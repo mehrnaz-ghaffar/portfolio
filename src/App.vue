@@ -36,22 +36,31 @@ export default {
     };
   },
   methods: {
-    function(){
+    $function(){
       var nav = $('nav'),
           menue = $('nav h1'),
           main = $('main'),
-          open = false,
-          hover = false;
+          open = false;
+          // hover = false;
 
-      menue.on('click', this.function(){
+      menue.on("click", function(){
         open = !open? true : false ;
-        nav.toggleClass('');
+        nav.toggleClass('navbarActive');
+        main.toggleClass('navbarActive');
+        nav.removeClass('navbarHover');
+        main.removeClass('navbarHover');
+        console.log(open)
+
       })
     }
     
   },
 };
 </script>
+
+
+
+
 
 
 
