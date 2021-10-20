@@ -19,6 +19,10 @@
           <h3>text sample</h3>
         </div>
       </section>
+      <section class="about">
+        <h2>ABOUT ME</h2>
+
+      </section>
     </main>
   </div>
 </template>
