@@ -1,15 +1,9 @@
 <template>
   <div id="app">
-    <nav class="navbarActive">
-      <h1>MENUE</h1>
-      <ul>
-        <li>ABOUT</li>
-        <li>MY SKILLS</li>
-        <li>EXPERIENCE / EDUCATION</li>
-        <li>CONTACS</li>
-        <li>test</li>
-      </ul>
-    </nav>
+
+
+    <navbar></navbar>
+
 
     <main>
       <section class="introImage">
@@ -30,42 +24,13 @@
 
   
 <script>
-
-import $ from 'jquery'
+import navbar from './components/navbar.vue';
 export default {
-  name: "App",
-  data(){
-    return {
-      
-    };
-  },
-  methods: {
-    $function(){
-      var nav = $('nav'),
-          menue = $('nav h1'),
-          main = $('main'),
-          open = false;
-          // hover = false;
+  components: { navbar },
+  name: "App"
 
-      menue.on("click", function(){
-        open = !open? true : false ;
-        nav.toggleClass('navbarActive');
-        main.toggleClass('navbarActive');
-        nav.removeClass('navbarHover');
-        main.removeClass('navbarHover');
-        console.log(open)
-
-      })
-    }
-    
-  },
 };
 </script>
-
-
-
-
-
 
 
 <style>
@@ -85,73 +50,6 @@ body {
   transition: transform 150ms ease-out;
 } */
 
-nav {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 16em;
-  background-color: cornsilk;
-  transform: translateX(-16em);
-}
-
-nav.navbarActive {
-  transform: translateX(0);
-}
-
-nav.navbarHover {
-  transform: translateX(-15em);
-}
-
-nav h1 {
-  z-index: 100;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -65px;
-  height: 60px;
-  width: 65px;
-  line-height: 60px;
-  font-size: 0.8rem;
-  /* letter-spacing: 1px; */
-  color: blue;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: coral;
-  cursor: pointer;
-}
-
-nav h1:hover {
-  color: white;
-  background-color: violet;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0 1em;
-  width: 100%;
-  height: 60px;
-  color: aqua;
-  line-height: 60px;
-  background-color: gray;
-  transition: all 0.5s ease-in;
-}
-
-/* nav li:nth-of-type(2n){
-  background-color: hotpink;
-} */
-
-nav li:hover {
-  background: orangered;
-  color: white;
-}
-
 /* main{
   z-index: 0;
   position: absolute;
@@ -165,7 +63,7 @@ nav li:hover {
   background-size: cover;
 } */
 
-main::after{
+/* main::after{
   content: '';
   display: block;
   position: absolute;
@@ -190,13 +88,13 @@ main.navbarActive::after{
   visibility: visible;
   opacity: 1;
   transition: opacity 150ms ease-out , visibility 0s;
-}
+} */
 
 
-main.navbarHover{
+/* main.navbarHover{
   border-radius: 0.001px;
   transform: translateX(1em) rotateY(1deg);
-}
+} */
 
 
 
