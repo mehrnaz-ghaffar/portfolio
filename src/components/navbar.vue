@@ -1,6 +1,9 @@
 <template>
     <div>
-    <nav class="navbarActive">
+    <nav 
+      
+      v-bind="{navbarActive : opened}"
+      >
       <h1>MENUE</h1>
       <ul>
         <li>ABOUT</li>
@@ -17,6 +20,18 @@
 <script>
 export default {
     name: 'navbar',
+    data(){
+        return{
+            opened : true,
+            hover: false
+        }
+    },
+    methods: {
+      test : function(){
+        this.opened = !this.opened
+        console.log(this.opened)
+      }
+    },
 }
 </script>
 
@@ -34,7 +49,7 @@ nav {
   transform: translateX(-16em);
 }
 
-nav.navbarActive {
+.navbarActive {
   transform: translateX(0);
 }
 
