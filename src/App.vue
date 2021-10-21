@@ -2,7 +2,7 @@
   <div id="app">
 
 
-    <navbar></navbar>
+    <!-- <navbar></navbar> -->
 
 
     <main>
@@ -15,6 +15,31 @@
       </section>
       <section class="about">
         <h2>ABOUT ME</h2>
+        <!-- <v-divider></v-divider> -->
+        <div class="aboutContainer">
+          <div class="aboutText" id="leftDiv">
+            <ul>
+              <li>my address</li>
+              <li>my address</li>
+              <li>my address</li>
+              <li>my address</li>
+            </ul>
+
+          </div>
+          <div class="aboutImage">
+            <img src="./assets/images/sample3.jpg" alt="">
+          </div>
+          <div class="aboutText" id="rightDiv">
+            <ul>
+              <li>my address</li>
+              <li>my address</li>
+              <li>my address</li>
+              <li>my address</li>
+            </ul>
+
+          </div>
+          
+        </div>
 
       </section>
     </main>
@@ -24,9 +49,9 @@
 
   
 <script>
-import navbar from './components/navbar.vue';
+// import navbar from './components/navbar.vue';
 export default {
-  components: { navbar },
+  // components: { navbar },
   name: "App"
 
 };
@@ -117,4 +142,34 @@ main.navbarActive::after{
   /* background-color: blue; */
   padding-left: 300px;
 }
+
+.about h2{
+  background-color: blue;
+  text-align: center;
+  margin: 20px;
+}
+
+.aboutContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.aboutText{
+  margin-top: 30px;
+}
+
+.aboutText ul li{
+  list-style: none;
+  line-height: 3rem;
+}
+
+#leftDiv , #rightDiv{
+  margin: 40px 20px 20px;
+  
+}
+
+.aboutImage img{
+  border-radius: 200px;
+}
+
 </style>
