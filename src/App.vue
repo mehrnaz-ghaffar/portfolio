@@ -4,18 +4,24 @@
 
     <!-- <navbar></navbar> -->
 
-
+    
     <main>
-      <section class="introImage">
-        <div class="introText">
+
+      <!-- Introduction Section -->
+      <section class="introductionImage">
+        <div class="introductionText">
           <p>Hi I'm</p>
           <h1>Mehrnaz</h1>
           <h3>text sample</h3>
         </div>
       </section>
+
+      <!-- About Section -->
       <section class="about">
         <h2>ABOUT ME</h2>
+        <hr>
         <!-- <v-divider></v-divider> -->
+        
         <div class="aboutContainer">
           <div class="aboutText" id="leftDiv">
             <ul>
@@ -27,7 +33,7 @@
 
           </div>
           <div class="aboutImage">
-            <img src="./assets/images/sample3.jpg" alt="">
+            <img src="./assets/images/sample3.jpg" alt="" >
           </div>
           <div class="aboutText" id="rightDiv">
             <ul>
@@ -124,7 +130,7 @@ main.navbarActive::after{
 
 
 
-.introImage {
+.introductionImage {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
@@ -135,7 +141,7 @@ main.navbarActive::after{
   position: relative;
 }
 
-.introText {
+.introductionText {
   color: #fff;
   position: absolute;
   bottom: 8%;
@@ -144,12 +150,12 @@ main.navbarActive::after{
 }
 
 .about h2{
-  background-color: blue;
   text-align: center;
   margin: 20px;
 }
 
 .aboutContainer{
+  margin: 40px;
   display: flex;
   justify-content: center;
 }
@@ -169,7 +175,7 @@ main.navbarActive::after{
 }
 
 .aboutImage img{
-  border-radius: 200px;
+  border-radius: 50%;
 }
 
 </style>
