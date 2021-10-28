@@ -1,7 +1,7 @@
 <template>
     <div>
     <nav 
-      
+      v-on:click="test"
       v-bind="{navbarActive : opened}"
       >
       <h1>MENUE</h1>
