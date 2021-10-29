@@ -6,7 +6,7 @@
 
 
      <nav 
-      v-on:click="test()"
+      v-on:click="toggle()"
        v-bind:class="{ navbarActive: opened}"
       >
       <h1>MENUE</h1>
@@ -20,7 +20,9 @@
     </nav>
 
     
-    <main>
+    <main
+    v-bind:class="{ navbarActiveMenue: opened}"
+    >
 
       <!-- Introduction Section -->
       <section class="introductionImage">
@@ -35,7 +37,7 @@
       <section class="about">
         <h2>ABOUT ME</h2>
         <hr>
-        <!-- <v-divider></v-divider> -->
+
         
         <div class="aboutContainer">
           <div class="aboutText" id="leftDiv">
@@ -60,8 +62,12 @@
 
           </div>
           
+          
         </div>
-
+        <div class="aboutInformation">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
+             Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?</p>
+        </div>     
       </section>
     </main>
   </div>
@@ -81,7 +87,7 @@ export default {
         }
     },
     methods: {
-      test : function(){
+      toggle : function(){
         this.opened = !this.opened
         console.log(this.opened)
       }
@@ -185,24 +191,27 @@ body {
   box-sizing: border-box;
 }
 
-/* nav , section{
-  transition: transform 150ms ease-out;
-} */
 
-/* main{
+
+
+nav , section{
+  transition: transform 150ms ease-out;
+}
+
+main{
   z-index: 0;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   align-items: center;
-  display: flex;
+  /* display: flex; */
   overflow: hidden;
   background-size: cover;
-} */
+}
 
-/* main::after{
+main::after{
   content: '';
   display: block;
   position: absolute;
@@ -217,27 +226,30 @@ body {
   transition: opacity 150ms ease-out , visibility 0s 150ms;
 }
 
-main.navbarActive{
+.navbarActiveMenue{
   border-radius: 0.001px;
   transform: translateX(16em) rotateY(15deg);
 
 }
 
-main.navbarActive::after{
+.navbarActiveMenue::after{
   visibility: visible;
   opacity: 1;
   transition: opacity 150ms ease-out , visibility 0s;
-} */
+}
 
 
-/* main.navbarHover{
+main.navbarHover{
   border-radius: 0.001px;
   transform: translateX(1em) rotateY(1deg);
-} */
+}
 
 
 
 
+
+
+/* Introduction Section */
 .introductionImage {
   width: 100%;
   height: 100vh;
@@ -257,19 +269,33 @@ main.navbarActive::after{
   padding-left: 300px;
 }
 
+@media only screen and (max-width: 1271px){
+   .introductionText{
+     padding-left: 100px;
+   }
+}
+
+
+/* About Section */
+.about{
+  margin-top: 50px;
+}
+
 .about h2{
   text-align: center;
   margin: 20px;
+  font-size:30px;
 }
 
 .aboutContainer{
-  margin: 40px;
+  margin: 60px 20px 20px 20px;
   display: flex;
   justify-content: center;
 }
 
 .aboutText{
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-top: inherit;
 }
 
 .aboutText ul li{
@@ -277,13 +303,17 @@ main.navbarActive::after{
   line-height: 3rem;
 }
 
-#leftDiv , #rightDiv{
-  margin: 40px 20px 20px;
-  
-}
+/* #leftDiv{
+    
+} */
 
 .aboutImage img{
-  border-radius: 50%;
+  
+  clip-path: circle();
+}
+
+.aboutInformation p{
+  text-align: center;
 }
 
 </style>
