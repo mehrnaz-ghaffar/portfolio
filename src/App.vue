@@ -37,15 +37,25 @@
       <section class="about">
         <h2>ABOUT ME</h2>
         <hr>
-
-        
         <div class="aboutContainer">
           <div class="aboutText" id="leftDiv">
             <ul>
-              <li>my address</li>
-              <li>my address</li>
-              <li>my address</li>
-              <li>my address</li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>   
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div> 
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>
+              </li>
             </ul>
 
           </div>
@@ -54,10 +64,22 @@
           </div>
           <div class="aboutText" id="rightDiv">
             <ul>
-              <li>my address</li>
-              <li>my address</li>
-              <li>my address</li>
-              <li>my address</li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>   
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div> 
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>
+              </li>
+              <li>
+                <div class="titles">my address</div>
+                <div>sample text</div>
+              </li>
             </ul>
 
           </div>
@@ -294,8 +316,8 @@ main.navbarHover{
 }
 
 .aboutText{
-  /* margin-top: 30px; */
-  margin-top: inherit;
+  margin-top: 25px;
+  /* margin-top: inherit; */
 }
 
 .aboutText ul li{
@@ -303,9 +325,13 @@ main.navbarHover{
   line-height: 3rem;
 }
 
-/* #leftDiv{
-    
-} */
+#leftDiv{
+ margin-right: -63px ;   
+}
+
+#rightDiv{
+  margin-left: -100px;
+}
 
 .aboutImage img{
   
@@ -314,6 +340,10 @@ main.navbarHover{
 
 .aboutInformation p{
   text-align: center;
+}
+
+.titles{
+  margin-bottom: -20px;
 }
 
 </style>
