@@ -20,6 +20,7 @@
     </nav>
 
     
+
     <main
     v-bind:class="{ navbarActiveMenue: opened}"
     >
@@ -90,7 +91,20 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
              Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?</p>
         </div>     
+        <button>download resume</button>
       </section>
+
+      <!-- skills Section -->
+      <section class="mySkills">
+        <h2>My Skills</h2>
+        <hr>
+
+
+      </section>
+
+
+
+
     </main>
   </div>
 </template>
@@ -271,7 +285,7 @@ main.navbarHover{
 
 
 
-/* Introduction Section */
+/*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
   width: 100%;
   height: 100vh;
@@ -298,12 +312,12 @@ main.navbarHover{
 }
 
 
-/* About Section */
+/*   /////////////////  About Section ///////////////////  */
 .about{
   margin-top: 50px;
 }
 
-.about h2{
+h2{
   text-align: center;
   margin: 20px;
   font-size:30px;
@@ -345,5 +359,12 @@ main.navbarHover{
 .titles{
   margin-bottom: -20px;
 }
+
+
+/* /////////////////  Skills Sections  ///////////////// */
+.mySkills{
+  margin: 200px;
+}
+
 
 </style>
