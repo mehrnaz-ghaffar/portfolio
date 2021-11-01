@@ -39,22 +39,22 @@
         <h2>ABOUT ME</h2>
         <hr>
         <div class="aboutContainer">
-          <div class="aboutText" id="leftDiv">
+          <div class="aboutText" id="leftDiv" dir="rtl">
             <ul>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div>   
+                <div class="titles"> <b>FULL NAME</b> </div>
+                <div>Mehrnaz Ghaffar Tabrizi</div>   
               </li>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div> 
+                <div class="titles"> <b>BIRTHDAY</b> </div>
+                <div>1378/8/18</div> 
               </li>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div>
+                <div class="titles"> <b>BIRTH PLACE</b> </div>
+                <div>Tehran , Iran </div>
               </li>
               <li>
-                <div class="titles">my address</div>
+                <div class="titles"> <b>my address</b> </div>
                 <div>sample text</div>
               </li>
             </ul>
@@ -66,19 +66,19 @@
           <div class="aboutText" id="rightDiv">
             <ul>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div>   
+                <div class="titles"> <b>ADDRESS</b> </div>
+                <div>Tehran , Iran</div>   
               </li>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div> 
+                <div class="titles"> <b>PHONE</b> </div>
+                <div>+98912*****15</div> 
               </li>
               <li>
-                <div class="titles">my address</div>
-                <div>sample text</div>
+                <div class="titles"> <b>EMAIL</b> </div>
+                <div>mehrnaz.ghaffar@gmail.com</div>
               </li>
               <li>
-                <div class="titles">my address</div>
+                <div class="titles"> <b>my address</b> </div>
                 <div>sample text</div>
               </li>
             </ul>
@@ -91,7 +91,9 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
              Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?</p>
         </div>     
+        <div class="button">
         <button>download resume</button>
+        </div>
       </section>
 
       <!-- skills Section -->
@@ -227,6 +229,12 @@ body {
   box-sizing: border-box;
 }
 
+h2{
+  text-align: center;
+  margin: 20px;
+  font-size:30px;
+}
+
 
 
 
@@ -317,12 +325,6 @@ main.navbarHover{
   margin-top: 50px;
 }
 
-h2{
-  text-align: center;
-  margin: 20px;
-  font-size:30px;
-}
-
 .aboutContainer{
   margin: 60px 20px 20px 20px;
   display: flex;
@@ -340,7 +342,7 @@ h2{
 }
 
 #leftDiv{
- margin-right: -63px ;   
+ margin-right: -98px ;   
 }
 
 #rightDiv{
@@ -354,17 +356,30 @@ h2{
 
 .aboutInformation p{
   text-align: center;
+  margin-top: 50px;
 }
 
 .titles{
   margin-bottom: -20px;
 }
 
+.button{
+  text-align: center;
+  margin: 65px;
+}
+
+.button button{
+  padding: 25px;
+  border-radius: 16px;
+  font-size: 1em;
+  box-shadow: gray;
+}
+
 
 /* /////////////////  Skills Sections  ///////////////// */
-.mySkills{
+/* .mySkills{
   margin: 200px;
-}
+} */
 
 
 </style>
