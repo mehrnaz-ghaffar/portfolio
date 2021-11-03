@@ -36,7 +36,7 @@
 
       <!-- About Section -->
       <section class="about">
-        <h2>ABOUT ME</h2>
+        <h2>About  Me</h2>
         <hr>
         <div class="aboutContainer">
           <div class="aboutText" id="leftDiv" dir="rtl">
@@ -102,6 +102,9 @@
         <hr>
         <div class="skillsContainer">
           <progressBar></progressBar> 
+          <progressBar></progressBar>
+          <progressBar></progressBar>
+          <progressBar></progressBar>
 
         </div>
 
@@ -229,7 +232,8 @@ body {
 h2{
   text-align: center;
   margin: 20px;
-  font-size:30px;
+  font-size:40px;
+  font-family: 'Great Vibes', cursive;
 }
 
 
@@ -375,7 +379,16 @@ main.navbarHover{
 
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
-  margin: 200px;
+  margin-bottom: 100px;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.skillsContainer{
+  margin-top: 70px;
+  /* justify-content: center; */
+  display: flex;
 }
 
 
