@@ -100,6 +100,10 @@
       <section class="mySkills">
         <h2>My Skills</h2>
         <hr>
+        <div class="skillsContainer">
+          <progressBar></progressBar> 
+
+        </div>
 
 
       </section>
@@ -115,8 +119,9 @@
   
 <script>
 // import navbar from './components/navbar.vue';
+import progressBar from './components/progressBar.vue'
 export default {
-  // components: { navbar },
+  components: { progressBar },
   name: "App",
   data(){
         return{
@@ -138,7 +143,7 @@ export default {
 <style>
 
 
-
+/*/////////////////////////////// navbar TEST css ///////////////////////////*/
 nav {
   z-index: 100;
   position: absolute;
@@ -206,15 +211,7 @@ nav li:hover {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
+/*///////////////////////////////////////////// CSS ///////////////////////////////////////////////////*/
 
 
 body {
@@ -372,14 +369,14 @@ main.navbarHover{
   padding: 25px;
   border-radius: 16px;
   font-size: 1em;
-  box-shadow: gray;
+  box-shadow: 4px 3px 9px grey;
 }
 
 
 /* /////////////////  Skills Sections  ///////////////// */
-/* .mySkills{
+.mySkills{
   margin: 200px;
-} */
+}
 
 
 </style>
