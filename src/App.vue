@@ -101,10 +101,21 @@
         <h2>My Skills</h2>
         <hr>
         <div class="skillsContainer">
-          <progressBar></progressBar> 
-          <progressBar></progressBar>
-          <progressBar></progressBar>
-          <progressBar></progressBar>
+          <div class="column">
+            <progressBar></progressBar> 
+            <progressBar></progressBar>
+            <progressBar></progressBar>
+            <progressBar></progressBar>
+          </div>
+          <div class="column">
+            <progressBar></progressBar> 
+            <progressBar></progressBar>
+            <progressBar></progressBar>
+            <progressBar></progressBar>
+          </div>
+
+
+          
 
         </div>
 
@@ -380,16 +391,22 @@ main.navbarHover{
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
   margin-bottom: 100px;
-  justify-content: center;
-  flex-direction: column;
-  flex-flow: column wrap;
 }
 
 .skillsContainer{
   margin-top: 70px;
-  /* justify-content: center; */
   display: flex;
+  justify-content: space-evenly;
+  column-gap: 10px;
+
 }
+
+.loadingBar div.data-v-4e838c74 {
+  margin-bottom: 30px;
+}
+/* .column{
+  flex: 50%;
+} */
 
 
 </style>
