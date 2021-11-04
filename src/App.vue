@@ -37,7 +37,7 @@
       <!-- About Section -->
       <section class="about">
         <h2>About  Me</h2>
-        <hr>
+        <divider></divider>
         <div class="aboutContainer">
           <div class="aboutText" id="leftDiv" dir="rtl">
             <ul>
@@ -99,7 +99,7 @@
       <!-- skills Section -->
       <section class="mySkills">
         <h2>My Skills</h2>
-        <hr>
+        <divider></divider>
         <div class="skillsContainer">
           <div class="column">
             <progressBar></progressBar> 
@@ -114,7 +114,7 @@
             <progressBar></progressBar>
           </div>
 
-
+          
           
 
         </div>
@@ -122,6 +122,8 @@
 
       </section>
 
+
+      
 
 
 
@@ -134,8 +136,11 @@
 <script>
 // import navbar from './components/navbar.vue';
 import progressBar from './components/progressBar.vue'
+import divider from './components/divider.vue'
 export default {
-  components: { progressBar },
+  components: { progressBar,
+                divider 
+  },
   name: "App",
   data(){
         return{
@@ -242,7 +247,7 @@ body {
 
 h2{
   text-align: center;
-  margin: 20px;
+  margin: 20px 0px 0px 0px;
   font-size:40px;
   font-family: 'Great Vibes', cursive;
 }
@@ -351,6 +356,7 @@ main.navbarHover{
 .aboutText ul li{
   list-style: none;
   line-height: 3rem;
+  font-family: 'Zen Antique', serif;
 }
 
 #leftDiv{
