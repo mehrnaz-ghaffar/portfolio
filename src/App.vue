@@ -7,7 +7,10 @@
 
      <nav 
       v-on:click="toggle()"
-       v-bind:class="{ navbarActive: opened}"
+      @mouseover="hover=true"
+      @mouseleave="hover=false"
+      v-bind:class="{ navbarActive: opened , navbarHover:hover}"
+         
       >
       <h1>MENUE</h1>
       <ul>
@@ -22,7 +25,7 @@
     
 
     <main
-    v-bind:class="{ navbarActiveMenue: opened}"
+    v-bind:class="{ navbarActiveMenue: opened , navbarHoverMain:hover }"
     >
 
       <!-- Introduction Section -->
@@ -152,10 +155,12 @@ export default {
       toggle : function(){
         this.opened = !this.opened
         console.log(this.opened)
-      }
+      },
+
     },
 
 };
+
 </script>
 
 
@@ -255,7 +260,7 @@ h2{
 
 
 
-nav , section{
+nav , main{
   transition: transform 150ms ease-out;
 }
 
@@ -300,7 +305,7 @@ main::after{
 }
 
 
-main.navbarHover{
+.navbarHoverMain{
   border-radius: 0.001px;
   transform: translateX(1em) rotateY(1deg);
 }
@@ -407,9 +412,9 @@ main.navbarHover{
 
 }
 
-.loadingBar div.data-v-4e838c74 {
+/* .loadingBar div.data-v-4e838c74 {
   margin-bottom: 30px;
-}
+} */
 /* .column{
   flex: 50%;
 } */
