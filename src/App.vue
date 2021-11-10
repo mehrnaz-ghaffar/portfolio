@@ -105,15 +105,23 @@
         <divider></divider>
         <div class="skillsContainer">
           <div class="column">
+            <span>text</span>
             <progressBar></progressBar> 
+            <span>taxt</span>
             <progressBar></progressBar>
+            <span>text</span>
             <progressBar></progressBar>
+            <span>text</span>
             <progressBar></progressBar>
           </div>
           <div class="column">
-            <progressBar></progressBar> 
+            <span>text</span>
             <progressBar></progressBar>
+            <span>text</span> 
             <progressBar></progressBar>
+            <span>text</span>
+            <progressBar></progressBar>
+            <span>text</span>
             <progressBar></progressBar>
           </div>
 
@@ -321,6 +329,7 @@ main::after{
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./assets/images/background.png);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   /* padding: 0 8%; */
@@ -332,7 +341,7 @@ main::after{
   position: absolute;
   bottom: 8%;
   /* background-color: blue; */
-  padding-left: 300px;
+  padding-left: 230px;
 }
 
 @media only screen and (max-width: 1271px){
@@ -340,7 +349,11 @@ main::after{
      padding-left: 100px;
    }
 }
-
+@media only screen and (max-width: 659px){
+  .introductionImage{
+    background-position: 70% 0%;
+  }
+}
 
 /*   /////////////////  About Section ///////////////////  */
 .about{
