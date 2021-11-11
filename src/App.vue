@@ -105,24 +105,40 @@
         <divider></divider>
         <div class="skillsContainer">
           <div class="column">
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar> 
-            <span>taxt</span>
-            <progressBar class="progressBar"></progressBar>
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar>
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+           <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
           </div>
           <div class="column">
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar>
-            <span>text</span> 
-            <progressBar class="progressBar"></progressBar>
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar>
-            <span>text</span>
-            <progressBar class="progressBar"></progressBar>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
+            <div class="progressBar">
+              <span>text</span>
+              <progressBar></progressBar> 
+            </div>
           </div>
 
           
@@ -421,17 +437,24 @@ main::after{
   margin-top: 70px;
   display: flex;
   justify-content: space-evenly;
-  column-gap: 10px;
 
 }
 
-.progressBar{
-  margin-bottom: 10px;
-}
+
 
 /* .column{
   flex: 50%;
 } */
+
+.progressBar{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.progressBar span {
+  margin-right: 10px;
+  font-size: 20px;
+}
 
 @media screen and (max-width: 1028px) {
   .skillsContainer{
