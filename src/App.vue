@@ -106,23 +106,23 @@
         <div class="skillsContainer">
           <div class="column">
             <span>text</span>
-            <progressBar></progressBar> 
+            <progressBar class="progressBar"></progressBar> 
             <span>taxt</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
             <span>text</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
             <span>text</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
           </div>
           <div class="column">
             <span>text</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
             <span>text</span> 
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
             <span>text</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
             <span>text</span>
-            <progressBar></progressBar>
+            <progressBar class="progressBar"></progressBar>
           </div>
 
           
@@ -329,7 +329,7 @@ main::after{
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./assets/images/background.png);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   /* padding: 0 8%; */
@@ -425,12 +425,24 @@ main::after{
 
 }
 
-/* .loadingBar div.data-v-4e838c74 {
-  margin-bottom: 30px;
-} */
+.progressBar{
+  margin-bottom: 10px;
+}
+
 /* .column{
   flex: 50%;
 } */
+
+@media screen and (max-width: 1028px) {
+  .skillsContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+  }
+  
+}
+
+
 
 
 </style>
