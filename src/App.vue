@@ -9,7 +9,7 @@
       v-on:click="toggle()"
       @mouseover="hover=true"
       @mouseleave="hover=false"
-      v-bind:class="{ navbarActive: opened , navbarHover:hover}"
+      :class="{ navbarActive: opened , navbarHover:hover}"
          
       >
       <h1>MENUE</h1>
@@ -106,15 +106,15 @@
         <div class="skillsContainer">
           <div class="column">
             <div class="progressBar">
-              <span>text</span>
+              <span>HTML</span>
               <progressBar></progressBar> 
             </div>
             <div class="progressBar">
-              <span>text</span>
+              <span>Javascript</span>
               <progressBar></progressBar> 
             </div>
            <div class="progressBar">
-              <span>text</span>
+              <span>Git</span>
               <progressBar></progressBar> 
             </div>
             <div class="progressBar">
@@ -124,11 +124,11 @@
           </div>
           <div class="column">
             <div class="progressBar">
-              <span>text</span>
+              <span>CSS</span>
               <progressBar></progressBar> 
             </div>
             <div class="progressBar">
-              <span>text</span>
+              <span>Vue.js</span>
               <progressBar></progressBar> 
             </div>
             <div class="progressBar">
@@ -148,6 +148,11 @@
 
 
       </section>
+
+      <setion class="languages">
+
+
+      </setion>
 
 
       
@@ -425,6 +430,18 @@ main::after{
   border-radius: 16px;
   font-size: 1em;
   box-shadow: 4px 3px 9px grey;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.button button:hover{
+  /* padding: 25px;
+  border-radius: 16px;
+  font-size: 1em;
+  box-shadow: 4px 3px 9px grey;
+  cursor: pointer; */
+  background-color: rgb(235, 198, 206);
+   transform: scale(1.1);
 }
 
 
