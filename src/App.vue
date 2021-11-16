@@ -160,6 +160,22 @@
 
 
     </main>
+
+    <div class="preIntroduction">
+      <div class="preIntroductionText">
+        <h1 class="hide">
+          <span class="text">Creating innovation</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">For everydad</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">People.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
   </div>
 </template>
 
@@ -340,9 +356,36 @@ main::after{
 }
 
 
+/* //////////////// on load text section /////////////////// */
 
+.preIntroduction{
+  background-color: black;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
 
+.preIntroductionText{
+  color: rgb(241, 243, 245);
+  /* font-family: cursive; */
+  font-size: 3rem;
 
+}
+
+.slider{
+  background-color: rgb(83, 91, 95);
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
@@ -435,12 +478,7 @@ main::after{
 }
 
 .button button:hover{
-  /* padding: 25px;
-  border-radius: 16px;
-  font-size: 1em;
-  box-shadow: 4px 3px 9px grey;
-  cursor: pointer; */
-  background-color: rgb(235, 198, 206);
+   background-color: rgb(235, 198, 206);
    transform: scale(1.1);
 }
 
