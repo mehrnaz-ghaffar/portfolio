@@ -183,8 +183,13 @@
   
 <script>
 // import navbar from './components/navbar.vue';
+ import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
+
+const tl = gsap.timeline({defaults :{ ease : "power1.out" }});
+tl.to(".text", {y:"0%" , duration: 1, stagger: 0.25})
+
 export default {
   components: { progressBar,
                 divider 
@@ -384,6 +389,16 @@ main::after{
   left: 0;
   width: 100%;
   height: 100%;
+  transform: translateY(100%);
+}
+
+.hide{
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  display: inline-block;
   transform: translateY(100%);
 }
 
