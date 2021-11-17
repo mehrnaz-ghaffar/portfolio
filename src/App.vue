@@ -160,7 +160,9 @@
 
 
     </main>
+    
 
+<!-- 
     <div class="preIntroduction">
       <div class="preIntroductionText">
         <h1 class="hide">
@@ -174,7 +176,7 @@
         </h1>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
 
   </div>
 </template>
@@ -183,14 +185,19 @@
   
 <script>
 // import navbar from './components/navbar.vue';
- import gsap from 'gsap';
+//  import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
 
-const tl = gsap.timeline({defaults :{ ease : "power1.out" }});
-tl.to(".text", {y:"0%" , duration: 1, stagger: 0.25})
+
 
 export default {
+  // setup() {
+  //   const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
+  //   timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
+  //   timeline.to(".slider" , {y:"-100%", duration: 1.5 , delay: 0.5});
+    
+  // },
   components: { progressBar,
                 divider 
   },
@@ -361,23 +368,23 @@ main::after{
 }
 
 
+
 /* //////////////// on load text section /////////////////// */
 
-.preIntroduction{
-  background-color: black;
+/* .preIntroduction{
+  background: black;
   position: fixed;
   top : 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  /* align-items: center; */
+  align-items: center; 
   justify-content: center;
 }
 
 .preIntroductionText{
   color: rgb(241, 243, 245);
-  /* font-family: cursive; */
   font-size: 3rem;
 
 }
@@ -400,7 +407,7 @@ main::after{
 .hide span {
   display: inline-block;
   transform: translateY(100%);
-}
+} */
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
