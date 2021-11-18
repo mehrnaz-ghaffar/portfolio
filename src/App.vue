@@ -11,7 +11,7 @@
       v-on:click="toggle()"
       @mouseover="hover=true"
       @mouseleave="hover=false"
-      :class="{ navbarActive: opened , navbarHover:hover}"
+      :class="{ navbarActive: !opened , navbarHover:hover}"
          
       >
       <h1>MENUE</h1>
@@ -27,7 +27,8 @@
     
 
     <main
-    v-bind:class="{ navbarActiveMenue: opened , navbarHoverMain:hover }"
+    :class="{ navbarActiveMenue: !opened , navbarHoverMain:hover && opened }"
+    
     >
 
       <!-- Introduction Section -->
@@ -170,7 +171,7 @@
           <span class="text">Creating innovation</span>
         </h1>
         <h1 class="hide">
-          <span class="text">For everydad</span>
+          <span class="text">For everyday</span>
         </h1>
         <h1 class="hide">
           <span class="text">People.</span>
