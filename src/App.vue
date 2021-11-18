@@ -2,6 +2,8 @@
   <div id="app">
 
 
+   
+
     <!-- <navbar></navbar> -->
 
 
@@ -161,9 +163,8 @@
 
     </main>
     
-
-<!-- 
-    <div class="preIntroduction">
+    <!-- on load animated text -->
+     <div class="preIntroduction">
       <div class="preIntroductionText">
         <h1 class="hide">
           <span class="text">Creating innovation</span>
@@ -176,7 +177,9 @@
         </h1>
       </div>
     </div>
-    <div class="slider"></div> -->
+    <!-- on load animated slider -->
+    <div class="slider"></div>
+
 
   </div>
 </template>
@@ -185,19 +188,23 @@
   
 <script>
 // import navbar from './components/navbar.vue';
-//  import gsap from 'gsap';
+import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
 
-
+  
 
 export default {
-  // setup() {
-  //   const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
-  //   timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
-  //   timeline.to(".slider" , {y:"-100%", duration: 1.5 , delay: 0.5});
-    
-  // },
+  mounted(){
+    const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
+    timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
+    timeline.to(".slider" , {y:"-100%", duration: 1.5 , delay: 0.5});
+    timeline.to(".preIntroduction" , {y:"-100%", duration: 1}, "-=1");
+    timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
+    timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
+
+  },
+
   components: { progressBar,
                 divider 
   },
@@ -222,6 +229,49 @@ export default {
 
 
 <style>
+
+
+
+/* //////////////// on load animation /////////////////// */
+
+.preIntroduction{
+  background: black;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center;  */
+  justify-content: center;
+}
+
+.preIntroductionText{
+  color: rgb(241, 243, 245);
+  font-size: 3rem;
+  margin-top: 80px;
+}
+
+.slider{
+  background-color: rgb(83, 91, 95);
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide{
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
 
 
 /*/////////////////////////////// navbar TEST css ///////////////////////////*/
@@ -369,45 +419,6 @@ main::after{
 
 
 
-/* //////////////// on load text section /////////////////// */
-
-/* .preIntroduction{
-  background: black;
-  position: fixed;
-  top : 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-}
-
-.preIntroductionText{
-  color: rgb(241, 243, 245);
-  font-size: 3rem;
-
-}
-
-.slider{
-  background-color: rgb(83, 91, 95);
-  position: fixed;
-  top : 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-}
-
-.hide{
-  background: black;
-  overflow: hidden;
-}
-
-.hide span {
-  display: inline-block;
-  transform: translateY(100%);
-} */
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
