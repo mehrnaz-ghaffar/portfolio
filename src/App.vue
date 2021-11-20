@@ -363,6 +363,7 @@ h2{
   margin: 20px 0px 0px 0px;
   font-size:40px;
   font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 4px 5px rgb(199 192 193);
 }
 
 
