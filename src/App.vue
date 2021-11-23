@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-
-
-   
-
     <!-- <navbar></navbar> -->
 
 
-     <nav 
-      v-on:click="toggle()"
+    <nav 
+      :class="{ navbarActive: !opened , navbarHover:hover}"
+      @click="toggle()"
       @mouseover="hover=true"
       @mouseleave="hover=false"
-      :class="{ navbarActive: !opened , navbarHover:hover}"
-         
-      >
+    >
       <h1>MENUE</h1>
       <ul>
         <li>ABOUT</li>
@@ -27,10 +22,8 @@
     
 
     <main
-    :class="{ navbarActiveMenue: !opened , navbarHoverMain:hover && opened }"
-    
+      :class="{ navbarActiveMenue: !opened , navbarHoverMain:hover && opened }"
     >
-
       <!-- Introduction Section -->
       <section class="introductionImage">
         <div class="introductionText">
@@ -43,129 +36,138 @@
       <!-- About Section -->
       <section class="about">
         <h2>About  Me</h2>
-        <divider></divider>
+        <divider />
         <div class="aboutContainer">
-          <div class="aboutText" id="leftDiv" dir="rtl">
+          <div
+            id="leftDiv"
+            class="aboutText"
+            dir="rtl"
+          >
             <ul>
               <li>
-                <div class="titles"> <b>FULL NAME</b> </div>
+                <div class="titles">
+                  <b>FULL NAME</b>
+                </div>
                 <div>Mehrnaz Ghaffar Tabrizi</div>   
               </li>
               <li>
-                <div class="titles"> <b>BIRTHDAY</b> </div>
+                <div class="titles">
+                  <b>BIRTHDAY</b>
+                </div>
                 <div>1378/8/18</div> 
               </li>
               <li>
-                <div class="titles"> <b>BIRTH PLACE</b> </div>
+                <div class="titles">
+                  <b>BIRTH PLACE</b>
+                </div>
                 <div>Tehran , Iran </div>
               </li>
               <li>
-                <div class="titles"> <b>my address</b> </div>
+                <div class="titles">
+                  <b>my address</b>
+                </div>
                 <div>sample text</div>
               </li>
             </ul>
-
           </div>
           <div class="aboutImage">
-            <img src="./assets/images/sample3.jpg" alt="" >
+            <img
+              src="./assets/images/sample3.jpg"
+              alt=""
+            >
           </div>
-          <div class="aboutText" id="rightDiv">
+          <div
+            id="rightDiv"
+            class="aboutText"
+          >
             <ul>
               <li>
-                <div class="titles"> <b>ADDRESS</b> </div>
+                <div class="titles">
+                  <b>ADDRESS</b>
+                </div>
                 <div>Tehran , Iran</div>   
               </li>
               <li>
-                <div class="titles"> <b>PHONE</b> </div>
+                <div class="titles">
+                  <b>PHONE</b>
+                </div>
                 <div>+98912*****15</div> 
               </li>
               <li>
-                <div class="titles"> <b>EMAIL</b> </div>
+                <div class="titles">
+                  <b>EMAIL</b>
+                </div>
                 <div>mehrnaz.ghaffar@gmail.com</div>
               </li>
               <li>
-                <div class="titles"> <b>my address</b> </div>
+                <div class="titles">
+                  <b>my address</b>
+                </div>
                 <div>sample text</div>
               </li>
             </ul>
-
           </div>
-          
-          
         </div>
         <div class="aboutInformation">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
-             Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
+            Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?
+          </p>
         </div>     
         <div class="button">
-        <button>download resume</button>
+          <button>download resume</button>
         </div>
       </section>
 
       <!-- skills Section -->
       <section class="mySkills">
         <h2>My Skills</h2>
-        <divider></divider>
+        <divider />
         <div class="skillsContainer">
           <div class="column">
             <div class="progressBar">
               <span>HTML</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
             <div class="progressBar">
               <span>Javascript</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
-           <div class="progressBar">
+            <div class="progressBar">
               <span>Git</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
             <div class="progressBar">
               <span>text</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
           </div>
           <div class="column">
             <div class="progressBar">
               <span>CSS</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
             <div class="progressBar">
               <span>Vue.js</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
             <div class="progressBar">
               <span>text</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
             <div class="progressBar">
               <span>text</span>
-              <progressBar></progressBar> 
+              <progressBar /> 
             </div>
           </div>
-
-          
-          
-
         </div>
-
-
       </section>
 
-      <setion class="languages">
-
-
-      </setion>
-
-
-      
-
-
-
+      <setion class="languages" />
     </main>
     
     <!-- on load animated text -->
-     <div class="preIntroduction">
+    <div class="preIntroduction">
       <div class="preIntroductionText">
         <h1 class="hide">
           <span class="text">Creating innovation</span>
@@ -179,9 +181,7 @@
       </div>
     </div>
     <!-- on load animated slider -->
-    <div class="slider"></div>
-
-
+    <div class="slider" />
   </div>
 </template>
 
@@ -196,6 +196,17 @@ import divider from './components/divider.vue'
   
 
 export default {
+  name: "App",
+
+  components: { progressBar,
+                divider 
+  },
+  data(){
+        return{
+            opened : false,
+            hover: false
+        }
+    },
   mounted(){
     const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
     timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
@@ -205,17 +216,6 @@ export default {
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
 
   },
-
-  components: { progressBar,
-                divider 
-  },
-  name: "App",
-  data(){
-        return{
-            opened : false,
-            hover: false
-        }
-    },
     methods: {
       toggle : function(){
         this.opened = !this.opened

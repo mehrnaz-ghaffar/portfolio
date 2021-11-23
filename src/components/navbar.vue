@@ -1,9 +1,9 @@
 <template>
-    <div>
+  <div>
     <nav 
-      v-on:click="test"
       v-bind="{navbarActive : opened}"
-      >
+      @click="test"
+    >
       <h1>MENUE</h1>
       <ul>
         <li>ABOUT</li>
@@ -13,13 +13,12 @@
         <li>test</li>
       </ul>
     </nav>
-
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'navbar',
+    name: 'Navbar',
     data(){
         return{
             opened : true,
@@ -27,7 +26,7 @@ export default {
         }
     },
     methods: {
-      test : function(){
+      test() {
         this.opened = !this.opened
         console.log(this.opened)
       }
