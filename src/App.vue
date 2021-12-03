@@ -44,6 +44,9 @@
             dir="rtl"
           >
             <ul>
+              <!-- <dl>
+                <dt>full name</dt> <dd>mehrnaz ghaffar</dd>
+              </dl> -->
               <li>
                 <div class="titles">
                   <b>FULL NAME</b>
@@ -460,7 +463,7 @@ main::after{
 }
 
 .aboutContainer{
-  margin: 60px 20px 20px 20px;
+  margin: 60px 20px 20px 70px;
   display: flex;
   justify-content: center;
 }
@@ -544,6 +547,8 @@ main::after{
 .progressBar span {
   margin-right: 10px;
   font-size: 20px;
+  display: inline;
+  width: 80px;
 }
 
 @media screen and (max-width: 1028px) {
