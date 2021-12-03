@@ -1,10 +1,7 @@
 <template>
-    <div class="loadingBar">
-        <div class="percentage">
-            
-        </div>
-
-    </div>
+  <div class="loadingBar">
+    <div class="percentage" />
+  </div>
 </template>
 
 <script>
