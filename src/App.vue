@@ -166,7 +166,58 @@
         </div>
       </section>
 
-      <setion class="languages" />
+      <!-- Language Section -->
+      <section class="languages">
+        <h2>My Languages</h2>
+        <divider />
+        <div class="languageContainer">
+          <div class="card">
+            <div class="countryFlag">
+              <img 
+                src="./assets/images/images.jpg" 
+                alt=""
+              >
+            </div>
+            <div class="level">
+              <h1>name1</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, fugit accusantium temporibus dolor 
+                dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
+              </p> 
+            </div>
+          </div>
+          <div class="card">
+            <div class="countryFlag">
+              <img 
+                src="./assets/images/images.jpg" 
+                alt=""
+              >
+            </div>
+            <div class="level">
+              <h1>name2</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, 
+                fugit accusantium temporibus dolor dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
+              </p> 
+            </div>
+          </div>
+          <div class="card">
+            <div class="countryFlag">
+              <img 
+                src="./assets/images/images.jpg"
+                alt=""
+              >
+            </div>
+            <div class="level">
+              <h1>name3</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, fugit accusantium temporibus dolor 
+                dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
+              </p> 
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     
     <!-- on load animated text -->
@@ -431,7 +482,7 @@ main::after{
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./assets/images/background.png);
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   /* padding: 0 8%; */
@@ -560,7 +611,70 @@ main::after{
   
 }
 
+/*  ///////////////  Languages Section  ///////////////// */
+.languages{
+  margin: 100px 0 100px 0;
+}
 
+.languageContainer{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
 
+.card{
+  position: relative;
+  max-width: 300px;
+  height: 210px;
+  background: rgba(160, 153, 153, 0);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+
+}
+
+.card:hover{
+  height: 420px;
+}
+
+.countryFlag{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.countryFlag img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card .level{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .level{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
 
 </style>
