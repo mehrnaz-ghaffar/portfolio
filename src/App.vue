@@ -179,10 +179,34 @@
               >
             </div>
             <div class="level">
-              <h1>name1</h1>
+              <h1>English</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, fugit accusantium temporibus dolor 
-                dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
+                speaking 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                listening 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                reading 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+                writing
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
               </p> 
             </div>
           </div>
@@ -196,9 +220,33 @@
             <div class="level">
               <h1>name2</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, 
-                fugit accusantium temporibus dolor dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
-              </p> 
+                speaking 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                listening 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                reading 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+                writing
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+              </p>
             </div>
           </div>
           <div class="card">
@@ -211,9 +259,72 @@
             <div class="level">
               <h1>name3</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde rerum possimus fugiat, fugit accusantium temporibus dolor 
-                dignissimos nisi neque aut similique odio consequuntur ratione deleniti numquam adipisci sed hic modi.
+                speaking 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                listening 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                reading 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+                writing
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
               </p> 
+            </div>
+          </div>
+          <div class="card">
+            <div class="countryFlag">
+              <img 
+                src="./assets/images/images.jpg"
+                alt=""
+              >
+            </div>
+            <div class="level">
+              <h1>name4</h1>
+              <p>
+                speaking 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                listening 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
+                <br>
+                reading 
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+                writing
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <i class="fas fa-star" />
+                <br>
+              </p>
             </div>
           </div>
         </div>
@@ -618,12 +729,12 @@ main::after{
 
 .languageContainer{
   position: relative;
-  width: 1100px;
+  /* width: 1100px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 60px 30px 30px 30px;
 }
 
 .card{
@@ -674,7 +785,10 @@ main::after{
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
+.level p i{
+  color: coral;
+}
 </style>
