@@ -1,23 +1,9 @@
 <template>
   <div id="app">
-    <!-- <navbar></navbar> -->
 
 
-    <nav 
-      :class="{ navbarActive: !opened , navbarHover:hover}"
-      @click="toggle()"
-      @mouseover="hover=true"
-      @mouseleave="hover=false"
-    >
-      <h1>MENUE</h1>
-      <ul>
-        <li>ABOUT</li>
-        <li>MY SKILLS</li>
-        <li>EXPERIENCE / EDUCATION</li>
-        <li>CONTACS</li>
-        <li>test</li>
-      </ul>
-    </nav>
+
+
 
     
 
@@ -438,77 +424,12 @@ export default {
   transform: translateY(100%);
 }
 
+/*/////////////////////////////////////// menu //////////////////////////////////////////////////*/
 
 
-/*/////////////////////////////// navbar TEST css ///////////////////////////*/
-nav {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 16em;
-  background-color: cornsilk;
-  transform: translateX(-16em);
-}
 
-.navbarActive {
-  transform: translateX(0);
-}
 
-.navbarHover {
-  transform: translateX(-15em);
-}
-
-nav h1 {
-  z-index: 100;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -65px;
-  height: 60px;
-  width: 65px;
-  line-height: 60px;
-  font-size: 0.8rem;
-  /* letter-spacing: 1px; */
-  color: blue;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: coral;
-  cursor: pointer;
-} 
-
-nav h1:hover {
-  color: white;
-  background-color: violet;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0 1em;
-  width: 100%;
-  height: 60px;
-  color: aqua;
-  line-height: 60px;
-  background-color: gray;
-  transition: all 0.5s ease-in;
-}
-
-/* nav li:nth-of-type(2n){
-  background-color: hotpink;
-} */
-
-nav li:hover {
-  background: orangered;
-  color: white;
-}
-
-/*///////////////////////////////////////////// CSS ///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////// General Styles ///////////////////////////////////////////////////*/
 
 
 body {
@@ -530,61 +451,6 @@ h2{
   font-family: 'Great Vibes', cursive;
   text-shadow: 1px 4px 5px rgb(199 192 193);
 }
-
-
-
-
-nav , main{
-  transition: transform 150ms ease-out;
-}
-
-main{
-  z-index: 0;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  align-items: center;
-  /* display: flex; */
-  overflow: hidden;
-  background-size: cover;
-}
-
-main::after{
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to right , transparent , rgba(33,33,45,.5));
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 150ms ease-out , visibility 0s 150ms;
-}
-
-.navbarActiveMenue{
-  border-radius: 0.001px;
-  transform: translateX(16em) rotateY(15deg);
-
-}
-
-.navbarActiveMenue::after{
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 150ms ease-out , visibility 0s;
-}
-
-
-.navbarHoverMain{
-  border-radius: 0.001px;
-  transform: translateX(1em) rotateY(1deg);
-}
-
-
 
 
 /*  ///////////////  Introduction Section  ///////////////// */
@@ -613,6 +479,7 @@ main::after{
      padding-left: 100px;
    }
 }
+
 @media only screen and (max-width: 659px){
   .introductionImage{
     background-position: 70% 0%;
