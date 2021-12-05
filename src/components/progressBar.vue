@@ -37,6 +37,10 @@ export default {
     background-size: 30px 30px ;
 }
 
-
+@media screen and (max-width: 483px) {
+  .loadingBar{
+    width: 200px;
+  }
+}
 
 </style>

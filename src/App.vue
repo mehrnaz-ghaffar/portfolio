@@ -718,6 +718,7 @@ main::after{
     display: flex;
     flex-direction: column;
     text-align: -webkit-center;
+    align-items: center;
   }
   
 }
