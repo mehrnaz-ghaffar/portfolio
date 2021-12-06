@@ -1,15 +1,8 @@
 <template>
   <div id="app">
 
+    <main>
 
-
-
-
-    
-
-    <main
-      :class="{ navbarActiveMenue: !opened , navbarHoverMain:hover && opened }"
-    >
       <!-- Introduction Section -->
       <section class="introductionImage">
         <div class="introductionText">
@@ -18,6 +11,57 @@
           <h3>text sample</h3>
         </div>
       </section>
+
+            <!-- menu -->
+       <nav class="menu">
+        <div class="logoContent">
+          <div class="logo">
+            <!-- logo -->
+            <span class="logoName">name</span>
+          </div>
+
+        </div>
+        <ul class="navList">
+          <li>
+            <a href="#" class="navLink">
+            <!-- logo -->
+            <span class="navText">text</span>
+          </a>
+          <span class="tooltip">test</span>
+          </li>
+          <li>
+            <a href="#" class="navLink">
+            <!-- logo -->
+            <span class="navText">text</span>
+          </a>
+          <span class="tooltip">test</span>
+          </li>
+          <li>
+            <a href="#" class="navLink">
+            <!-- logo -->
+            <span class="navText">text</span>
+          </a>
+          <span class="tooltip">test</span>
+          </li>
+          <li>
+            <a href="#" class="navLink">
+            <!-- logo -->
+            <span class="navText">text</span>
+          </a>
+          <span class="tooltip">test</span>
+          </li>
+          <li>
+            <a href="#" class="navLink">
+            <!-- logo -->
+            <span class="navText">text</span>
+          </a>
+          <span class="tooltip">test</span>
+          </li>
+
+        </ul>
+
+      </nav>
+
 
       <!-- About Section -->
       <section class="about">
@@ -352,12 +396,13 @@ export default {
   components: { progressBar,
                 divider 
   },
-  data(){
-        return{
-            opened : false,
-            hover: false
-        }
-    },
+  // data(){
+  //       return{
+  //           menu : document.querySelector(".menu"),
+  //           // closeBtn = document.querySelector("#btn"),
+            
+  //       }
+  //   },
   mounted(){
     const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
     timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
@@ -424,11 +469,6 @@ export default {
   transform: translateY(100%);
 }
 
-/*/////////////////////////////////////// menu //////////////////////////////////////////////////*/
-
-
-
-
 /*///////////////////////////////////////////// General Styles ///////////////////////////////////////////////////*/
 
 
@@ -452,6 +492,85 @@ h2{
   text-shadow: 1px 4px 5px rgb(199 192 193);
 }
 
+/*////////////////// menu /////////////////*/
+.menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 240px;
+  background: grey;
+  padding: 6px 14px;
+}
+
+.menu .logoContent .logo{
+  color: #fff;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.menu ul {
+  margin-top: 20px;
+  padding-inline-start: initial;
+}
+
+.menu ul li{
+  list-style: none;
+  margin: 0 5px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+
+.menu ul li .tooltip{
+  position: absolute;
+  left: 122px;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  height: 35px;
+  width: 122px;
+  background: rgb(121, 88, 88);
+  line-height: 35px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0s;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.menu ul li:hover .tooltip{
+  top: 50%;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.menu ul li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+.menu ul li a:hover{
+  background: coral;
+  color: cornflowerblue;
+}
+
+/* .menu ul li a i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+} */
+
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
@@ -463,7 +582,7 @@ h2{
   background-size: cover;
   background-position: center;
   /* padding: 0 8%; */
-  position: relative;
+  /* position: relative; */
 }
 
 .introductionText {
@@ -561,8 +680,6 @@ h2{
   justify-content: space-evenly;
 
 }
-
-
 
 /* .column{
   flex: 50%;
