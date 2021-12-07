@@ -5,12 +5,15 @@
       <nav 
         class="menu"
         :class="clicked ? 'menuActive' : 'menu'"
-        @click="toggle()"
       >
         <div class="logoContent">
           <div class="logo">
             <span class="logoName">Menu</span>
-            <i class="fas fa-bars"></i>
+            <i
+              id="menuIcon" 
+              class="fas fa-bars"
+              @click="toggle()"
+            />
           </div>
         </div>
         <ul class="navList">
@@ -19,7 +22,7 @@
               href="#" 
               class="navLink"
             >
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user" />
               <span class="navText">about me</span>
             </a>
             <span class="tooltip">about me</span>
@@ -29,7 +32,7 @@
               href="#"
               class="navLink"
             >
-              <i class="far fa-address-card"></i>
+              <i class="far fa-address-card" />
               <span class="navText">my skills</span>
             </a>
             <span class="tooltip">my skills</span>
@@ -39,7 +42,7 @@
               href="#" 
               class="navLink"
             >
-              <i class="fas fa-language"></i>
+              <i class="fas fa-language" />
               <span class="navText">my languages</span>
             </a>
             <span class="tooltip">my language</span>
@@ -412,9 +415,6 @@ export default {
   data(){
         return{
           clicked : false,
-          menu : document.querySelector(".menu"),
-          btn : document.querySelector("#btn"),
-            
         }
     },
   mounted(){
@@ -435,13 +435,10 @@ export default {
     },
 
 };
-
 </script>
 
 
 <style>
-
-
 
 /* //////////////// on load animation /////////////////// */
 
@@ -510,7 +507,7 @@ h2{
 .menu{
   position: fixed;
   left: 0;
-  top: 42px;
+  top: 90px;
   height: 530px;
   width: 78px;
   background: rgb(224, 147, 190);
@@ -523,16 +520,6 @@ h2{
   width: 240px;
 }
 
-.menu .logoContent .logoName{
-  opacity: 0;
-  pointer-events: none;
-}
-
-.menu.menuActive .logoContent .logoName{
-  opacity: 0;
-  pointer-events: none;
-}
-
 .menu .logoContent .logo{
   color: #fff;
   height: 50px;
@@ -543,10 +530,40 @@ h2{
   pointer-events: none; */
 }
 
+.menu .logoContent .logoName{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu.menuActive .logoContent .logoName{
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.8s ease;
+}
+
 /* .menu.menuActive .logoContent .logo{
   opacity: 1;
   pointer-events: none;
 } */
+
+.menu #menuIcon{
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 20px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.menu.menuActive #menuIcon{
+  left: 90%;
+  cursor: pointer;
+}
 
 .menu ul {
   margin-top: 20px;
@@ -622,6 +639,7 @@ h2{
 .menu.menuActive .navText{
   opacity: 1;
   pointer-events: auto;
+  transition: all 0.8s ease;
 }
 
 /*  ///////////////  Introduction Section  ///////////////// */
