@@ -264,7 +264,7 @@
               >
             </div>
             <div class="level">
-              <h1>name2</h1>
+              <h1>Hindi</h1>
               <p>
                 speaking 
                 <i class="fas fa-star" />
@@ -303,7 +303,7 @@
               >
             </div>
             <div class="level">
-              <h1>name3</h1>
+              <h1>Turkish</h1>
               <p>
                 speaking 
                 <i class="fas fa-star" />
@@ -342,7 +342,7 @@
               >
             </div>
             <div class="level">
-              <h1>name4</h1>
+              <h1>French</h1>
               <p>
                 speaking 
                 <i class="fas fa-star" />
@@ -431,9 +431,7 @@ export default {
         this.clicked = !this.clicked
         console.log(this.clicked)
       },
-
     },
-
 };
 </script>
 
@@ -486,9 +484,6 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  perspective-origin: 0% 50%;
-  perspective: 800px;
 }
 
 * {
@@ -540,11 +535,6 @@ h2{
   pointer-events: none;
   transition: all 0.8s ease;
 }
-
-/* .menu.menuActive .logoContent .logo{
-  opacity: 1;
-  pointer-events: none;
-} */
 
 .menu #menuIcon{
   position: absolute;
