@@ -1,7 +1,71 @@
 <template>
   <div id="app">
-
     <main>
+      <!-- menu -->
+      <nav 
+        class="menu"
+        :class="clicked ? 'menuActive' : 'menu'"
+        @click="toggle()"
+      >
+        <div class="logoContent">
+          <div class="logo">
+            <span class="logoName">Menu</span>
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="navList">
+          <li>
+            <a 
+              href="#" 
+              class="navLink"
+            >
+              <i class="fas fa-user"></i>
+              <span class="navText">about me</span>
+            </a>
+            <span class="tooltip">about me</span>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="navLink"
+            >
+              <i class="far fa-address-card"></i>
+              <span class="navText">my skills</span>
+            </a>
+            <span class="tooltip">my skills</span>
+          </li>
+          <li>
+            <a
+              href="#" 
+              class="navLink"
+            >
+              <i class="fas fa-language"></i>
+              <span class="navText">my languages</span>
+            </a>
+            <span class="tooltip">my language</span>
+          </li>
+          <li>
+            <a
+              href="#" 
+              class="navLink"
+            >
+              <!-- logo -->
+              <span class="navText">text</span>
+            </a>
+            <span class="tooltip">test</span>
+          </li>
+          <li>
+            <a 
+              href="#" 
+              class="navLink"
+            >
+              <!-- logo -->
+              <span class="navText">text</span>
+            </a>
+            <span class="tooltip">test</span>
+          </li>
+        </ul>
+      </nav>
 
       <!-- Introduction Section -->
       <section class="introductionImage">
@@ -11,57 +75,6 @@
           <h3>text sample</h3>
         </div>
       </section>
-
-            <!-- menu -->
-       <nav class="menu">
-        <div class="logoContent">
-          <div class="logo">
-            <!-- logo -->
-            <span class="logoName">name</span>
-          </div>
-
-        </div>
-        <ul class="navList">
-          <li>
-            <a href="#" class="navLink">
-            <!-- logo -->
-            <span class="navText">text</span>
-          </a>
-          <span class="tooltip">test</span>
-          </li>
-          <li>
-            <a href="#" class="navLink">
-            <!-- logo -->
-            <span class="navText">text</span>
-          </a>
-          <span class="tooltip">test</span>
-          </li>
-          <li>
-            <a href="#" class="navLink">
-            <!-- logo -->
-            <span class="navText">text</span>
-          </a>
-          <span class="tooltip">test</span>
-          </li>
-          <li>
-            <a href="#" class="navLink">
-            <!-- logo -->
-            <span class="navText">text</span>
-          </a>
-          <span class="tooltip">test</span>
-          </li>
-          <li>
-            <a href="#" class="navLink">
-            <!-- logo -->
-            <span class="navText">text</span>
-          </a>
-          <span class="tooltip">test</span>
-          </li>
-
-        </ul>
-
-      </nav>
-
 
       <!-- About Section -->
       <section class="about">
@@ -396,13 +409,14 @@ export default {
   components: { progressBar,
                 divider 
   },
-  // data(){
-  //       return{
-  //           menu : document.querySelector(".menu"),
-  //           // closeBtn = document.querySelector("#btn"),
+  data(){
+        return{
+          clicked : false,
+          menu : document.querySelector(".menu"),
+          btn : document.querySelector("#btn"),
             
-  //       }
-  //   },
+        }
+    },
   mounted(){
     const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
     timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
@@ -414,8 +428,8 @@ export default {
   },
     methods: {
       toggle : function(){
-        this.opened = !this.opened
-        console.log(this.opened)
+        this.clicked = !this.clicked
+        console.log(this.clicked)
       },
 
     },
@@ -496,11 +510,27 @@ h2{
 .menu{
   position: fixed;
   left: 0;
-  top: 0;
-  height: 100%;
-  width: 240px;
-  background: grey;
+  top: 42px;
+  height: 530px;
+  width: 78px;
+  background: rgb(224, 147, 190);
   padding: 6px 14px;
+  transition: all 0.5s ease;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.menu.menuActive{
+  width: 240px;
+}
+
+.menu .logoContent .logoName{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu.menuActive .logoContent .logoName{
+  opacity: 0;
+  pointer-events: none;
 }
 
 .menu .logoContent .logo{
@@ -509,7 +539,14 @@ h2{
   display: flex;
   width: 100%;
   align-items: center;
+  /* opacity: 0;
+  pointer-events: none; */
 }
+
+/* .menu.menuActive .logoContent .logo{
+  opacity: 1;
+  pointer-events: none;
+} */
 
 .menu ul {
   margin-top: 20px;
@@ -529,7 +566,7 @@ h2{
   position: absolute;
   left: 122px;
   top: 0;
-  transform: translateY(-50%);
+  transform: translate(-50% , -50%);
   border-radius: 6px;
   height: 35px;
   width: 122px;
@@ -540,7 +577,12 @@ h2{
   transition: 0s;
   opacity: 0;
   pointer-events: none;
+  display: block;
 
+}
+
+.menu.menuActive ul li .tooltip{
+  display: none;
 }
 
 .menu ul li:hover .tooltip{
@@ -556,6 +598,7 @@ h2{
   text-decoration: none;
   transition: all 0.4s ease;
   border-radius: 12px;
+  white-space: nowrap;
 }
 
 .menu ul li a:hover{
@@ -563,14 +606,23 @@ h2{
   color: cornflowerblue;
 }
 
-/* .menu ul li a i{
+.menu ul li i{
   height: 50px;
   min-width: 50px;
   border-radius: 12px;
   line-height: 50px;
   text-align: center;
-} */
+}
 
+.menu .navText{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu.menuActive .navText{
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introductionImage {
