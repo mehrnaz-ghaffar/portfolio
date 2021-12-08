@@ -375,6 +375,13 @@
           </div>
         </div>
       </section>
+      <section class="experience">
+        <h2>My experiences</h2>
+        <divider />
+        <di class="experienceContainer">
+          
+        </di>
+      </section>
     </main>
     
     <!-- on load animated text -->
