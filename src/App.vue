@@ -375,12 +375,42 @@
           </div>
         </div>
       </section>
+
+      <!-- Education & Experience Section -->
       <section class="experience">
-        <h2>My experiences</h2>
+        <h2>education &amp; experiences</h2>
         <divider />
-        <di class="experienceContainer">
-          
-        </di>
+        <div class="experienceContainer">
+          <div class="centerLine">
+            <a href="#" class="scrollIcon">
+              <i class="fas fa-caret-up" />
+            </a>
+          </div>
+          <div class="row row-1">
+            <div class="section">
+              <i class="fas fa-home" />
+              <div class="details">
+                <span class="timelineTitle">title 1</span>
+                <span>date 1</span>
+              </div> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+                Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
+                 quasi quo reiciendis.</p>    
+            </div>
+          </div>
+          <div class="row row-2">
+            <div class="section">
+              <i class="fas fa-home" />
+              <div class="details">
+                <span class="timelineTitle">title 2</span>
+                <span>date 2</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+                Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
+                 quasi quo reiciendis.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     
@@ -843,4 +873,145 @@ h2{
 .level p i{
   color: coral;
 }
+
+/*  ///////////////  experience Section  ///////////////// */
+.experienceContainer{
+  position: relative;
+  background: rgb(240, 158, 158);
+  max-width: 1080px;
+  margin: 58px auto;
+  padding: 0 20px;
+}
+
+.centerLine{
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.experienceContainer .row{
+  display: flex;
+}
+
+.experienceContainer .row-1{
+  justify-content: flex-start;
+}
+
+.experienceContainer .row-2{
+  justify-content: flex-end;
+}
+
+.row .section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.row .section i,
+.centerLine .scrollIcon{
+  position: absolute;
+  background: #fff; /* #f2f2f2 */
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(240, 158, 158); /* #ff7979 */
+  font-size: 17px;
+  /* box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05); */
+
+}
+
+.centerLine .scrollIcon{
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+}
+
+.row-1 .section i{
+  top: 13px;
+  right: -60px;
+}
+
+.row-2 .section i{
+  top: 13px;
+  left: -60px;
+}
+
+.experienceContainer .row .section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: darkblue;
+  top: 28px;
+  /* z-index: -1; */  /*/////////////////  !!!!!!!!!!!!!!!!!!!!!!!!!  //////////////////////*/
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.row-1 .section::before{
+  right: -7px;
+}
+
+.row-2 .section::before{
+  left: -7px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timelineTitle{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.section p{
+  margin: 10px 0 17px 0;
+}
+
+@media(max-width: 790px){
+  .experienceContainer .centerLine{
+    left: 40px;
+  }
+
+  .experienceContainer .row{
+    margin: 30px 0 3px 60px;
+  }
+
+  .experienceContainer .row .section{
+    width: 100%;
+  }
+
+  .row-1 .section::before{
+    left: -7px;
+  }
+
+  .row-1 .section i{
+    left: -60px;
+  }
+}
+
+@media(max-width: 440px){
+  .experienceContainer .centerLine ,
+  .row .section::before ,
+  .row .section i{
+    display: none;
+  }
+
+  .experienceContainer .row{
+    margin: 10px 0;
+  }
+}
+
 </style>
