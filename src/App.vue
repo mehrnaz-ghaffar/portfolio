@@ -382,7 +382,10 @@
         <divider />
         <div class="experienceContainer">
           <div class="centerLine">
-            <a href="#" class="scrollIcon">
+            <a 
+              href="#" 
+              class="scrollIcon"
+            >
               <i class="fas fa-caret-up" />
             </a>
           </div>
@@ -393,9 +396,11 @@
                 <span class="timelineTitle">title 1</span>
                 <span>date 1</span>
               </div> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
                 Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                 quasi quo reiciendis.</p>    
+                quasi quo reiciendis.
+              </p>    
             </div>
           </div>
           <div class="row row-2">
@@ -405,9 +410,11 @@
                 <span class="timelineTitle">title 2</span>
                 <span>date 2</span>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
                 Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                 quasi quo reiciendis.</p>
+                quasi quo reiciendis.
+              </p>
             </div>
           </div>
         </div>
@@ -875,9 +882,13 @@ h2{
 }
 
 /*  ///////////////  experience Section  ///////////////// */
+.experience{
+  background: rgb(240, 158, 158);
+  height: 560px;    /*test */
+}
+
 .experienceContainer{
   position: relative;
-  background: rgb(240, 158, 158);
   max-width: 1080px;
   margin: 58px auto;
   padding: 0 20px;
