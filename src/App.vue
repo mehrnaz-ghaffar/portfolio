@@ -469,14 +469,26 @@ export default {
     timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
 
+
+    let tl = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".aboutImage img",
+        start: "top",
+        end: "100%",
+        markers: true,
+        },});
+    tl.fromTo(".aboutImage img" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" });
+    console.log(tl)
+
   },
     methods: {
       toggle : function(){
         this.clicked = !this.clicked
         console.log(this.clicked)
       },
+
     },
-};
+}
 </script>
 
 
@@ -739,9 +751,8 @@ h2{
   margin-left: -100px;
 }
 
-.aboutImage img{
-  
-  clip-path: circle();
+.aboutImage img{ 
+  clip-path: circle(39%);
 }
 
 .aboutInformation p{
