@@ -11,13 +11,15 @@ new Vue({
 
 let tl = gsap.timeline({
   scrollTrigger: {
-  trigger: ".test1",
+  trigger: ".aboutImage",
   start: "top",
-  end: "120%",
-  markers: true,
+  end: "100%", //bottom
+  markers: true, //delete this
   scrub: true,
   pin: true,
   },
 });
-tl.fromTo(".test1" , { opacity:0 } , { opacity:1 });
+tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
+tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 console.log(tl)

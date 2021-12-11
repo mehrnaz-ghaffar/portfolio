@@ -119,13 +119,13 @@
               </li>
             </ul>
           </div>
-          <div class="aboutImage">
+          
             <img
-              class="test1"
+              class="aboutImage"
               src="./assets/images/sample3.jpg"
               alt=""
             >
-          </div>
+          
           <div
             id="rightDiv"
             class="aboutText"
@@ -158,7 +158,7 @@
             </ul>
           </div>
         </div>
-        <div class="aboutInformation">
+        <!-- <div class="aboutInformation">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
             Assumenda alias perferendis eos deserunt illo quia ullam animi odit. In inventore facilis blanditiis animi?
@@ -166,7 +166,7 @@
         </div>     
         <div class="button">
           <button>download resume</button>
-        </div>
+        </div> -->
       </section>
 
       <!-- skills Section -->
@@ -448,16 +448,11 @@
 import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
-
-
-
-
   
 
 export default {
   name: "App",
-
-
+  
   components: { progressBar,
                 divider 
   },
@@ -717,7 +712,7 @@ h2{
 
 /*   /////////////////  About Section ///////////////////  */
 .about{
-  margin-top: 50px;
+  margin: 50px 0 10% 0;
 }
 
 .aboutContainer{
@@ -738,15 +733,19 @@ h2{
 }
 
 #leftDiv{
- margin-right: -98px ;   
+ position: absolute;
+ left: 26%;
 }
 
 #rightDiv{
-  margin-left: -100px;
+  position: absolute;
+  right: 24%;
 }
 
-.aboutImage img{ 
+.aboutImage{ 
   clip-path: circle(39%);
+  position: relative;
+  right: 20px;
 }
 
 .aboutInformation p{
