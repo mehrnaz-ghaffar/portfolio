@@ -121,6 +121,7 @@
           </div>
           <div class="aboutImage">
             <img
+              class="test1"
               src="./assets/images/sample3.jpg"
               alt=""
             >
@@ -448,10 +449,14 @@ import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
 
+
+
+
   
 
 export default {
   name: "App",
+
 
   components: { progressBar,
                 divider 
@@ -468,17 +473,6 @@ export default {
     timeline.to(".preIntroduction" , {y:"-100%", duration: 1}, "-=1");
     timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
-
-
-    let tl = gsap.timeline({
-        scrollTrigger: {
-        trigger: ".aboutImage img",
-        start: "top",
-        end: "100%",
-        markers: true,
-        },});
-    tl.fromTo(".aboutImage img" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" });
-    console.log(tl)
 
   },
     methods: {
