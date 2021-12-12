@@ -71,12 +71,18 @@
       </nav>
 
       <!-- Introduction Section -->
-      <section class="introductionImage">
-        <div class="introductionText">
-          <p>Hi I'm</p>
+      <section class="introduction">
+        <div class="introductionContainer">
           <h1>Mehrnaz</h1>
-          <h3>text sample</h3>
+          <img src="./assets/images/bg1.png" class="background" alt="">
+          <img src="./assets/images/girl1.png" class="layer1" alt="">
+          <img src="./assets/images/rock1.png" class="layer2" alt="">
         </div>
+        <!-- <div class="introductionText">
+          <p>Hi I'm</p>
+          
+          <h3>text sample</h3>
+        </div> -->
       </section>
 
       <!-- About Section -->
@@ -757,7 +763,7 @@ h2{
   margin-bottom: -20px;
 }
 
-.button{
+/* .button{
   text-align: center;
   margin: 65px;
 }
@@ -771,11 +777,18 @@ h2{
   transition: transform .2s;
 }
 
-.button button:hover{
+.button button:hover{ 
    background-color: rgb(235, 198, 206);
    transform: scale(1.1);
-}
+}*/
 
+/* @media screen and (max-width: 1365px) {
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+} */
 
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
