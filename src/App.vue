@@ -73,10 +73,24 @@
       <!-- Introduction Section -->
       <section class="introduction">
         <div class="introductionContainer">
-          <h1>Mehrnaz</h1>
-          <img src="./assets/images/bg1.png" class="background" alt="">
-          <img src="./assets/images/girl1.png" class="layer1" alt="">
-          <img src="./assets/images/rock1.png" class="layer2" alt="">
+          <h1 class="introductionText">
+            Mehrnaz
+          </h1>
+          <img 
+            src="./assets/images/bg1.png" 
+            class="background" 
+            alt=""
+          >
+          <img 
+            src="./assets/images/girl1.png" 
+            class="layer1" 
+            alt=""
+          >
+          <img 
+            src="./assets/images/rock1.png" 
+            class="layer2" 
+            alt=""
+          >
         </div>
         <!-- <div class="introductionText">
           <p>Hi I'm</p>
@@ -126,11 +140,11 @@
             </ul>
           </div>
           
-            <img
-              class="aboutImage"
-              src="./assets/images/sample3.jpg"
-              alt=""
-            >
+          <img
+            class="aboutImage"
+            src="./assets/images/sample3.jpg"
+            alt=""
+          >
           
           <div
             id="rightDiv"
@@ -684,7 +698,29 @@ h2{
 }
 
 /*  ///////////////  Introduction Section  ///////////////// */
-.introductionImage {
+.introduction{
+  height: 100vh;
+}
+
+.introduction img{
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.introductionText{
+  position: absolute;
+  color: #fff;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -20%);
+  font-size: 6rem;
+}
+
+
+/* .introductionImage {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
@@ -692,17 +728,17 @@ h2{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  /* padding: 0 8%; */
-  /* position: relative; */
-}
+  padding: 0 8%;
+  position: relative;
+} */
 
-.introductionText {
+/* .introductionText {
   color: #fff;
   position: absolute;
   bottom: 8%;
-  /* background-color: blue; */
+  background-color: blue;
   padding-left: 230px;
-}
+} */
 
 @media only screen and (max-width: 1271px){
    .introductionText{
@@ -719,6 +755,7 @@ h2{
 /*   /////////////////  About Section ///////////////////  */
 .about{
   margin: 50px 0 10% 0;
+  margin-top: 50%;
 }
 
 .aboutContainer{
