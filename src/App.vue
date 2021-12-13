@@ -440,6 +440,37 @@
           </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <h1>connect with me on </h1>
+        <div class="mediaContainer">
+          <div class="mediaButton">
+            <div class="mediaIcon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <span>linkedin</span>
+          </div>
+          <div class="mediaButton">
+            <div class="mediaIcon">
+            <i class="fab fa-telegram-plane"></i>
+          </div>
+          <span>telegram</span>
+          </div>
+          <div class="mediaButton">
+            <div class="mediaIcon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <span>instagram</span>
+          </div>
+          <div class="mediaButton">
+            <div class="mediaIcon">
+            <i class="fab fa-github"></i>
+          </div>
+          <span>github</span>
+          </div>
+          
+        </div>
+      </footer>
     </main>
     
     <!-- on load animated text -->
@@ -1077,6 +1108,87 @@ h2{
   .experienceContainer .row{
     margin: 10px 0;
   }
+}
+
+/*  ///////////////  Social Media Section  ///////////////// */
+
+.mediaContainer .mediaButton{
+  /* display: inline-block; */
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  float: left;
+  background: rgb(164, 194, 238);
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.mediaContainer .mediaButton:hover{
+  width: 200px;
+}
+
+.mediaContainer .mediaButton .mediaIcon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.mediaContainer .mediaButton:nth-child(1):hover .mediaIcon{
+  background: darkblue;
+}
+
+.mediaContainer .mediaButton:nth-child(2):hover .mediaIcon{
+  background: darkblue;
+}
+
+.mediaContainer .mediaButton:nth-child(3):hover .mediaIcon{
+  background: #E1306C;
+}
+
+.mediaContainer .mediaButton:nth-child(4):hover .mediaIcon{
+  background: #333;
+}
+
+.mediaContainer .mediaButton .mediaIcon i{
+  line-height: 60px;
+  font-size: 25px;
+  transition: all 0.3s ease-out;
+}
+
+.mediaContainer .mediaButton:hover .mediaIcon i{
+  color: #fff;
+}
+
+.mediaContainer .mediaButton span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.mediaContainer .mediaButton:nth-child(1) span{
+  color: darkblue;
+}
+
+.mediaContainer .mediaButton:nth-child(2) span{
+  color: darkblue;
+}
+
+.mediaContainer .mediaButton:nth-child(3) span{
+  color: #E1306C;
+}
+
+.mediaContainer .mediaButton:nth-child(4) span{
+  color: #333;
 }
 
 </style>
