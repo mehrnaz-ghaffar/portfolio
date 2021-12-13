@@ -23,13 +23,12 @@ timeline
 let scene = new ScrollMagic.Scene({
   triggerElement: ".introduction" ,
   duration: "100%",
-  triggerHook: 0,
+  triggerHook: 0.5,
 })
   .setTween(timeline)
   .setPin(".introduction")
   .addTo(controller);
-
-
+console.log(scene)
 
 
 // about section animation, image circle going to full screen

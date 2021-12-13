@@ -10,9 +10,11 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "gsap": "^3.8.0",
+    "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "scrolltrigger": "^1.0.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
