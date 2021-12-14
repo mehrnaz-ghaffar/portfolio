@@ -1,6 +1,6 @@
 <template>
   <div class="loadingBar">
-    <div class="percentage">
+    <div class="percentage" :style="percentageWidth">
      <span> {{skillName}} </span>
     </div>
   </div>
@@ -16,6 +16,19 @@ export default {
         return ''
       }
     },
+    width: {
+      type: Number,
+      default: () =>{
+        return 0
+      }
+    }
+  },
+  computed: {
+    percentageWidth(){
+      return{
+        width: `${this.width}px`
+      };
+    }
   }
 }
 </script>
@@ -40,7 +53,7 @@ export default {
     background-color: aqua;
     display: block;
     height: 100%;
-    width: 50% ;
+    /* width: 50% ; */
     border-radius: 15px;
     background-size: 30px 30px ;
 }

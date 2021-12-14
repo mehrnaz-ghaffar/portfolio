@@ -195,18 +195,26 @@
         <divider />
         <div class="skillsContainer">
           <div class="column">
-            <div 
-              class="progressBar">          
-              <progressBar :skillName= "skillName" /> 
-              <span>HTML</span>
+            <div class="progressBar">          
+              <progressBar 
+                :skillName= "skillNameHtml" 
+                :width="widthHtml"
+              /> 
+              <span>86%</span>
             </div>
             <div class="progressBar">         
-              <progressBar /> 
-              <span>Javascript</span>
+              <progressBar 
+                :skillName="skillNameJs"
+                :width="widthJs"
+              /> 
+              <span>70%</span>
             </div>
             <div class="progressBar">
-              <progressBar /> 
-              <span>Git</span>
+              <progressBar 
+                :skillName="skillNameGit"
+                :width="widthGit"  
+              /> 
+              <span>65%</span>
             </div>
             <div class="progressBar">
               <progressBar /> 
@@ -215,12 +223,18 @@
           </div>
           <div class="column">
             <div class="progressBar">
-              <progressBar /> 
-              <span>CSS</span>
+              <progressBar 
+                :skillName="skillNameCss"
+                :width="widthCss"
+              /> 
+              <span>86%</span>
             </div>
             <div class="progressBar">
-              <progressBar /> 
-              <span>Vue.js</span>
+              <progressBar 
+                :skillName="skillNameVue"
+                :width="widthVue"
+              /> 
+              <span>55%</span>
             </div>
             <div class="progressBar">
               <progressBar /> 
@@ -495,7 +509,16 @@ export default {
   data(){
         return{
           clicked : false,
-          skillName :"HTML"
+          skillNameHtml :"HTML",
+          widthHtml: 300,
+          skillNameJs :"javascript",
+          widthJs: 300,
+          skillNameCss :"CSS",
+          widthCss: 300,
+          skillNameVue :"Vue.js",
+          widthVue: 300,
+          skillNameGit :"Git",
+          widthGit: 300,
         }
     },
   mounted(){
