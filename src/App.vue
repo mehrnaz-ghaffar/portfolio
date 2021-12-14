@@ -467,8 +467,8 @@
           </div>
           <span>github</span>
           </div>
-          
         </div>
+        <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
       </footer>
     </main>
     
@@ -1198,6 +1198,12 @@ h2{
 
 .mediaContainer .mediaButton:nth-child(4) span{
   color: #333;
+}
+
+.copyRight{
+  position: relative;
+  bottom: 0;
+  left: 43%;
 }
 
 </style>
