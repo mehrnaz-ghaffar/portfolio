@@ -1,14 +1,22 @@
 <template>
   <div class="loadingBar">
-    <div class="percentage" />
+    <div class="percentage">
+     <span> {{skillName}} </span>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
     name : 'ProgressBar' ,
-
-    
+    props: {
+    skillName: {
+      type: String,
+      default: () => {
+        return ''
+      }
+    },
+  }
 }
 </script>
 
@@ -35,6 +43,12 @@ export default {
     width: 50% ;
     border-radius: 15px;
     background-size: 30px 30px ;
+}
+
+.percentage span{
+  float: left;
+  margin: 4px 17px;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 483px) {

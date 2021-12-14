@@ -195,39 +195,40 @@
         <divider />
         <div class="skillsContainer">
           <div class="column">
-            <div class="progressBar">
+            <div 
+              class="progressBar">          
+              <progressBar :skillName= "skillName" /> 
               <span>HTML</span>
-              <progressBar /> 
             </div>
-            <div class="progressBar">
+            <div class="progressBar">         
+              <progressBar /> 
               <span>Javascript</span>
-              <progressBar /> 
             </div>
             <div class="progressBar">
+              <progressBar /> 
               <span>Git</span>
-              <progressBar /> 
             </div>
             <div class="progressBar">
-              <span>text</span>
               <progressBar /> 
+              <span>text</span>
             </div>
           </div>
           <div class="column">
             <div class="progressBar">
+              <progressBar /> 
               <span>CSS</span>
-              <progressBar /> 
             </div>
             <div class="progressBar">
+              <progressBar /> 
               <span>Vue.js</span>
-              <progressBar /> 
             </div>
             <div class="progressBar">
-              <span>text</span>
               <progressBar /> 
+              <span>text</span>
             </div>
             <div class="progressBar">
-              <span>text</span>
               <progressBar /> 
+              <span>text</span>
             </div>
           </div>
         </div>
@@ -292,24 +293,19 @@
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
                 <br>
                 listening 
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
+               
                 <br>
                 reading 
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <br>
                 writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <br>
@@ -330,11 +326,9 @@
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <i class="fas fa-star-half" />
                 <br>
                 listening 
-                <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
@@ -344,10 +338,8 @@
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <br>
                 writing
-                <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
@@ -368,13 +360,9 @@
                 speaking 
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <i class="fas fa-star-half" />
                 <br>
                 listening 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star-half" />
@@ -382,12 +370,9 @@
                 reading 
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
+                <i class="fas fa-star-half" />
                 <br>
                 writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <i class="fas fa-star" />
                 <br>
@@ -510,6 +495,7 @@ export default {
   data(){
         return{
           clicked : false,
+          skillName :"HTML"
         }
     },
   mounted(){
@@ -880,7 +866,7 @@ h2{
 }
 
 .progressBar span {
-  margin-right: 10px;
+  margin-left: 10px;
   font-size: 20px;
   display: inline;
   width: 80px;
