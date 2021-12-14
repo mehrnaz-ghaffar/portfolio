@@ -1120,6 +1120,9 @@ h2{
 }
 
 /*  ///////////////  Social Media Section  ///////////////// */
+.mediaContainer{
+  margin-bottom: 100px;
+}
 
 .mediaContainer .mediaButton{
   /* display: inline-block; */
