@@ -1,6 +1,13 @@
 import { TimelineMax } from 'gsap/gsap-core';
 import Vue from 'vue'
 import App from './App.vue'
+import ScrollMagic from 'scrollmagic'
+// import { TweenMax, TimelineMax } from "gsap"; 
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+
+
+ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
+
 
 Vue.config.productionTip = false
 
@@ -21,15 +28,15 @@ timeline
 // .to(".introductionText" , 5 ,{x : 500})
 
 let scene = new ScrollMagic.Scene({
-  triggerElement: ".introduction" ,
-  duration: "100%",
-  triggerHook: 0.5,
+  triggerElement: "#introduction" ,
+  duration: 100,
+  triggerHook: 0,
 })
   .setTween(timeline)
-  .setPin(".introduction")
+  // .setPin(".introduction")
   .addTo(controller);
-console.log(scene)
-
+console.log(scene.triggerElement)
+console.log(timeline)
 
 // about section animation, image circle going to full screen
 let tl = gsap.timeline({

@@ -71,8 +71,8 @@
       </nav>
 
       <!-- Introduction Section -->
-      <section class="introduction">
-        <div class="introductionContainer">
+      <section class="introduction" id="introduction">
+        <div class="introductionContainer" id="introductionContainer">
           <h1 class="introductionText">
             Mehrnaz
           </h1>
@@ -197,7 +197,7 @@
           <div class="column">
             <div class="progressBar">          
               <progressBar 
-                :skillName= "skillNameHtml" 
+                :skillName="skillNameHtml" 
                 :width="widthHtml"
               /> 
               <span>86%</span>
@@ -445,27 +445,27 @@
         <div class="mediaContainer">
           <div class="mediaButton">
             <div class="mediaIcon">
-            <i class="fab fa-linkedin"></i>
-          </div>
-          <span>linkedin</span>
-          </div>
-          <div class="mediaButton">
-            <div class="mediaIcon">
-            <i class="fab fa-telegram-plane"></i>
-          </div>
-          <span>telegram</span>
+              <i class="fab fa-linkedin" />
+            </div>
+            <span>linkedin</span>
           </div>
           <div class="mediaButton">
             <div class="mediaIcon">
-            <i class="fab fa-instagram"></i>
-          </div>
-          <span>instagram</span>
+              <i class="fab fa-telegram-plane" />
+            </div>
+            <span>telegram</span>
           </div>
           <div class="mediaButton">
             <div class="mediaIcon">
-            <i class="fab fa-github"></i>
+              <i class="fab fa-instagram" />
+            </div>
+            <span>instagram</span>
           </div>
-          <span>github</span>
+          <div class="mediaButton">
+            <div class="mediaIcon">
+              <i class="fab fa-github" />
+            </div>
+            <span>github</span>
           </div>
         </div>
         <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
@@ -494,7 +494,6 @@
 
   
 <script>
-// import navbar from './components/navbar.vue';
 import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
