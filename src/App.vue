@@ -1,8 +1,41 @@
 <template>
   <div id="app">
     <main>
-      <!-- menu -->
-      <nav 
+     
+
+      <!-- Introduction Section -->
+      <section class="introduction">
+        <div class="introductionContainer">
+          <h1 class="introductionText">
+            Mehrnaz
+          </h1>
+          <img 
+            src="./assets/images/bg1.png" 
+            class="background" 
+            alt=""
+          >
+          <img 
+            src="./assets/images/girl1.png" 
+            class="layer1" 
+            alt=""
+          >
+          <img 
+            src="./assets/images/rock1.png" 
+            class="layer2" 
+            alt=""
+          >
+        </div>
+        <!-- <div class="introductionText">
+          <p>Hi I'm</p>
+          
+          <h3>text sample</h3>
+        </div> -->
+      </section>
+
+    <section class="content">
+
+        <!-- menu -->
+        <nav 
         class="menu"
         :class="clicked ? 'menuActive' : 'menu'"
       >
@@ -68,39 +101,10 @@
             <span class="tooltip">test</span>
           </li>
         </ul>
-      </nav>
+        </nav>
 
-      <!-- Introduction Section -->
-      <section class="introduction" id="introduction">
-        <div class="introductionContainer" id="introductionContainer">
-          <h1 class="introductionText">
-            Mehrnaz
-          </h1>
-          <img 
-            src="./assets/images/bg1.png" 
-            class="background" 
-            alt=""
-          >
-          <img 
-            src="./assets/images/girl1.png" 
-            class="layer1" 
-            alt=""
-          >
-          <img 
-            src="./assets/images/rock1.png" 
-            class="layer2" 
-            alt=""
-          >
-        </div>
-        <!-- <div class="introductionText">
-          <p>Hi I'm</p>
-          
-          <h3>text sample</h3>
-        </div> -->
-      </section>
-
-      <!-- About Section -->
-      <section class="about">
+        <!-- About Section -->
+        <section class="about">
         <h2>About  Me</h2>
         <divider />
         <div class="aboutContainer">
@@ -187,10 +191,10 @@
         <div class="button">
           <button>download resume</button>
         </div> -->
-      </section>
+        </section>
 
-      <!-- skills Section -->
-      <section class="mySkills">
+        <!-- skills Section -->
+        <section class="mySkills">
         <h2>My Skills</h2>
         <divider />
         <div class="skillsContainer">
@@ -246,10 +250,10 @@
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      <!-- Language Section -->
-      <section class="languages">
+        <!-- Language Section -->
+        <section class="languages">
         <h2>My Languages</h2>
         <divider />
         <div class="languageContainer">
@@ -394,10 +398,10 @@
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      <!-- Education & Experience Section -->
-      <section class="experience">
+        <!-- Education & Experience Section -->
+        <section class="experience">
         <h2>education &amp; experiences</h2>
         <divider />
         <div class="experienceContainer">
@@ -438,9 +442,9 @@
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      <footer class="footer">
+        <footer class="footer">
         <h1>connect with me on </h1>
         <div class="mediaContainer">
           <div class="mediaButton">
@@ -469,7 +473,8 @@
           </div>
         </div>
         <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
-      </footer>
+        </footer>
+      </section>
     </main>
     
     <!-- on load animated text -->
@@ -584,6 +589,13 @@ export default {
 
 /*///////////////////////////////////////////// General Styles ///////////////////////////////////////////////////*/
 
+.content{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  background: #fff;
+}
 
 body {
   padding: 0;
@@ -744,7 +756,7 @@ h2{
 .introduction img{
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -1207,5 +1219,6 @@ h2{
   bottom: 0;
   left: 43%;
 }
+
 
 </style>

@@ -24,19 +24,21 @@ let timeline = new TimelineMax();
 timeline
   .to(".layer1" , 3 , { y : -300 } )
   .to(".layer2" , 3 , { y : -200 } , "-=3" )
-  .to(".background" , 3 , { y : 50 } , "-=3" )
+  .fromTo(".background" , { y : -50 } , { y : 0 , duration : 3 } , "-=3" )
+  .to(".content" , 3 , { top : "0%" } , "-=3" )
 // .to(".introductionText" , 5 ,{x : 500})
 
 let scene = new ScrollMagic.Scene({
-  triggerElement: "#introduction" ,
-  duration: 100,
+  triggerElement: "main" ,
+  duration: "200%",
   triggerHook: 0,
 })
   .setTween(timeline)
-  // .setPin(".introduction")
+  .setPin("main")
   .addTo(controller);
 console.log(scene.triggerElement)
 console.log(timeline)
+
 
 // about section animation, image circle going to full screen
 let tl = gsap.timeline({

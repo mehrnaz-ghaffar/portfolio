@@ -1,7 +1,10 @@
 <template>
   <div class="loadingBar">
-    <div class="percentage" :style="percentageWidth">
-     <span> {{skillName}} </span>
+    <div 
+      class="percentage" 
+      :style="percentageWidth" 
+    >
+      <span> {{ skillName }} </span>
     </div>
   </div>
 </template>
