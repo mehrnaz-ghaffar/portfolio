@@ -553,7 +553,7 @@ main{
 
 .data-scrollmagic-pin-spacer{
   padding-top: 0 !important;
-}
+} 
 
 /* //////////////// on load animation /////////////////// */
 
@@ -764,7 +764,7 @@ h2{
 .introduction img{
   width: 100%;
   position: absolute;
-  height: 110vh;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }

@@ -34,7 +34,9 @@ let scene = new ScrollMagic.Scene({
   triggerHook: 0,
 })
   .setTween(timeline)
-  .setPin("main")
+  .setPin(".introduction",{
+    // pushFollowers: false
+  })
   .addTo(controller);
 console.log(scene.triggerElement)
 console.log(timeline)
