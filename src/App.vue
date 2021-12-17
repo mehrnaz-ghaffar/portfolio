@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <main>
-     
-
       <!-- Introduction Section -->
       <section class="introduction">
         <div class="introductionContainer">
@@ -32,156 +30,155 @@
         </div> -->
       </section>
 
-    <section class="content">
-
+      <section class="content">
         <!-- menu -->
         <nav 
-        class="menu"
-        :class="clicked ? 'menuActive' : 'menu'"
-      >
-        <div class="logoContent">
-          <div class="logo">
-            <span class="logoName">Menu</span>
-            <i
-              id="menuIcon" 
-              class="fas fa-bars"
-              @click="toggle()"
-            />
+          class="menu"
+          :class="clicked ? 'menuActive' : 'menu'"
+        >
+          <div class="logoContent">
+            <div class="logo">
+              <span class="logoName">Menu</span>
+              <i
+                id="menuIcon" 
+                class="fas fa-bars"
+                @click="toggle()"
+              />
+            </div>
           </div>
-        </div>
-        <ul class="navList">
-          <li>
-            <a 
-              href="#" 
-              class="navLink"
-            >
-              <i class="fas fa-user" />
-              <span class="navText">about me</span>
-            </a>
-            <span class="tooltip">about me</span>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="navLink"
-            >
-              <i class="far fa-address-card" />
-              <span class="navText">my skills</span>
-            </a>
-            <span class="tooltip">my skills</span>
-          </li>
-          <li>
-            <a
-              href="#" 
-              class="navLink"
-            >
-              <i class="fas fa-language" />
-              <span class="navText">my languages</span>
-            </a>
-            <span class="tooltip">my language</span>
-          </li>
-          <li>
-            <a
-              href="#" 
-              class="navLink"
-            >
-              <!-- logo -->
-              <span class="navText">text</span>
-            </a>
-            <span class="tooltip">test</span>
-          </li>
-          <li>
-            <a 
-              href="#" 
-              class="navLink"
-            >
-              <!-- logo -->
-              <span class="navText">text</span>
-            </a>
-            <span class="tooltip">test</span>
-          </li>
-        </ul>
+          <ul class="navList">
+            <li>
+              <a 
+                href="#" 
+                class="navLink"
+              >
+                <i class="fas fa-user" />
+                <span class="navText">about me</span>
+              </a>
+              <span class="tooltip">about me</span>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="navLink"
+              >
+                <i class="far fa-address-card" />
+                <span class="navText">my skills</span>
+              </a>
+              <span class="tooltip">my skills</span>
+            </li>
+            <li>
+              <a
+                href="#" 
+                class="navLink"
+              >
+                <i class="fas fa-language" />
+                <span class="navText">my languages</span>
+              </a>
+              <span class="tooltip">my language</span>
+            </li>
+            <li>
+              <a
+                href="#" 
+                class="navLink"
+              >
+                <!-- logo -->
+                <span class="navText">text</span>
+              </a>
+              <span class="tooltip">test</span>
+            </li>
+            <li>
+              <a 
+                href="#" 
+                class="navLink"
+              >
+                <!-- logo -->
+                <span class="navText">text</span>
+              </a>
+              <span class="tooltip">test</span>
+            </li>
+          </ul>
         </nav>
 
         <!-- About Section -->
         <section class="about">
-        <h2>About  Me</h2>
-        <divider />
-        <div class="aboutContainer">
-          <div
-            id="leftDiv"
-            class="aboutText"
-            dir="rtl"
-          >
-            <ul>
-              <!-- <dl>
-                <dt>full name</dt> <dd>mehrnaz ghaffar</dd>
-              </dl> -->
-              <li>
-                <div class="titles">
-                  <b>FULL NAME</b>
-                </div>
-                <div>Mehrnaz Ghaffar Tabrizi</div>   
-              </li>
-              <li>
-                <div class="titles">
-                  <b>BIRTHDAY</b>
-                </div>
-                <div>1378/8/18</div> 
-              </li>
-              <li>
-                <div class="titles">
-                  <b>BIRTH PLACE</b>
-                </div>
-                <div>Tehran , Iran </div>
-              </li>
-              <li>
-                <div class="titles">
-                  <b>my address</b>
-                </div>
-                <div>sample text</div>
-              </li>
-            </ul>
+          <h2>About  Me</h2>
+          <divider />
+          <div class="aboutContainer">
+            <div
+              id="leftDiv"
+              class="aboutText"
+              dir="rtl"
+            >
+              <ul>
+                <!-- <dl>
+                  <dt>full name</dt> <dd>mehrnaz ghaffar</dd>
+                </dl> -->
+                <li>
+                  <div class="titles">
+                    <b>FULL NAME</b>
+                  </div>
+                  <div>Mehrnaz Ghaffar Tabrizi</div>   
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>BIRTHDAY</b>
+                  </div>
+                  <div>1378/8/18</div> 
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>BIRTH PLACE</b>
+                  </div>
+                  <div>Tehran , Iran </div>
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>my address</b>
+                  </div>
+                  <div>sample text</div>
+                </li>
+              </ul>
+            </div>
+
+            <img
+              class="aboutImage"
+              src="./assets/images/sample3.jpg"
+              alt=""
+            >
+
+            <div
+              id="rightDiv"
+              class="aboutText"
+            >
+              <ul>
+                <li>
+                  <div class="titles">
+                    <b>ADDRESS</b>
+                  </div>
+                  <div>Tehran , Iran</div>   
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>PHONE</b>
+                  </div>
+                  <div>+98912*****15</div> 
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>EMAIL</b>
+                  </div>
+                  <div>mehrnaz.ghaffar@gmail.com</div>
+                </li>
+                <li>
+                  <div class="titles">
+                    <b>my address</b>
+                  </div>
+                  <div>sample text</div>
+                </li>
+              </ul>
+            </div>
           </div>
-          
-          <img
-            class="aboutImage"
-            src="./assets/images/sample3.jpg"
-            alt=""
-          >
-          
-          <div
-            id="rightDiv"
-            class="aboutText"
-          >
-            <ul>
-              <li>
-                <div class="titles">
-                  <b>ADDRESS</b>
-                </div>
-                <div>Tehran , Iran</div>   
-              </li>
-              <li>
-                <div class="titles">
-                  <b>PHONE</b>
-                </div>
-                <div>+98912*****15</div> 
-              </li>
-              <li>
-                <div class="titles">
-                  <b>EMAIL</b>
-                </div>
-                <div>mehrnaz.ghaffar@gmail.com</div>
-              </li>
-              <li>
-                <div class="titles">
-                  <b>my address</b>
-                </div>
-                <div>sample text</div>
-              </li>
-            </ul>
-          </div>
-        </div>
         <!-- <div class="aboutInformation">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores magnam inventore sit a cum.
@@ -195,284 +192,284 @@
 
         <!-- skills Section -->
         <section class="mySkills">
-        <h2>My Skills</h2>
-        <divider />
-        <div class="skillsContainer">
-          <div class="column">
-            <div class="progressBar">          
-              <progressBar 
-                :skillName="skillNameHtml" 
-                :width="widthHtml"
-              /> 
-              <span>86%</span>
+          <h2>My Skills</h2>
+          <divider />
+          <div class="skillsContainer">
+            <div class="column">
+              <div class="progressBar">          
+                <progressBar 
+                  :skillName="skillNameHtml" 
+                  :width="widthHtml"
+                /> 
+                <span>86%</span>
+              </div>
+              <div class="progressBar">         
+                <progressBar 
+                  :skillName="skillNameJs"
+                  :width="widthJs"
+                /> 
+                <span>70%</span>
+              </div>
+              <div class="progressBar">
+                <progressBar 
+                  :skillName="skillNameGit"
+                  :width="widthGit"  
+                /> 
+                <span>65%</span>
+              </div>
+              <div class="progressBar">
+                <progressBar /> 
+                <span>text</span>
+              </div>
             </div>
-            <div class="progressBar">         
-              <progressBar 
-                :skillName="skillNameJs"
-                :width="widthJs"
-              /> 
-              <span>70%</span>
-            </div>
-            <div class="progressBar">
-              <progressBar 
-                :skillName="skillNameGit"
-                :width="widthGit"  
-              /> 
-              <span>65%</span>
-            </div>
-            <div class="progressBar">
-              <progressBar /> 
-              <span>text</span>
+            <div class="column">
+              <div class="progressBar">
+                <progressBar 
+                  :skillName="skillNameCss"
+                  :width="widthCss"
+                /> 
+                <span>86%</span>
+              </div>
+              <div class="progressBar">
+                <progressBar 
+                  :skillName="skillNameVue"
+                  :width="widthVue"
+                /> 
+                <span>55%</span>
+              </div>
+              <div class="progressBar">
+                <progressBar /> 
+                <span>text</span>
+              </div>
+              <div class="progressBar">
+                <progressBar /> 
+                <span>text</span>
+              </div>
             </div>
           </div>
-          <div class="column">
-            <div class="progressBar">
-              <progressBar 
-                :skillName="skillNameCss"
-                :width="widthCss"
-              /> 
-              <span>86%</span>
-            </div>
-            <div class="progressBar">
-              <progressBar 
-                :skillName="skillNameVue"
-                :width="widthVue"
-              /> 
-              <span>55%</span>
-            </div>
-            <div class="progressBar">
-              <progressBar /> 
-              <span>text</span>
-            </div>
-            <div class="progressBar">
-              <progressBar /> 
-              <span>text</span>
-            </div>
-          </div>
-        </div>
         </section>
 
         <!-- Language Section -->
         <section class="languages">
-        <h2>My Languages</h2>
-        <divider />
-        <div class="languageContainer">
-          <div class="card">
-            <div class="countryFlag">
-              <img 
-                src="./assets/images/images.jpg" 
-                alt=""
-              >
+          <h2>My Languages</h2>
+          <divider />
+          <div class="languageContainer">
+            <div class="card">
+              <div class="countryFlag">
+                <img 
+                  src="./assets/images/images.jpg" 
+                  alt=""
+                >
+              </div>
+              <div class="level">
+                <h1>English</h1>
+                <p>
+                  speaking 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  listening 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  reading 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                  writing
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                </p> 
+              </div>
             </div>
-            <div class="level">
-              <h1>English</h1>
-              <p>
-                speaking 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                listening 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                reading 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-                writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-              </p> 
+            <div class="card">
+              <div class="countryFlag">
+                <img 
+                  src="./assets/images/images.jpg" 
+                  alt=""
+                >
+              </div>
+              <div class="level">
+                <h1>Hindi</h1>
+                <p>
+                  speaking 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                  listening 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+
+                  <br>
+                  reading 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                  writing
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="countryFlag">
+                <img 
+                  src="./assets/images/images.jpg"
+                  alt=""
+                >
+              </div>
+              <div class="level">
+                <h1>Turkish</h1>
+                <p>
+                  speaking 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  listening 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  reading 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                  writing
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                </p> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="countryFlag">
+                <img 
+                  src="./assets/images/images.jpg"
+                  alt=""
+                >
+              </div>
+              <div class="level">
+                <h1>French</h1>
+                <p>
+                  speaking 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  listening 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  reading 
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star-half" />
+                  <br>
+                  writing
+                  <i class="fas fa-star" />
+                  <i class="fas fa-star" />
+                  <br>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="countryFlag">
-              <img 
-                src="./assets/images/images.jpg" 
-                alt=""
-              >
-            </div>
-            <div class="level">
-              <h1>Hindi</h1>
-              <p>
-                speaking 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-                listening 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-               
-                <br>
-                reading 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-                writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="countryFlag">
-              <img 
-                src="./assets/images/images.jpg"
-                alt=""
-              >
-            </div>
-            <div class="level">
-              <h1>Turkish</h1>
-              <p>
-                speaking 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                listening 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                reading 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-                writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-              </p> 
-            </div>
-          </div>
-          <div class="card">
-            <div class="countryFlag">
-              <img 
-                src="./assets/images/images.jpg"
-                alt=""
-              >
-            </div>
-            <div class="level">
-              <h1>French</h1>
-              <p>
-                speaking 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                listening 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                reading 
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <i class="fas fa-star-half" />
-                <br>
-                writing
-                <i class="fas fa-star" />
-                <i class="fas fa-star" />
-                <br>
-              </p>
-            </div>
-          </div>
-        </div>
         </section>
 
         <!-- Education & Experience Section -->
         <section class="experience">
-        <h2>education &amp; experiences</h2>
-        <divider />
-        <div class="experienceContainer">
-          <div class="centerLine">
-            <a 
-              href="#" 
-              class="scrollIcon"
-            >
-              <i class="fas fa-caret-up" />
-            </a>
-          </div>
-          <div class="row row-1">
-            <div class="section">
-              <i class="fas fa-home" />
-              <div class="details">
-                <span class="timelineTitle">title 1</span>
-                <span>date 1</span>
-              </div> 
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
-                Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                quasi quo reiciendis.
-              </p>    
+          <h2>education &amp; experiences</h2>
+          <divider />
+          <div class="experienceContainer">
+            <div class="centerLine">
+              <a 
+                href="#" 
+                class="scrollIcon"
+              >
+                <i class="fas fa-caret-up" />
+              </a>
             </div>
-          </div>
-          <div class="row row-2">
-            <div class="section">
-              <i class="fas fa-home" />
-              <div class="details">
-                <span class="timelineTitle">title 2</span>
-                <span>date 2</span>
+            <div class="row row-1">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">title 1</span>
+                  <span>date 1</span>
+                </div> 
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+                  Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
+                  quasi quo reiciendis.
+                </p>    
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
-                Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                quasi quo reiciendis.
-              </p>
+            </div>
+            <div class="row row-2">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">title 2</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
+                  Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
+                  quasi quo reiciendis.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
         </section>
 
         <footer class="footer">
-        <h1>connect with me on </h1>
-        <div class="mediaContainer">
-          <div class="mediaButton">
-            <div class="mediaIcon">
-              <i class="fab fa-linkedin" />
+          <h1>connect with me on </h1>
+          <div class="mediaContainer">
+            <div class="mediaButton">
+              <div class="mediaIcon">
+                <i class="fab fa-linkedin" />
+              </div>
+              <span>linkedin</span>
             </div>
-            <span>linkedin</span>
-          </div>
-          <div class="mediaButton">
-            <div class="mediaIcon">
-              <i class="fab fa-telegram-plane" />
+            <div class="mediaButton">
+              <div class="mediaIcon">
+                <i class="fab fa-telegram-plane" />
+              </div>
+              <span>telegram</span>
             </div>
-            <span>telegram</span>
-          </div>
-          <div class="mediaButton">
-            <div class="mediaIcon">
-              <i class="fab fa-instagram" />
+            <div class="mediaButton">
+              <div class="mediaIcon">
+                <i class="fab fa-instagram" />
+              </div>
+              <span>instagram</span>
             </div>
-            <span>instagram</span>
-          </div>
-          <div class="mediaButton">
-            <div class="mediaIcon">
-              <i class="fab fa-github" />
+            <div class="mediaButton">
+              <div class="mediaIcon">
+                <i class="fab fa-github" />
+              </div>
+              <span>github</span>
             </div>
-            <span>github</span>
           </div>
-        </div>
-        <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
+          <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
         </footer>
       </section>
     </main>
@@ -764,7 +761,7 @@ h2{
 .introduction img{
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 100vh;      /*///////////////////////////////////*/
   object-fit: cover;
   z-index: -1;
 }
@@ -778,26 +775,6 @@ h2{
   font-size: 6rem;
 }
 
-
-/* .introductionImage {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url(./assets/images/background.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  padding: 0 8%;
-  position: relative;
-} */
-
-/* .introductionText {
-  color: #fff;
-  position: absolute;
-  bottom: 8%;
-  background-color: blue;
-  padding-left: 230px;
-} */
 
 @media only screen and (max-width: 1271px){
    .introductionText{
