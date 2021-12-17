@@ -547,6 +547,14 @@ export default {
 
 <style>
 
+main{
+  position: relative !important;
+}
+
+.data-scrollmagic-pin-spacer{
+  padding-top: 0 !important;
+}
+
 /* //////////////// on load animation /////////////////// */
 
 .preIntroduction{
@@ -806,7 +814,7 @@ h2{
 /*   /////////////////  About Section ///////////////////  */
 .about{
   margin: 50px 0 10% 0;
-  margin-top: 50%;
+ 
 }
 
 .aboutContainer{
