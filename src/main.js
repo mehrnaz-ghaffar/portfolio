@@ -47,7 +47,7 @@ console.log(timeline)
 //   scrollTrigger: {
 //   trigger: ".aboutImage",
 //   start: "top",
-//   end: "100%", //bottom
+//   end: "bottom", //bottom
 //   markers: true, //delete this
 //   scrub: true,
 //   pin: true,

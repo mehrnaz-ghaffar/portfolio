@@ -97,6 +97,16 @@
               </a>
               <span class="tooltip">test</span>
             </li>
+            <li>
+              <div class="darkMode">
+                <div class="darkModeName">
+                  dark mode :
+                </div>
+                <div class="switchButton">
+                  test
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
 
@@ -632,6 +642,18 @@ h2{
   border-radius: 0px 10px 10px 0px;
 }
 
+.darkModemenu{
+    position: fixed;
+  left: 0;
+  top: 90px;
+  height: 530px;
+  width: 78px;
+  background: rgb(46, 33, 40);
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+  border-radius: 0px 10px 10px 0px;
+}
+
 .menu.menuActive{
   width: 240px;
 }
@@ -752,6 +774,19 @@ h2{
   pointer-events: auto;
   transition: all 0.8s ease;
 }
+
+.darkMode{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
 
 /*  ///////////////  Introduction Section  ///////////////// */
 .introduction{
