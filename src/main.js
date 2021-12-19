@@ -35,7 +35,7 @@ let scene = new ScrollMagic.Scene({
 })
   .setTween(timeline)
   .setPin(".introduction",{
-    // pushFollowers: false
+    pushFollowers: false
   })
   .addTo(controller);
 console.log(scene.triggerElement)
@@ -43,16 +43,17 @@ console.log(timeline)
 
 
 // about section animation, image circle going to full screen
-// let tl = gsap.timeline({
-//   scrollTrigger: {
-//   trigger: ".aboutImage",
-//   start: "top",
-//   end: "bottom", //bottom
-//   markers: true, //delete this
-//   scrub: true,
-//   pin: true,
-//   },
-// });
-// tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
-// tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
-// tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+let tl = gsap.timeline({
+  scrollTrigger: {
+  trigger: ".aboutImage",
+  duration: 100,
+  start: "top",
+  end: "bottom", //bottom
+  markers: true, //delete this
+  scrub: true,
+  pin: true,
+  },
+});
+tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
+tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );

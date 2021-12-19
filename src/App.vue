@@ -826,7 +826,7 @@ h2{
 /*   /////////////////  About Section ///////////////////  */
 .about{
   margin: 50px 0 10% 0;
- 
+  background: #fff;
 }
 
 .aboutContainer{
@@ -900,7 +900,8 @@ h2{
 
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  background: #fff;
 }
 
 .skillsContainer{
@@ -938,7 +939,8 @@ h2{
 
 /*  ///////////////  Languages Section  ///////////////// */
 .languages{
-  margin: 100px 0 100px 0;
+  padding: 100px 0 100px 0;
+  background: #fff;
 }
 
 .languageContainer{
