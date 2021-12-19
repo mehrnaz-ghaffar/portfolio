@@ -102,7 +102,7 @@
                 <div class="darkModeName">
                   dark mode :
                 </div>
-                <div class="switchButton">
+                <div >
                   test
                 </div>
               </div>
@@ -111,7 +111,7 @@
         </nav>
 
         <!-- About Section -->
-        <section class="about">
+        <section :class="darkMode ? 'aboutDark' : 'about'">
           <h2>About  Me</h2>
           <divider />
           <div class="aboutContainer">
@@ -530,6 +530,7 @@ export default {
           widthVue: 300,
           skillNameGit :"Git",
           widthGit: 300,
+          darkMode: false,
         }
     },
   mounted(){
@@ -643,7 +644,7 @@ h2{
 }
 
 .darkModemenu{
-    position: fixed;
+  position: fixed;
   left: 0;
   top: 90px;
   height: 530px;
@@ -827,6 +828,11 @@ h2{
 .about{
   margin: 50px 0 10% 0;
   background: #fff;
+}
+
+.aboutDark{
+  margin: 50px 0 10% 0;
+  background: #000;
 }
 
 .aboutContainer{
