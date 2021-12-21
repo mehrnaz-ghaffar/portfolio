@@ -26,7 +26,7 @@ timeline
   .to(".layer2" , 3 , { y : -200 } , "-=3" )
   .fromTo(".background" , { y : -50 } , { y : 0 , duration : 3 } , "-=3" )
   .to(".content" , 3 , { top : "0%" } , "-=3" )
-// .to(".introductionText" , 5 ,{x : 500})
+  // .to(".introductionText" , 5 ,{x : 900})
 
 let scene = new ScrollMagic.Scene({
   triggerElement: "main" ,

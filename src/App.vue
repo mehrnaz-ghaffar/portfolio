@@ -102,7 +102,7 @@
                 <div class="darkModeName">
                   dark mode :
                 </div>
-                <div >
+                <div class="switchButton">
                   test
                 </div>
               </div>
@@ -643,7 +643,7 @@ h2{
   border-radius: 0px 10px 10px 0px;
 }
 
-.darkModemenu{
+/* .darkModemenu{
   position: fixed;
   left: 0;
   top: 90px;
@@ -653,7 +653,7 @@ h2{
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
-}
+} */
 
 .menu.menuActive{
   width: 240px;
@@ -777,15 +777,11 @@ h2{
 }
 
 .darkMode{
-  position: fixed;
-  height: 60px;
-  width: 78px;
-  left: 0;
-  bottom: -8px;
-  padding: 10px 14px;
   background: #1d1b31;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  position: absolute;
+  display: flex;
+  top: 98px;
+  flex-direction: row;
 }
 
 
