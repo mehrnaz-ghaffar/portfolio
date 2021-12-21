@@ -144,9 +144,9 @@
                 </li>
                 <li>
                   <div class="titles">
-                    <b>my address</b>
+                    <b>EMAIL</b>
                   </div>
-                  <div>sample text</div>
+                  <div>mehrnaz.ghaffar@gmail.com</div>
                 </li>
               </ul>
             </div>
@@ -176,15 +176,15 @@
                 </li>
                 <li>
                   <div class="titles">
-                    <b>EMAIL</b>
+                    <b>DEGREE</b>
                   </div>
-                  <div>mehrnaz.ghaffar@gmail.com</div>
+                  <div>bachlor of computer engineering</div>
                 </li>
                 <li>
                   <div class="titles">
-                    <b>my address</b>
+                    <b>UNIVERSITY</b>
                   </div>
-                  <div>sample text</div>
+                  <div>Shahrood university of technology</div>
                 </li>
               </ul>
             </div>
@@ -656,7 +656,7 @@ h2{
 } */
 
 .menu.menuActive{
-  width: 240px;
+  width: 175px;
 }
 
 .menu .logoContent .logo{
@@ -822,12 +822,12 @@ h2{
 
 /*   /////////////////  About Section ///////////////////  */
 .about{
-  margin: 50px 0 10% 0;
+  padding: 50px 0 10% 0;
   background: #fff;
 }
 
 .aboutDark{
-  margin: 50px 0 10% 0;
+  padding: 50px 0 10% 0;
   background: #000;
 }
 
@@ -835,6 +835,7 @@ h2{
   margin: 60px 20px 20px 70px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .aboutText{
@@ -849,13 +850,14 @@ h2{
 }
 
 #leftDiv{
- position: absolute;
- left: 26%;
+ /* position: absolute;
+ left: 26%; */
+ padding-left: 60px;
 }
 
 #rightDiv{
-  position: absolute;
-  right: 24%;
+  /* position: absolute;
+  right: 24%; */
 }
 
 .aboutImage{ 
@@ -904,6 +906,7 @@ h2{
 .mySkills{
   padding-bottom: 100px;
   background: #fff;
+  padding-top: 2px;
 }
 
 .skillsContainer{
@@ -1013,7 +1016,8 @@ h2{
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
   background: rgb(240, 158, 158);
-  height: 560px;    /*test */
+  height: 580px;    /*test */
+  padding-top: 2px;
 }
 
 .experienceContainer{
@@ -1157,6 +1161,8 @@ h2{
 /*  ///////////////  Social Media Section  ///////////////// */
 .mediaContainer{
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .mediaContainer .mediaButton{
@@ -1239,9 +1245,8 @@ h2{
 }
 
 .copyRight{
-  position: relative;
-  bottom: 0;
-  left: 43%;
+  display: flex;
+  justify-content: center;
 }
 
 
