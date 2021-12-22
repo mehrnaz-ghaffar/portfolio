@@ -97,17 +97,24 @@
               </a>
               <span class="tooltip">test</span>
             </li>
-            <li>
-              <div class="darkMode">
-                <div class="darkModeName">
-                  dark mode :
-                </div>
-                <div class="switchButton">
-                  test
-                </div>
-              </div>
-            </li>
           </ul>
+          <div class="darkmodeContent">
+            <div class="darkmode">
+              <div class="darkmodeIcon">
+                <i 
+                  v-if="darkMode"
+                  class="fas fa-moon" 
+                />
+                <i 
+                  v-else 
+                  class="fas fa-sun" 
+                />
+              </div>
+              <div class="switchButton">
+            test
+              </div>
+            </div>
+          </div>
         </nav>
 
         <!-- About Section -->
@@ -757,7 +764,7 @@ h2{
   color: cornflowerblue;
 }
 
-.menu ul li i{
+.menu ul li i, .menu .darkmodeIcon{
   height: 50px;
   min-width: 50px;
   border-radius: 12px;
@@ -776,12 +783,39 @@ h2{
   transition: all 0.8s ease;
 }
 
-.darkMode{
+.darkmodeContent{
   background: #1d1b31;
   position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.darkmode{
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
   display: flex;
-  top: 98px;
-  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* .darkmodeIcon{} */
+.menu .darkmodeIcon{
+  font-size: 19px;
+}
+
+
+.menu .switchButton{
+  opacity: 0;
+  display: none;
+}
+
+.menu.menuActive .switchButton{
+  opacity: 1;
+  display: flex;
+  margin: 13px;
+  /* transition: all 0.8s ease; */
 }
 
 
@@ -855,10 +889,10 @@ h2{
  padding-left: 60px;
 }
 
-#rightDiv{
-  /* position: absolute;
-  right: 24%; */
-}
+/* #rightDiv{
+  position: absolute;
+  right: 24%;
+} */
 
 .aboutImage{ 
   clip-path: circle(39%);
