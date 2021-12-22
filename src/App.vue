@@ -42,7 +42,7 @@
               <i
                 id="menuIcon" 
                 class="fas fa-bars"
-                @click="toggle()"
+                @click="toggleNav()"
               />
             </div>
           </div>
@@ -110,8 +110,10 @@
                   class="fas fa-sun" 
                 />
               </div>
-              <div class="switchButton">
-                  <SwitchBox />
+              <div class="switchButton" >
+                <switchBox 
+                  @darkMode="darkMode = !darkMode"
+                />
               </div>
             </div>
           </div>
@@ -513,15 +515,12 @@
 
   
 <script>
-import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
 import switchBox from './components/switchBox.vue'
   
-
 export default {
   name: "App",
-  
   components: { progressBar,
                 divider ,
                 switchBox
@@ -552,10 +551,11 @@ export default {
 
   },
     methods: {
-      toggle : function(){
+      toggleNav : function(){
         this.clicked = !this.clicked
-        console.log(this.clicked)
       },
+
+      
 
     },
 }

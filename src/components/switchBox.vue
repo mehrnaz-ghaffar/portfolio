@@ -4,13 +4,26 @@
       id="switchbox"
       type="checkbox" 
     >
-    <label for="switchbox" />
+    <label for="switchbox" @click="switchToggle()"/>
   </div>
 </template>
 
 <script>
 export default {
     name: 'switchBox',
+
+    props:{
+      type: Boolean,
+      default: () =>{
+        return false
+      }
+    },
+
+    methods:{
+      switchToggle: function(){
+        this.$emit('darkMode')
+      }
+    }
 }
 </script>
 
