@@ -111,7 +111,7 @@
                 />
               </div>
               <div class="switchButton">
-            test
+                  <SwitchBox />
               </div>
             </div>
           </div>
@@ -516,13 +516,15 @@
 import gsap from 'gsap';
 import progressBar from './components/progressBar.vue'
 import divider from './components/divider.vue'
+import switchBox from './components/switchBox.vue'
   
 
 export default {
   name: "App",
   
   components: { progressBar,
-                divider 
+                divider ,
+                switchBox
   },
   data(){
         return{
