@@ -38,8 +38,8 @@ let scene = new ScrollMagic.Scene({
     pushFollowers: false
   })
   .addTo(controller);
-console.log(scene.triggerElement)
-console.log(timeline)
+// console.log(scene.triggerElement)
+// console.log(timeline)
 
 
 // about section animation, image circle going to full screen
@@ -57,3 +57,5 @@ let tl = gsap.timeline({
 tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
 tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+
+

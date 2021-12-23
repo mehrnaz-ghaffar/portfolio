@@ -1,7 +1,7 @@
 <template>
   <div class="loadingBar">
     <div 
-      @load="test"
+      @click="test()"
       class="percentage" 
       :style="percentageWidth" 
     >
@@ -13,7 +13,12 @@
 <script>
 import gsap from 'gsap'
 import { TweenMax, TimelineMax } from "gsap"; 
-//  gsap.from(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2}
+
+
+  
+
+
+
 
 export default {
     name : 'ProgressBar' ,
@@ -38,11 +43,19 @@ export default {
       };
     }
   },
+
  methods:{
+
    test : function(){
-     gsap.from(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
+      gsap.fromTo(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
    }
- } 
+  }
+
+
+
+
+
+   
 
 }
 </script>
@@ -70,7 +83,10 @@ export default {
     /* width: 50% ; */
     border-radius: 15px;
     background-size: 30px 30px ;
+
 }
+
+
 
 .percentage span{
   float: left;
