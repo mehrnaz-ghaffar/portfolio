@@ -1,6 +1,7 @@
 <template>
   <div class="loadingBar">
     <div 
+      @load="test"
       class="percentage" 
       :style="percentageWidth" 
     >
@@ -10,6 +11,10 @@
 </template>
 
 <script>
+import gsap from 'gsap'
+import { TweenMax, TimelineMax } from "gsap"; 
+//  gsap.from(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2}
+
 export default {
     name : 'ProgressBar' ,
     props: {
@@ -32,7 +37,13 @@ export default {
         width: `${this.width}px`
       };
     }
-  }
+  },
+ methods:{
+   test : function(){
+     gsap.from(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
+   }
+ } 
+
 }
 </script>
 
