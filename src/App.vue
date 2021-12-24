@@ -420,10 +420,10 @@
         <section class="experience">
           <h2>education &amp; experiences</h2>
           <divider />
-          <div class="experienceContainer">
+          <div id="experienceStart" class="experienceContainer">
             <div class="centerLine">
               <a 
-                href="#" 
+                href="#experienceStart" 
                 class="scrollIcon"
               >
                 <i class="fas fa-caret-up" />
