@@ -548,6 +548,8 @@ export default {
     timeline.to(".preIntroduction" , {y:"-100%", duration: 1}, "-=1");
     timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
+    
+    // timeline.fromTo(".card", { opacity:0 } , { opacity:1 , duration:2} );
 
   },
     methods: {
@@ -563,6 +565,7 @@ export default {
 
 
 <style>
+
 
 main{
   position: relative !important;
@@ -646,7 +649,7 @@ h2{
   top: 90px;
   height: 530px;
   width: 78px;
-  background: rgb(224, 147, 190);
+  background: #9ea2a4;
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
@@ -859,7 +862,7 @@ h2{
 /*   /////////////////  About Section ///////////////////  */
 .about{
   padding: 50px 0 10% 0;
-  background: #fff;
+  background: #ece8e0;
 }
 
 .aboutDark{
@@ -941,7 +944,7 @@ h2{
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
   padding-bottom: 100px;
-  background: #fff;
+  background: #d7cfd2;
   padding-top: 2px;
 }
 

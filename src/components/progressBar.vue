@@ -15,11 +15,6 @@ import gsap from 'gsap'
 import { TweenMax, TimelineMax } from "gsap"; 
 
 
-  
-
-
-
-
 export default {
     name : 'ProgressBar' ,
     props: {
@@ -49,7 +44,8 @@ export default {
    test : function(){
       gsap.fromTo(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
    }
-  }
+  },
+
 
 
 

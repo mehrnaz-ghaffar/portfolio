@@ -26,7 +26,7 @@ timeline
   .to(".layer2" , 3 , { y : -200 } , "-=3" )
   .fromTo(".background" , { y : -50 } , { y : 0 , duration : 3 } , "-=3" )
   .to(".content" , 3 , { top : "0%" } , "-=3" )
-  // .to(".introductionText" , 5 ,{x : 900})
+  // .to(".introductionText" , 3 ,{x : 900} , "-=3" )
 
 let scene = new ScrollMagic.Scene({
   triggerElement: "main" ,
@@ -57,5 +57,3 @@ let tl = gsap.timeline({
 tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
 tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
-
-
