@@ -3,6 +3,7 @@
     <div class="line">
       <div class="diamond" />
     </div>
+    <hr>
   </div>
 </template>
 
@@ -54,7 +55,11 @@ export default {
   transform: rotate(45deg);
 }
 
-@media (max-width: 768px) {
+hr{
+  opacity: 0;
+}
+
+@media (max-width: 1280px) {
   .diamond {
     height: 20px;
     width: 20px;
@@ -64,4 +69,53 @@ export default {
     height: 25px;
   }
 }
+
+@media (max-width: 1161px) {
+  .container {
+    padding: 20px 200px 20px 200px;
+  }
+  
+}
+
+@media (max-width: 976px) {
+
+  .diamond {
+    height: 17px;
+    width: 17px;
+  }
+  
+}
+
+@media (max-width: 604px) {
+  .container {
+    padding: 20px 100px 20px 100px;
+  }
+  
+  .diamond {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+
+@media (max-width: 296px){
+  .line{
+    visibility: hidden;
+  }
+
+  .diamond{
+     visibility: hidden;
+  }
+
+  hr{
+    opacity: 1;
+    border-top: 3px solid rgb(0, 0, 0);
+  }
+
+  .container {
+    padding: 20px 50px 20px 50px;
+  }
+
+}
+
 </style>
