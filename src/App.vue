@@ -531,7 +531,7 @@ export default {
           skillNameHtml :"HTML",
           widthHtml: 300,
           skillNameJs :"javascript",
-          widthJs: 300,
+          widthJs: 200,
           skillNameCss :"CSS",
           widthCss: 300,
           skillNameVue :"Vue.js",

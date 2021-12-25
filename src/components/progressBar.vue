@@ -1,7 +1,6 @@
 <template>
   <div class="loadingBar">
     <div 
-      @click="test()"
       class="percentage" 
       :style="percentageWidth" 
     >
@@ -41,9 +40,9 @@ export default {
 
  methods:{
 
-   test : function(){
-      gsap.fromTo(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
-   }
+  //  test : function(){
+  //     gsap.fromTo(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
+  //  }
   },
 
 
