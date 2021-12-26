@@ -28,7 +28,8 @@ gsap.to(".background" ,{
     
   },
   y :  -100 ,
-  duration: 3
+  duration: 3,
+  triggerHook: 0,
 })
 
 gsap.to(".layer1" ,{
@@ -40,7 +41,8 @@ gsap.to(".layer1" ,{
     pinSpacing: false
   },
   y : -300 ,
-  duration: 3
+  duration: 3,
+  triggerHook: 0,
 })
 
 gsap.to(".layer2" ,{
@@ -53,6 +55,7 @@ gsap.to(".layer2" ,{
   },
   y : -600,
   duration : 4,
+  triggerHook: 0,
 })
 
 gsap.to(".content" ,{
@@ -65,7 +68,8 @@ gsap.to(".content" ,{
     pinSpacer: false
   },
   top : "0%",
-  duration: 3
+  duration: 3,
+  triggerHook: 0,
 })
 // let controller = new ScrollMagic.Controller();
 // let timeline = new TimelineMax();
@@ -108,3 +112,9 @@ let tl = gsap.timeline({
 tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
 tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+
+
+
+//////////////////////
+gsap.fromTo(".percentage",{ width:0 ,markers:true} , { width:`${this.width}px` , duration: 2 })
+

@@ -274,12 +274,10 @@
           <divider />
           <div class="languageContainer">
             <div class="card">
-              <div class="countryFlag">
                 <img 
-                  src="./assets/images/images.jpg" 
+                  src="./assets/images/americaFlag.png" 
                   alt=""
                 >
-              </div>
               <div class="level">
                 <h1>English</h1>
                 <p>
@@ -313,12 +311,10 @@
               </div>
             </div>
             <div class="card">
-              <div class="countryFlag">
                 <img 
-                  src="./assets/images/images.jpg" 
+                  src="./assets/images/indiaFlag.png" 
                   alt=""
                 >
-              </div>
               <div class="level">
                 <h1>Hindi</h1>
                 <p>
@@ -347,12 +343,10 @@
               </div>
             </div>
             <div class="card">
-              <div class="countryFlag">
                 <img 
-                  src="./assets/images/images.jpg"
+                  src="./assets/images/turkeyFlag.jpg"
                   alt=""
                 >
-              </div>
               <div class="level">
                 <h1>Turkish</h1>
                 <p>
@@ -381,13 +375,11 @@
                 </p> 
               </div>
             </div>
-            <div class="card">
-              <div class="countryFlag">
+            <div class="card">             
                 <img 
-                  src="./assets/images/images.jpg"
+                  src="./assets/images/franceFlag.png"
                   alt=""
-                >
-              </div>
+                >             
               <div class="level">
                 <h1>French</h1>
                 <p>
@@ -1016,7 +1008,7 @@ h2{
   height: 420px;
 }
 
-.countryFlag{
+/* .countryFlag{
   position: relative;
   width: 260px;
   height: 260px;
@@ -1024,7 +1016,7 @@ h2{
   left: 20px;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .countryFlag img{
   max-width: 100%;
@@ -1045,7 +1037,7 @@ h2{
 .card:hover .level{
   visibility: visible;
   opacity: 1;
-  margin-top: -40px;
+  margin-top: 35px;
   transition-delay: 0.2s;
 }
 
