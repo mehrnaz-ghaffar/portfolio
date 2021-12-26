@@ -8,17 +8,17 @@
             Mehrnaz
           </h1>
           <img 
-            src="./assets/images/bg1.png" 
+            src="./assets/images/backgroundog.png" 
             class="background" 
             alt=""
           >
           <img 
-            src="./assets/images/girl1.png" 
+            src="./assets/images/laptop.png" 
             class="layer1" 
             alt=""
           >
           <img 
-            src="./assets/images/rock1.png" 
+            src="./assets/images/books.png" 
             class="layer2" 
             alt=""
           >
@@ -110,7 +110,7 @@
                   class="fas fa-sun" 
                 />
               </div>
-              <div class="switchButton" >
+              <div class="switchButton">
                 <switchBox 
                   @darkMode="darkMode = !darkMode"
                 />

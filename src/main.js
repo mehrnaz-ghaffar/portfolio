@@ -17,27 +17,76 @@ new Vue({
 }).$mount('#app')
 
 
-// header animation , parallax effect
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
-
-timeline
-  .to(".layer1" , 3 , { y : -300 } )
-  .to(".layer2" , 3 , { y : -200 } , "-=3" )
-  .fromTo(".background" , { y : -50 } , { y : 0 , duration : 3 } , "-=3" )
-  .to(".content" , 3 , { top : "0%" } , "-=3" )
-  // .to(".introductionText" , 3 ,{x : 900} , "-=3" )
-
-let scene = new ScrollMagic.Scene({
-  triggerElement: "main" ,
-  duration: "200%",
-  triggerHook: 0,
+// // header animation , parallax effect
+gsap.to(".background" ,{
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top",
+    scrub: 1,
+    markers:true,
+    pinSpacing: false
+    
+  },
+  y :  -100 ,
+  duration: 3
 })
-  .setTween(timeline)
-  .setPin(".introduction",{
-    pushFollowers: false
-  })
-  .addTo(controller);
+
+gsap.to(".layer1" ,{
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top",
+    scrub: 1,
+    markers:true,
+    pinSpacing: false
+  },
+  y : -300 ,
+  duration: 3
+})
+
+gsap.to(".layer2" ,{
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top",
+    scrub: 1,
+    markers:true,
+    pinSpacing: false
+  },
+  y : -600,
+  duration : 4,
+})
+
+gsap.to(".content" ,{
+  scrollTrigger: {
+    trigger: ".introduction",
+    start: "top",
+
+    scrub: 1,
+    markers:true, 
+    pinSpacing: false
+  },
+  top : "0%",
+  duration: 3
+})
+// let controller = new ScrollMagic.Controller();
+// let timeline = new TimelineMax();
+
+// timeline
+//   .to(".layer1" , 3 , { y : -300 } )
+//   .to(".layer2" , 3 , { y : -200 } , "-=3" )
+//   .fromTo(".background" , { y : -50 } , { y : 0 , duration : 3 } , "-=3" )
+//   .to(".content" , 3 , { top : "0%" } , "-=3" )
+//   // .to(".introductionText" , 3 ,{x : 900} , "-=3" )
+
+// let scene = new ScrollMagic.Scene({
+//   triggerElement: "main" ,
+//   duration: "200%",
+//   triggerHook: 0,
+// })
+//   .setTween(timeline)
+//   .setPin(".introduction",{
+//     pushFollowers: false
+//   })
+//   .addTo(controller);
 // console.log(scene.triggerElement)
 // console.log(timeline)
 
