@@ -23,7 +23,7 @@ gsap.to(".background" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    markers:true,
+    // markers:true,
     pinSpacing: false
     
   },
@@ -36,7 +36,7 @@ gsap.to(".layer1" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    markers:true,
+    // markers:true,
     pinSpacing: false
   },
   y : -300 ,
@@ -48,7 +48,7 @@ gsap.to(".layer2" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    markers:true,
+    // markers:true,
     pinSpacing: false
   },
   y : -600,
@@ -59,10 +59,10 @@ gsap.to(".content" ,{
   scrollTrigger: {
     trigger: ".introduction",
     start: "top",
-
     scrub: 1,
-    markers:true, 
-    pinSpacing: false
+    // markers:true, 
+    pinSpacing: false,
+    pinSpacer: false
   },
   top : "0%",
   duration: 3
@@ -94,13 +94,15 @@ gsap.to(".content" ,{
 // about section animation, image circle going to full screen
 let tl = gsap.timeline({
   scrollTrigger: {
-  trigger: ".aboutImage",
-  duration: 100,
-  start: "top",
+  trigger: ".about",
+  // duration: 2,
+  start: "top ",
   end: "bottom", //bottom
   markers: true, //delete this
   scrub: true,
   pin: true,
+  immediateRender: false,
+  
   },
 });
 tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
