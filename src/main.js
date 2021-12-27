@@ -17,7 +17,7 @@ new Vue({
 }).$mount('#app')
 
 
-// // header animation , parallax effect
+//--------------- header animation , parallax effect -----------------//
 gsap.to(".background" ,{
   scrollTrigger: {
     trigger: ".introduction",
@@ -99,23 +99,39 @@ gsap.to(".layer2" ,{
 // console.log(timeline)
 
 
-// about section animation, image circle going to full screen
-let tl = gsap.timeline({
+//--------- about section animation, image circle going to full screen -----------//
+let tl1 = gsap.timeline({
   scrollTrigger: {
   trigger: ".about",
   // duration: 2,
   start: "top ",
-  end: "bottom", //bottom
+  end: "bottom", 
   markers: true, //delete this
   scrub: true,
   pin: true,
   immediateRender: false,
-  
   },
 });
-tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
-tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
-tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
+   .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 2}, "-=2" )
+
+
+
+// let tl = gsap.timeline({
+//   scrollTrigger: {
+//   trigger: ".about",
+//   // duration: 2,
+//   start: "top",
+//   end: "bottom", //bottom
+//   markers: true, //delete this
+//   scrub: true,
+//   pin: true,
+//   immediateRender: false,
+//   },
+// });
+// tl.fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
+// tl.fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+// tl.fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 
 
 
