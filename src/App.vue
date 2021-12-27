@@ -645,6 +645,7 @@ h2{
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
+  z-index: 1;
 }
 
 /* .darkModemenu{
