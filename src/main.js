@@ -27,7 +27,7 @@ gsap.to(".background" ,{
     pinSpacing: false
     
   },
-  y :  -100 ,
+  y :  400 ,
   duration: 3,
   triggerHook: 0,
 })
@@ -40,7 +40,7 @@ gsap.to(".layer1" ,{
     // markers:true,
     pinSpacing: false
   },
-  y : -300 ,
+  y : -200 ,
   duration: 3,
   triggerHook: 0,
 })
@@ -53,24 +53,28 @@ gsap.to(".layer2" ,{
     // markers:true,
     pinSpacing: false
   },
-  y : -600,
+  y : -400,
   duration : 4,
   triggerHook: 0,
 })
 
-gsap.to(".content" ,{
-  scrollTrigger: {
-    trigger: ".introduction",
-    start: "top",
-    scrub: 1,
-    // markers:true, 
-    pinSpacing: false,
-    pinSpacer: false
-  },
-  top : "0%",
-  duration: 3,
-  triggerHook: 0,
-})
+// gsap.to(".about" ,{
+//   scrollTrigger: {
+//     trigger: ".introduction",
+//     start: "top",
+//     scrub: 1,
+//     // markers:true, 
+//     pinSpacing: false,
+
+//   },
+//   top : "0%",
+//   duration: 3,
+//   triggerHook: 0,
+// })
+
+
+
+
 // let controller = new ScrollMagic.Controller();
 // let timeline = new TimelineMax();
 
