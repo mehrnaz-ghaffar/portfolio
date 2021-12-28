@@ -110,11 +110,14 @@ let tl1 = gsap.timeline({
   scrub: true,
   pin: true,
   immediateRender: false,
+  delay: 0.25
   },
 });
 tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
    .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 2}, "-=2" )
-
+   .fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
+  //  .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+  //  .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
 
 
 // let tl = gsap.timeline({
@@ -135,6 +138,23 @@ tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
 
 
 
-//////////////////////
-gsap.fromTo(".percentage",{ width:0 ,markers:true} , { width:`${this.width}px` , duration: 2 })
+//------------- skill section animation ---------------//
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".mySkills",
+    start: "top center",
+    end: "bottom",
+    markers: true,
+    duration: 100,
+    // scrub: true,
+
+  },
+});
+
+tl2.fromTo(".loadingBar" , {opacity: 0} , {opacity:1 })
+   .fromTo(".progressBar span" , {opacity: 0} , {opacity:1 })
+  // .fromTo(".percentage",{ width: 0 } , { width: document.getElementsByClassName(".percentage").width })
+console.log(document.getElementsByClassName(".percentage").width)
+
+
 
