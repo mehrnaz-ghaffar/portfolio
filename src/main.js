@@ -139,7 +139,7 @@ tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
 
 
 
-//------------- skill section animation ---------------//
+//------------- skill section animation , bars appearing and percentages easing in ---------------//
 let tl2 = gsap.timeline({
   scrollTrigger:{
     trigger: ".mySkills",
@@ -151,9 +151,24 @@ let tl2 = gsap.timeline({
 
 tl2.fromTo(".loadingBar" , {opacity: 0} , {opacity:1 })
    .fromTo(".progressBar span" , {opacity: 0} , {opacity:1 })
-   .from(".percentage",{ width: 0 , duration: 1.5} )
+   .from(".percentage",{ width: 0 , duration: 1.5} );
 
 
 
-//----------------- language section anomation ---------------------//
+//----------------- language section animation ---------------------//
 
+//---------------- experiance section animation -------------------//
+
+//---------------- socisl media section animation -------------------//
+let tl5 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".footer",
+    start: "top 85%",
+    end: "bottom",
+    // ease : "power1.out",
+    markers: true
+  },
+});
+
+tl5.fromTo(".mediaButton" , {opacity: 0} , {opacity: 1 , duration: 2})
+   .fromTo(".copyRight" , {opacity: 0} , {opacity: 1 , duration: 2} , "-=2")
