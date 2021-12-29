@@ -273,7 +273,7 @@
           <h2>My Languages</h2>
           <divider />
           <div class="languageContainer">
-            <div class="card">
+            <div class="card" id="card1">
                 <img 
                   src="./assets/images/americaFlag.png" 
                   alt=""
@@ -310,7 +310,7 @@
                 </p> 
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="card2">
                 <img 
                   src="./assets/images/indiaFlag.png" 
                   alt=""
@@ -342,7 +342,7 @@
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="card3">
                 <img 
                   src="./assets/images/turkeyFlag.jpg"
                   alt=""
@@ -375,7 +375,7 @@
                 </p> 
               </div>
             </div>
-            <div class="card">             
+            <div class="card" id="card4">             
                 <img 
                   src="./assets/images/franceFlag.png"
                   alt=""

@@ -120,7 +120,6 @@ tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
    .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 , duration: 3} , "-=3"  )
   
 
-
 // let tl = gsap.timeline({
 //   scrollTrigger: {
 //   trigger: ".about",
@@ -149,15 +148,38 @@ let tl2 = gsap.timeline({
   },
 });
 
-tl2.fromTo(".loadingBar" , {opacity: 0} , {opacity:1 })
-   .fromTo(".progressBar span" , {opacity: 0} , {opacity:1 })
+tl2.fromTo(".loadingBar" , {opacity: 0} , {opacity:1 , duration: 1.5})
+   .fromTo(".progressBar span" , {opacity: 0} , {opacity:1 , duration: 1.5 })
    .from(".percentage",{ width: 0 , duration: 1.5} );
 
 
 
 //----------------- language section animation ---------------------//
+let tl3 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".languages",
+    start: "top",
+    end: "bottom",
+    // ease : "power1.out",
+    markers: true,
+    // pin: true,
+    // scrub: true
+   
+  },
+});
+
+tl3.fromTo("#card1", { opacity: 0} , {opacity: 1 , duration: 0.1})
+   .fromTo("#card3", { opacity: 0} , {opacity: 1 , duration: 0.1})
+   .fromTo("#card4", { opacity: 0} , {opacity: 1 , duration: 0.1})
+   .fromTo("#card5", { opacity: 0} , {opacity: 1 , duration: 0.1})
+   .from("#card1" , { top: -900 , duration: 1.7})
+   .from("#card2" , { top: 900 , duration: 1.7})
+   .from("#card3" , { top: -900 , duration: 1.7})
+   .from("#card4" , { top: 900 , duration: 1.7})
+
 
 //---------------- experiance section animation -------------------//
+
 
 //---------------- socisl media section animation -------------------//
 let tl5 = gsap.timeline({
@@ -166,9 +188,8 @@ let tl5 = gsap.timeline({
     start: "top 85%",
     end: "bottom",
     // ease : "power1.out",
-    markers: true
   },
 });
 
-tl5.fromTo(".mediaButton" , {opacity: 0} , {opacity: 1 , duration: 2})
-   .fromTo(".copyRight" , {opacity: 0} , {opacity: 1 , duration: 2} , "-=2")
+tl5.fromTo(".mediaButton" , {opacity: 0} , {opacity: 1 , duration: 3})
+   .fromTo(".copyRight" , {opacity: 0} , {opacity: 1 , duration: 3} , "-=3")
