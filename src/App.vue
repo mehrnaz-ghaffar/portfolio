@@ -273,11 +273,14 @@
           <h2>My Languages</h2>
           <divider />
           <div class="languageContainer">
-            <div class="card" id="card1">
-                <img 
-                  src="./assets/images/americaFlag.png" 
-                  alt=""
-                >
+            <div 
+              id="card1" 
+              class="card"
+            >
+              <img 
+                src="./assets/images/americaFlag.png" 
+                alt=""
+              >
               <div class="level">
                 <h1>English</h1>
                 <p>
@@ -310,11 +313,14 @@
                 </p> 
               </div>
             </div>
-            <div class="card" id="card2">
-                <img 
-                  src="./assets/images/indiaFlag.png" 
-                  alt=""
-                >
+            <div 
+              id="card2" 
+              class="card" 
+            >
+              <img 
+                src="./assets/images/indiaFlag.png" 
+                alt=""
+              >
               <div class="level">
                 <h1>Hindi</h1>
                 <p>
@@ -342,11 +348,14 @@
                 </p>
               </div>
             </div>
-            <div class="card" id="card3">
-                <img 
-                  src="./assets/images/turkeyFlag.jpg"
-                  alt=""
-                >
+            <div 
+              id="card3" 
+              class="card"
+            >
+              <img 
+                src="./assets/images/turkeyFlag.jpg"
+                alt=""
+              >
               <div class="level">
                 <h1>Turkish</h1>
                 <p>
@@ -375,11 +384,14 @@
                 </p> 
               </div>
             </div>
-            <div class="card" id="card4">             
-                <img 
-                  src="./assets/images/franceFlag.png"
-                  alt=""
-                >             
+            <div 
+              id="card4" 
+              class="card"
+            >             
+              <img 
+                src="./assets/images/franceFlag.png"
+                alt=""
+              >             
               <div class="level">
                 <h1>French</h1>
                 <p>

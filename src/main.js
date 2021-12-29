@@ -190,7 +190,6 @@ let tl5 = gsap.timeline({
     trigger: ".footer",
     start: "top 85%",
     end: "bottom",
-    markers: true,
     // toggleActions: 'play none reverse none'
   },
 });
