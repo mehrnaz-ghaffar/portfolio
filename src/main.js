@@ -115,9 +115,10 @@ let tl1 = gsap.timeline({
 });
 tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
    .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 2}, "-=2" )
-   .fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 2 } );
-  //  .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
-  //  .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 } , { opacity: 0 , duration: 1 } /* , "-=2"*/ );
+   .fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 3 } )
+   .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 , duration: 3 } , "-=3" )
+   .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 , duration: 3} , "-=3"  )
+  
 
 
 // let tl = gsap.timeline({
@@ -144,17 +145,15 @@ let tl2 = gsap.timeline({
     trigger: ".mySkills",
     start: "top center",
     end: "bottom",
-    markers: true,
-    duration: 100,
-    // scrub: true,
-
+    ease : "power1.out",
   },
 });
 
 tl2.fromTo(".loadingBar" , {opacity: 0} , {opacity:1 })
    .fromTo(".progressBar span" , {opacity: 0} , {opacity:1 })
-  // .fromTo(".percentage",{ width: 0 } , { width: document.getElementsByClassName(".percentage").width })
-console.log(document.getElementsByClassName(".percentage").width)
+   .from(".percentage",{ width: 0 , duration: 1.5} )
 
 
+
+//----------------- language section anomation ---------------------//
 
