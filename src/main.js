@@ -179,7 +179,6 @@ let tl4 = gsap.timeline({
     trigger: ".experience",
     start: "top",
     end: "bottom",
-    markers: true
   },
 });
 
@@ -191,9 +190,12 @@ let tl5 = gsap.timeline({
     trigger: ".footer",
     start: "top 85%",
     end: "bottom",
-    // ease : "power1.out",
+    markers: true,
+    // toggleActions: 'play none reverse none'
   },
 });
 
 tl5.fromTo(".mediaButton" , {opacity: 0} , {opacity: 1 , duration: 3})
-   .fromTo(".copyRight" , {opacity: 0} , {opacity: 1 , duration: 3} , "-=3")
+   .to(".mediaButton" , { rotation: 360 , duration: 1.3 })
+   .fromTo(".copyRight" , {opacity: 0} , {opacity: 1 , duration: 3} , "-=3" )
+  
