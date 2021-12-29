@@ -412,7 +412,10 @@
         <section class="experience">
           <h2>education &amp; experiences</h2>
           <divider />
-          <div id="experienceStart" class="experienceContainer">
+          <div 
+            id="experienceStart" 
+            class="experienceContainer"
+          >
             <div class="centerLine">
               <a 
                 href="#experienceStart" 

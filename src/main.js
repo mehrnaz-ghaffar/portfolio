@@ -23,7 +23,6 @@ gsap.to(".background" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    // markers:true,
     pinSpacing: false
     
   },
@@ -37,7 +36,6 @@ gsap.to(".layer1" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    // markers:true,
     pinSpacing: false
   },
   y : -200 ,
@@ -50,7 +48,6 @@ gsap.to(".layer2" ,{
     trigger: ".introduction",
     start: "top",
     scrub: 1,
-    // markers:true,
     pinSpacing: false
   },
   y : -400,
@@ -106,7 +103,6 @@ let tl1 = gsap.timeline({
   // duration: 2,
   start: "top ",
   end: "bottom", 
-  markers: true, //delete this
   scrub: true,
   pin: true,
   immediateRender: false,
@@ -160,9 +156,8 @@ let tl3 = gsap.timeline({
     trigger: ".languages",
     start: "top",
     end: "bottom",
-    // ease : "power1.out",
     markers: true,
-    // pin: true,
+    pin: true,
     // scrub: true
    
   },
@@ -179,7 +174,16 @@ tl3.fromTo("#card1", { opacity: 0} , {opacity: 1 , duration: 0.1})
 
 
 //---------------- experiance section animation -------------------//
+let tl4 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".experience",
+    start: "top",
+    end: "bottom",
+    markers: true
+  },
+});
 
+tl4.fromTo(".experienceContainer" , {opacity: 0} , {opacity: 1 , duration: 2})
 
 //---------------- socisl media section animation -------------------//
 let tl5 = gsap.timeline({
