@@ -122,7 +122,7 @@
         <!-- About Section -->
         <section :class="darkMode ? 'aboutDark' : 'about'">
           <h2>About  Me</h2>
-          <divider />
+          <divider id="devider" />
           <div class="aboutContainer">
             <div
               id="leftDiv"
@@ -1023,7 +1023,7 @@ h2{
 .about{
   padding: 50px 0 10% 0;
   background: #ece8e0;
-  height: 100vh;
+  height: 120vh;
 }
 
 .aboutDark{
@@ -1062,11 +1062,11 @@ h2{
 
 .aboutImage{ 
   width: 900px;
-  height: 660px;
+  height: 680px;
   clip-path: circle(39%);
   position: relative;
   right: 20px;
-  bottom: 160px;
+  bottom: 140px;
   z-index: 1;
 }
 

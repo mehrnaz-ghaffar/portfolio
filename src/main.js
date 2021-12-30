@@ -113,7 +113,8 @@ tl1.fromTo("#leftDiv", {x:-1000 }  , {x:240 , duration:3} )
    .fromTo(".aboutImage" , { clipPath: "circle(25%)" } , { clipPath: "circle(75%)" , duration: 3 } )
    .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 , duration: 3 } , "-=3" )
    .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 , duration: 3} , "-=3"  )
-  
+   .fromTo("#devider" , { opacity: 1 } , { opacity: 0 , duration: 2 } , "-=3" )
+  //  .fromTo(".about h2" , { scale: 1 } , { scale: 0 , duration: 3 } , "-=3" )  
 
 // let tl = gsap.timeline({
 //   scrollTrigger: {
