@@ -519,13 +519,13 @@
               <div class="section">
                 <i class="fas fa-home" />
                 <div class="details">
-                  <span class="timelineTitle">title 1</span>
+                  <span class="timelineTitle">started university</span>
                   <span>date 1</span>
                 </div> 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
-                  Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                  quasi quo reiciendis.
+                   &nbsp; Starting my studuies as a computer engineering student at Shahrood University of Technology was the start of my coding path . 
+                  It was then that I got to know the world of coding and developing that instantly made me fall in love with it . I started learning basics of coding and
+                  got to learn about important topics such as Database Design , Data Structures and Data Algorithms .
                 </p>    
               </div>
             </div>
@@ -533,13 +533,80 @@
               <div class="section">
                 <i class="fas fa-home" />
                 <div class="details">
-                  <span class="timelineTitle">title 2</span>
+                  <span class="timelineTitle">HTML &amp; CSS</span>
                   <span>date 2</span>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe illo esse, tenetur error sunt. 
-                  Voluptate delectus molestiaeipsa asperiores debitis animi veniam eveniet laborum excepturi corporis,
-                  quasi quo reiciendis.
+                  &nbsp;I got familiar with HTML and CSS through an extra course I took on my first term . Got to know the basics and got familiar with a little Javascript and PHP to use them for a learning project and it was at this stage 
+                  that I realised my passion for Web Development and after some more researches decided to choose it as future career.
+                </p>
+              </div>
+            </div>
+            <div class="row row-1">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">Javascript</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  &nbsp;Summer was a good time for me to put my full focus on Javascript without university duties . I started learning the language more using youtube courses
+                  and got into errors and struggles with my codes but in the end all of this helped me make a good progress with the language.
+                </p>
+              </div>
+            </div>
+            <div class="row row-2">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">Internship</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  &nbsp; Starting my Internship at Novaday company was a great leap in my path. I got to know and work with more complicated and heavier projects 
+                  and learn a lot more things while doing so . My first steps in my internship was reviewing and learning more HTML , CSS and Javascript for which I did a project using only HTML and CSS and another
+                  project which was a calculator project using pure Javascript.
+                </p>
+              </div>
+            </div>
+            <div class="row row-1">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">Git</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  &nbsp; I started using git and github through out my internship and university courses . I learned about using it from youtube and started putting my 
+                  projects on github which was a great help on managing my code and collabing with others .
+                </p>
+              </div>
+            </div>
+            <div class="row row-2">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">Vue.js</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  &nbsp; Next step was learning a framework and I choose Vue.js , I started learning Vue through youtube courses. To really learn the framework 
+                  I did a todo list project using vue and got to know more about Vue , Vue lifecycle , componnents and much more . After that I did a calendar document website
+                  for my internship company which was a great help in learning more about Vue and working with a group.
+                </p>
+              </div>
+            </div>
+
+            <div class="row row-1">
+              <div class="section">
+                <i class="fas fa-home" />
+                <div class="details">
+                  <span class="timelineTitle">Portfolio</span>
+                  <span>date 2</span>
+                </div>
+                <p>
+                  &nbsp; Creating this site as my own portfolio was one of my best learning experiences and a great way to put all my knowledge together and do a lot 
+                  of searching learning new things and tricks . One of the things I got to learn during this project was GSAP library and using ScrollTrigger for my animations .
                 </p>
               </div>
             </div>
@@ -1163,7 +1230,7 @@ h2{
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
   background: rgb(240, 158, 158);
-  height: 580px;    /*test */
+  height: 203vh;  
   padding-top: 2px;
 }
 

@@ -162,9 +162,9 @@ let tl3 = gsap.timeline({
 });
 
 tl3.fromTo("#card1", { opacity: 0} , {opacity: 1 , duration: 0.1})
+   .fromTo("#card2", { opacity: 0} , {opacity: 1 , duration: 0.1})
    .fromTo("#card3", { opacity: 0} , {opacity: 1 , duration: 0.1})
    .fromTo("#card4", { opacity: 0} , {opacity: 1 , duration: 0.1})
-   .fromTo("#card5", { opacity: 0} , {opacity: 1 , duration: 0.1})
    .from("#card1" , { top: -900 , duration: 1.7})
    .from("#card2" , { top: 900 , duration: 1.7})
    .from("#card3" , { top: -900 , duration: 1.7})
@@ -180,7 +180,7 @@ let tl4 = gsap.timeline({
   },
 });
 
-tl4.fromTo(".experienceContainer" , {opacity: 0} , {opacity: 1 , duration: 2})
+tl4.fromTo(".row" , {opacity: 0} , {opacity: 1 , duration: 2})
 
 //---------------- socisl media section animation -------------------//
 let tl5 = gsap.timeline({
