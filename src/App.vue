@@ -162,7 +162,7 @@
 
             <img
               class="aboutImage"
-              src="./assets/images/sample3.jpg"
+              src="./assets/images/mehrnaz.png"
               alt=""
             >
 
@@ -683,7 +683,7 @@ export default {
           clicked : false,
           skillNameHtml :"HTML",
           widthHtml: 300,
-          skillNameJs :"javascript",
+          skillNameJs :"Javascript",
           widthJs: 200,
           skillNameCss :"CSS",
           widthCss: 300,
@@ -1061,9 +1061,13 @@ h2{
 } */
 
 .aboutImage{ 
+  width: 900px;
+  height: 660px;
   clip-path: circle(39%);
   position: relative;
   right: 20px;
+  bottom: 160px;
+  z-index: 1;
 }
 
 .aboutInformation p{
@@ -1116,9 +1120,6 @@ h2{
 
 }
 
-/* .column{
-  flex: 50%;
-} */
 
 .progressBar{
   display: flex;

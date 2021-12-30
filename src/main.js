@@ -102,15 +102,15 @@ let tl1 = gsap.timeline({
   trigger: ".about",
   start: "top ",
   end: "bottom", 
-  scrub: true,
+  scrub: 0.5,
   pin: true,
   immediateRender: false,
   delay: 1
   },
 });
-tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:3} )
-   .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 3}, "-=3" )
-   .fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 3 } )
+tl1.fromTo("#leftDiv", {x:-1000 }  , {x:240 , duration:3} )
+   .fromTo("#rightDiv", {x:1000 } , {x:-280 , duration: 3}, "-=3" )
+   .fromTo(".aboutImage" , { clipPath: "circle(25%)" } , { clipPath: "circle(75%)" , duration: 3 } )
    .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 , duration: 3 } , "-=3" )
    .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 , duration: 3} , "-=3"  )
   

@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import gsap from 'gsap'
-import { TweenMax, TimelineMax } from "gsap"; 
 
 
 export default {
@@ -37,21 +35,6 @@ export default {
       };
     }
   },
-
- methods:{
-
-  //  test : function(){
-  //     gsap.fromTo(".percentage",{ width:0 } , { width:`${this.width}px` , duration: 2})
-  //  }
-  },
-
-
-
-
-
-
-   
-
 }
 </script>
 
