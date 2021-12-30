@@ -100,17 +100,16 @@ gsap.to(".layer2" ,{
 let tl1 = gsap.timeline({
   scrollTrigger: {
   trigger: ".about",
-  // duration: 2,
   start: "top ",
   end: "bottom", 
   scrub: true,
   pin: true,
   immediateRender: false,
-  delay: 0.25
+  delay: 1
   },
 });
-tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:2} )
-   .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 2}, "-=2" )
+tl1.fromTo("#leftDiv", {x:-1000 }  , {x:70 , duration:3} )
+   .fromTo("#rightDiv", {x:1000 } , {x:-110 , duration: 3}, "-=3" )
    .fromTo(".aboutImage" , { clipPath: "circle(39%)" } , { clipPath: "circle(75%)" , duration: 3 } )
    .fromTo("#leftDiv" , { scale: 1 } , { scale: 0 , duration: 3 } , "-=3" )
    .fromTo("#rightDiv" , { scale: 1 } , { scale: 0 , duration: 3} , "-=3"  )

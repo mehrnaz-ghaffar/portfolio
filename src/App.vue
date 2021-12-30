@@ -956,7 +956,7 @@ h2{
 .about{
   padding: 50px 0 10% 0;
   background: #ece8e0;
-  height: 200vh;
+  height: 100vh;
 }
 
 .aboutDark{
