@@ -295,7 +295,7 @@
                 <h1>English</h1>
                 <p>
                   <span class="skillMeasure">
-                    <span class="skillTitle"> speaking </span>
+                    <span> speaking </span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -306,7 +306,7 @@
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">listening </span> 
+                    <span>listening </span> 
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -317,17 +317,17 @@
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle"> reading </span>
+                    <span> reading </span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">writing</span> 
+                    <span>writing</span> 
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -351,38 +351,44 @@
                 <h1>Hindi</h1>
                 <p>
                   <span class="skillMeasure">
-                    <span class="skillTitle">speaking</span>
+                    <span>speaking</span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle"> listening </span> 
+                    <span> listening </span> 
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>
                   <br>
-                  <span class="skillMeasure" id="skillMeasure">
-                    <span class="skillTitle" >reading </span>
+                  <span 
+                    id="skillMeasure" 
+                    class="skillMeasure" 
+                  >
+                    <span>reading </span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>  
                   <br>
-                  <span class="skillMeasure" id="skillMeasure">
-                    <span class="skillTitle">writing</span>
+                  <span 
+                    id="skillMeasure" 
+                    class="skillMeasure" 
+                  >
+                    <span>writing</span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>  
                   <br>
@@ -401,36 +407,36 @@
                 <h1>Turkish</h1>
                 <p>
                   <span class="skillMeasure">
-                    <span class="skillTitle">speaking </span>
+                    <span>speaking </span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star-half" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star-half" />
                     </span>
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">listening</span>
+                    <span>listening</span>
                     <span>         
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star-half" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star-half" />
                     </span>
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">reading</span>
+                    <span>reading</span>
                     <span>
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
-                    <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
+                      <i class="fas fa-star" />
                     </span>
                   </span>
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">writing</span>
+                    <span>writing</span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -453,7 +459,7 @@
                 <h1>French</h1>
                 <p>
                   <span class="skillMeasure">
-                    <span class="skillTitle">speaking </span>
+                    <span>speaking </span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -462,7 +468,7 @@
                   </span>                
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">listening</span>
+                    <span>listening</span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -471,7 +477,7 @@
                   </span>                   
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">reading </span>
+                    <span>reading </span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -480,7 +486,7 @@
                   </span>                  
                   <br>
                   <span class="skillMeasure">
-                    <span class="skillTitle">writing</span>
+                    <span>writing</span>
                     <span>
                       <i class="fas fa-star" />
                       <i class="fas fa-star" />
@@ -1059,16 +1065,6 @@ h2{
   width: 80px;
 }
 
-.skillMeasure{
-  display: flex;
-  justify-content: space-evenly;
-  block-size: 7px;
-}
-
-#skillMeasure{
-  margin-right: 20px;
-}
-
 @media screen and (max-width: 1028px) {
   .skillsContainer{
     display: flex;
@@ -1152,6 +1148,16 @@ h2{
 
 .level p i{
   color: coral;
+}
+
+.skillMeasure{
+  display: flex;
+  justify-content: space-evenly;
+  block-size: 7px;
+}
+
+#skillMeasure{
+  margin-right: 20px;
 }
 
 /*  ///////////////  experience Section  ///////////////// */

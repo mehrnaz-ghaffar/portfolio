@@ -156,7 +156,6 @@ let tl3 = gsap.timeline({
     trigger: ".languages",
     start: "top",
     end: "bottom",
-    markers: true,
     pin: true,
     // scrub: true
    
