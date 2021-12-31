@@ -53,9 +53,9 @@
                 class="navLink"
               >
                 <i class="fas fa-user" />
-                <span class="navText">about me</span>
+                <span class="navText">About</span>
               </a>
-              <span class="tooltip">about me</span>
+              <span class="tooltip">About</span>
             </li>
             <li>
               <a
@@ -63,9 +63,9 @@
                 class="navLink"
               >
                 <i class="far fa-address-card" />
-                <span class="navText">my skills</span>
+                <span class="navText">Skills</span>
               </a>
-              <span class="tooltip">my skills</span>
+              <span class="tooltip">Skills</span>
             </li>
             <li>
               <a
@@ -73,29 +73,29 @@
                 class="navLink"
               >
                 <i class="fas fa-language" />
-                <span class="navText">my languages</span>
+                <span class="navText">Languages</span>
               </a>
-              <span class="tooltip">my language</span>
+              <span class="tooltip">Language</span>
             </li>
             <li>
               <a
                 href="#" 
                 class="navLink"
               >
-                <!-- logo -->
-                <span class="navText">text</span>
+                <i class="fas fa-laptop-code" />
+                <span class="navText">Experiences</span>
               </a>
-              <span class="tooltip">test</span>
+              <span class="tooltip">Experiences</span>
             </li>
             <li>
               <a 
                 href="#" 
                 class="navLink"
               >
-                <!-- logo -->
-                <span class="navText">text</span>
+                <i class="fas fa-users" />
+                <span class="navText">Social Media</span>
               </a>
-              <span class="tooltip">test</span>
+              <span class="tooltip">Social Media</span>
             </li>
           </ul>
           <div class="darkmodeContent">
@@ -517,7 +517,7 @@
             </div>
             <div class="row row-1">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fas fa-university" />
                 <div class="details">
                   <span class="timelineTitle">started university</span>
                   <span>date 1</span>
@@ -531,7 +531,7 @@
             </div>
             <div class="row row-2">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fas fa-code" />
                 <div class="details">
                   <span class="timelineTitle">HTML &amp; CSS</span>
                   <span>date 2</span>
@@ -544,7 +544,7 @@
             </div>
             <div class="row row-1">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fab fa-js" />
                 <div class="details">
                   <span class="timelineTitle">Javascript</span>
                   <span>date 2</span>
@@ -557,7 +557,7 @@
             </div>
             <div class="row row-2">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fas fa-building" />
                 <div class="details">
                   <span class="timelineTitle">Internship</span>
                   <span>date 2</span>
@@ -571,7 +571,7 @@
             </div>
             <div class="row row-1">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fab fa-git-alt" />
                 <div class="details">
                   <span class="timelineTitle">Git</span>
                   <span>date 2</span>
@@ -584,7 +584,7 @@
             </div>
             <div class="row row-2">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fab fa-vuejs" />
                 <div class="details">
                   <span class="timelineTitle">Vue.js</span>
                   <span>date 2</span>
@@ -596,10 +596,9 @@
                 </p>
               </div>
             </div>
-
             <div class="row row-1">
               <div class="section">
-                <i class="fas fa-home" />
+                <i class="fas fa-window-restore" />
                 <div class="details">
                   <span class="timelineTitle">Portfolio</span>
                   <span>date 2</span>
