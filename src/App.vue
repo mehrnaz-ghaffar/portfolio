@@ -49,7 +49,7 @@
           <ul class="navList">
             <li>
               <a 
-                href="#" 
+                href="#about" 
                 class="navLink"
               >
                 <i class="fas fa-user" />
@@ -59,7 +59,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#mySkills"
                 class="navLink"
               >
                 <i class="far fa-address-card" />
@@ -69,7 +69,7 @@
             </li>
             <li>
               <a
-                href="#" 
+                href="#languages" 
                 class="navLink"
               >
                 <i class="fas fa-language" />
@@ -79,7 +79,7 @@
             </li>
             <li>
               <a
-                href="#" 
+                href="#experience" 
                 class="navLink"
               >
                 <i class="fas fa-laptop-code" />
@@ -89,7 +89,7 @@
             </li>
             <li>
               <a 
-                href="#" 
+                href="#footer" 
                 class="navLink"
               >
                 <i class="fas fa-users" />
@@ -120,7 +120,10 @@
         </nav>
 
         <!-- About Section -->
-        <section :class="darkMode ? 'aboutDark' : 'about'">
+        <section
+          id="about"
+         :class="darkMode ? 'aboutDark' : 'about'"
+        >
           <h2>About  Me</h2>
           <divider id="devider" />
           <div class="aboutContainer">
@@ -210,7 +213,10 @@
         </section>
 
         <!-- skills Section -->
-        <section class="mySkills">
+        <section 
+          id="mySkills" 
+          class="mySkills"
+        >
           <h2>My Skills</h2>
           <divider />
           <div class="skillsContainer">
@@ -279,7 +285,10 @@
         </section>
 
         <!-- Language Section -->
-        <section class="languages">
+        <section
+          id="languages" 
+          class="languages"
+        >
           <h2>My Languages</h2>
           <divider />
           <div class="languageContainer">
@@ -500,7 +509,10 @@
         </section>
 
         <!-- Education & Experience Section -->
-        <section class="experience">
+        <section
+          id="experience" 
+          class="experience"
+        >
           <h2>education &amp; experiences</h2>
           <divider />
           <div 
@@ -612,32 +624,75 @@
           </div>
         </section>
 
-        <footer class="footer">
+        <footer 
+          id="footer" 
+          class="footer"
+        >
           <h1>connect with me on </h1>
           <div class="mediaContainer">
             <div class="mediaButton">
               <div class="mediaIcon">
-                <i class="fab fa-linkedin" />
+                <a 
+                  class="linkIcon" 
+                  href="www.linkedin.com/in/mehrnaz-ghaffar-242399219"
+                >
+                  <i class="fab fa-linkedin" />
+                </a>
               </div>
-              <span>linkedin</span>
+              <a 
+                class="linkName" 
+                href="www.linkedin.com/in/mehrnaz-ghaffar-242399219"
+              >
+                <span>linkedin</span>
+              </a>
             </div>
             <div class="mediaButton">
               <div class="mediaIcon">
-                <i class="fab fa-telegram-plane" />
+                <a 
+                  class="linkIcon" 
+                  href="http://www.instagram.com/mehrnaz._.ghr"
+                >
+                  <i class="fab fa-instagram" />
+                </a>
               </div>
-              <span>telegram</span>
+              <a 
+                class="linkName" 
+                href="http://www.instagram.com/mehrnaz._.ghr"
+              >
+                <span>instagram</span>
+              </a>
             </div>
             <div class="mediaButton">
               <div class="mediaIcon">
-                <i class="fab fa-instagram" />
+                <a 
+                  class="linkIcon" 
+                  href="https://t.me/Mehrnaz_ghr"
+                >
+                  <i class="fab fa-telegram-plane" />
+                </a>  
               </div>
-              <span>instagram</span>
+              <a 
+                class="linkName" 
+                href="https://t.me/Mehrnaz_ghr"
+              >
+                <span>telegram</span>
+               </a> 
             </div>
             <div class="mediaButton">
               <div class="mediaIcon">
-                <i class="fab fa-github" />
+                <a 
+                  class="linkIcon" 
+                  href="https://www.github.com/mehrnaz-ghaffar"
+                >
+                  <i class="fab fa-github" />
+                </a>
               </div>
-              <span>github</span>
+              <a 
+                class="linkName" 
+                href="https://www.github.com/mehrnaz-ghaffar"
+              >
+                <span>github</span>
+              </a>
             </div>
           </div>
           <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
@@ -1409,15 +1464,15 @@ h2{
 }
 
 .mediaContainer .mediaButton:nth-child(1):hover .mediaIcon{
-  background: darkblue;
+  background: #2867B2;
 }
 
 .mediaContainer .mediaButton:nth-child(2):hover .mediaIcon{
-  background: darkblue;
+  background: #E1306C;
 }
 
 .mediaContainer .mediaButton:nth-child(3):hover .mediaIcon{
-  background: #E1306C;
+  background: #0088CC;
 }
 
 .mediaContainer .mediaButton:nth-child(4):hover .mediaIcon{
@@ -1443,19 +1498,27 @@ h2{
 }
 
 .mediaContainer .mediaButton:nth-child(1) span{
-  color: darkblue;
+  color: #2867B2;
 }
 
 .mediaContainer .mediaButton:nth-child(2) span{
-  color: darkblue;
+  color: #E1306C;
 }
 
 .mediaContainer .mediaButton:nth-child(3) span{
-  color: #E1306C;
+  color: #0088CC;
 }
 
 .mediaContainer .mediaButton:nth-child(4) span{
   color: #333;
+}
+
+.linkName{
+  text-decoration: none;
+}
+
+.linkIcon{
+  color: #000;
 }
 
 .copyRight{
