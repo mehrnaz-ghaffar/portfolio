@@ -181,13 +181,13 @@ let tl4 = gsap.timeline({
   },
 });
 
-tl4.fromTo(".row" , {opacity: 0} , {opacity: 1 , duration: 2})
+tl4.fromTo(".experience" , {opacity: 0} , {opacity: 1 , duration: 2})
 
 //---------------- socisl media section animation -------------------//
 let tl5 = gsap.timeline({
   scrollTrigger:{
     trigger: ".footer",
-    start: "top 85%",
+    start: "top 80%",
     end: "bottom",
     // toggleActions: 'play none reverse none'
   },
