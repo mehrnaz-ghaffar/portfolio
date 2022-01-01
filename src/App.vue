@@ -140,25 +140,25 @@
                   <div class="titles">
                     <b>FULL NAME</b>
                   </div>
-                  <div>Mehrnaz Ghaffar Tabrizi</div>   
+                  <div class="info">Mehrnaz Ghaffar Tabrizi</div>   
                 </li>
                 <li>
                   <div class="titles">
                     <b>BIRTHDAY</b>
                   </div>
-                  <div>1378/8/18</div> 
+                  <div class="info">1378/8/18</div> 
                 </li>
                 <li>
                   <div class="titles">
                     <b>BIRTH PLACE</b>
                   </div>
-                  <div>Tehran , Iran </div>
+                  <div class="info">Tehran , Iran </div>
                 </li>
                 <li>
                   <div class="titles">
                     <b>EMAIL</b>
                   </div>
-                  <div>mehrnaz.ghaffar@gmail.com</div>
+                  <div class="info">mehrnaz.ghaffar@gmail.com</div>
                 </li>
               </ul>
             </div>
@@ -178,25 +178,25 @@
                   <div class="titles">
                     <b>ADDRESS</b>
                   </div>
-                  <div>Tehran , Iran</div>   
+                  <div class="info">Tehran , Iran</div>   
                 </li>
                 <li>
                   <div class="titles">
                     <b>PHONE</b>
                   </div>
-                  <div>+98912*****15</div> 
+                  <div class="info">+98912*****15</div> 
                 </li>
                 <li>
                   <div class="titles">
                     <b>DEGREE</b>
                   </div>
-                  <div>bachlor of computer engineering</div>
+                  <div class="info">Bachlor of computer engineering</div>
                 </li>
                 <li>
                   <div class="titles">
                     <b>UNIVERSITY</b>
                   </div>
-                  <div>Shahrood university of technology</div>
+                  <div class="info">Shahrood university of technology</div>
                 </li>
               </ul>
             </div>
@@ -233,21 +233,21 @@
                   :skillName="skillNameJs"
                   :width="widthJs"
                 /> 
-                <span>70%</span>
+                <span>63%</span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameGit"
                   :width="widthGit"  
                 /> 
-                <span>65%</span>
+                <span>46%</span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNamePython"
                   :width="widthPython"
                 /> 
-                <span>40%</span>
+                <span>48%</span>
               </div>
             </div>
             <div class="column">
@@ -256,29 +256,28 @@
                   :skillName="skillNameCss"
                   :width="widthCss"
                 /> 
-                <span>86%</span>
+                <span>78%</span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameVue"
                   :width="widthVue"
                 /> 
-                <span>55%</span>
+                <span>56%</span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameJava"
                   :width="widthJava"
                 /> 
-                <span>45%</span>
-              </div>
-              
+                <span>50%</span>
+              </div>            
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNamePhotoshop"
                   :width="widthPhotoshop"
                 /> 
-                <span>30%</span>
+                <span>35%</span>
               </div>
             </div>
           </div>
@@ -736,21 +735,21 @@ export default {
         return{
           clicked : false,
           skillNameHtml :"HTML",
-          widthHtml: 300,
+          widthHtml: 330,
           skillNameJs :"Javascript",
-          widthJs: 200,
+          widthJs: 265,
           skillNameCss :"CSS",
           widthCss: 300,
           skillNameVue :"Vue.js",
-          widthVue: 300,
+          widthVue: 240,
           skillNameGit :"Git",
-          widthGit: 300,
+          widthGit: 180,
           skillNameJava :"Java",
-          widthJava: 300,
+          widthJava: 210,
           skillNamePython: "Python",
-          widthPython: 300,
+          widthPython: 190,
           skillNamePhotoshop : "Photoshop",
-          widthPhotoshop: 300,
+          widthPhotoshop: 160,
           darkMode: false,
         }
     },
@@ -862,7 +861,7 @@ h2{
   top: 90px;
   height: 530px;
   width: 78px;
-  background: #9ea2a4;
+  background: rgba(91, 62, 129, 0.438);
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
@@ -921,7 +920,7 @@ h2{
 }
 
 .menu.menuActive #menuIcon{
-  left: 90%;
+  left: 85%;
   cursor: pointer;
 }
 
@@ -1003,7 +1002,6 @@ h2{
 }
 
 .darkmodeContent{
-  background: #1d1b31;
   position: absolute;
   color: #fff;
   bottom: 0;
@@ -1019,11 +1017,10 @@ h2{
   justify-content: space-around;
 }
 
-/* .darkmodeIcon{} */
+/* .darkmodeIcon */
 .menu .darkmodeIcon{
   font-size: 19px;
 }
-
 
 .menu .switchButton{
   opacity: 0;
@@ -1076,7 +1073,7 @@ h2{
 /*   /////////////////  About Section ///////////////////  */
 .about{
   padding: 50px 0 10% 0;
-  background: #ece8e0;
+  background: #fff;
   height: 120vh;
 }
 
@@ -1089,7 +1086,7 @@ h2{
   margin: 60px 20px 20px 70px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .aboutText{
@@ -1133,6 +1130,10 @@ h2{
   margin-bottom: -20px;
 }
 
+.info{
+  color: rgb(56, 54, 54);
+}
+
 /* .button{
   text-align: center;
   margin: 65px;
@@ -1152,18 +1153,30 @@ h2{
    transform: scale(1.1);
 }*/
 
-/* @media screen and (max-width: 1365px) {
+@media screen and (max-width: 1365px) {
   .about{
-    display: flex;
-    flex-wrap: wrap;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .about{
+    width: 200px;
   }
 
-} */
+  ul li div{
+    font-size: 10px;
+  }
+
+  .aboutImage{
+    height: 200px;
+  }
+}
 
 /* /////////////////  Skills Sections  ///////////////// */
 .mySkills{
   padding-bottom: 100px;
-  background: #d7cfd2;
+  background: #fff;
   padding-top: 2px;
 }
 
@@ -1197,6 +1210,16 @@ h2{
   
 }
 
+.skillMeasure{
+  display: flex;
+  justify-content: space-evenly;
+  block-size: 7px;
+}
+
+#skillMeasure{
+  margin-right: 20px;
+}
+
 /*  ///////////////  Languages Section  ///////////////// */
 .languages{
   padding: 100px 0 100px 0;
@@ -1217,14 +1240,14 @@ h2{
   position: relative;
   max-width: 300px;
   height: 210px;
-  background: rgba(160, 153, 153, 0);
+  background: rgba(246, 238, 255, 0.952);
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease-in-out;
-
+  border-radius: 10px;
 }
 
 .card:hover{
@@ -1241,14 +1264,20 @@ h2{
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 } */
 
-.countryFlag img{
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-#card1 img{
+.card img{
+  /* max-width: 100%; */
+  border-radius: 10px;
   height: 170px;
 }
+
+#card1{
+  width: 290px;
+}
+/* 
+#card1 img{
+  height: 170px;
+
+} */
 
 .card .level{
   position: relative;
@@ -1272,19 +1301,9 @@ h2{
   color: coral;
 }
 
-.skillMeasure{
-  display: flex;
-  justify-content: space-evenly;
-  block-size: 7px;
-}
-
-#skillMeasure{
-  margin-right: 20px;
-}
-
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
-  background: rgb(240, 158, 158);
+  background: rgba(193, 158, 240, 0.247);
   height: 203vh;  
   padding-top: 2px;
 }
@@ -1335,7 +1354,7 @@ h2{
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: rgb(240, 158, 158); /* #ff7979 */
+  color: rgba(68, 44, 100, 0.726); /* #ff7979 */
   font-size: 17px;
   /* box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05); */
 
@@ -1363,7 +1382,6 @@ h2{
   content: "";
   height: 15px;
   width: 15px;
-  background: darkblue;
   top: 28px;
   /* z-index: -1; */  /*/////////////////  !!!!!!!!!!!!!!!!!!!!!!!!!  //////////////////////*/
   background: #fff;
@@ -1440,7 +1458,7 @@ h2{
   width: 60px;
   margin: 0 5px;
   float: left;
-  background: rgb(164, 194, 238);
+  background: rgba(213, 200, 230, 0.836);
   overflow: hidden;
   border-radius: 50px;
   cursor: pointer;

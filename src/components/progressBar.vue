@@ -55,7 +55,7 @@ export default {
     top: 1px;
     left: 1px;
     right: 1px;
-    background-color: aqua;
+    background-color: rgba(144, 80, 173, 0.329);
     display: block;
     height: 100%;
     /* width: 50% ; */
@@ -64,12 +64,11 @@ export default {
 
 }
 
-
-
 .percentage span{
   float: left;
   margin: 4px 17px;
   font-size: 17px;
+  color: rgba(56, 54, 54, 0.87);
 }
 
 @media screen and (max-width: 483px) {

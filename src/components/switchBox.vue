@@ -39,7 +39,7 @@ label{
     display: block;
     width: 64px;
     height: 34px;
-    background-color: #477a85;
+    background-color: rgba(91, 62, 129, 0.534);
     border-radius: 100px;
     position: relative;
     cursor: pointer;
@@ -67,7 +67,7 @@ input:checked + label::after{
 }
 
 input:checked + label {
-   background-color: #243d42;
+   background-color: rgba(95, 60, 141, 0.774);
 }
 
 </style>
