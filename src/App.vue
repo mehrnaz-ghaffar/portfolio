@@ -5,8 +5,9 @@
       <section class="introduction">
         <div class="introductionContainer">
           <h1 class="introductionText">
-            Mehrnaz
+            Hi , I'm Mehrnaz
           </h1>
+          <h5 class="introductionDetail">Front-end web developer</h5>
           <img 
             src="./assets/images/backgroundog.png" 
             class="background" 
@@ -215,7 +216,7 @@
         <!-- skills Section -->
         <section 
           id="mySkills" 
-          class="mySkills"
+          :class="darkMode ? 'mySkillsDark' : 'mySkills'"
         >
           <h2>My Skills</h2>
           <divider />
@@ -623,11 +624,12 @@
           </div>
         </section>
 
+        <!-- Social Media Section -->
         <footer 
           id="footer" 
           class="footer"
         >
-          <h1>connect with me on </h1>
+          <h2>connect with me on </h2>
           <div class="mediaContainer">
             <div class="mediaButton">
               <div class="mediaIcon">
@@ -802,7 +804,7 @@ main{
 }
 
 .preIntroductionText{
-  color: rgb(241, 243, 245);
+  color: rgba(193, 158, 240, 0.856);
   font-size: 3rem;
   margin-top: 80px;
 }
@@ -1050,11 +1052,20 @@ h2{
 
 .introductionText{
   position: absolute;
-  color: #fff;
-  top: 20%;
-  left: 50%;
+  color: rgba(246, 238, 255, 0.966);
+  top: 27%;
+  left: 28%;
   transform: translate(-50% , -20%);
-  font-size: 6rem;
+  font-size: 5rem;
+}
+
+.introductionDetail{
+  position: absolute;
+  color: rgba(246, 238, 255, 0.966);
+  top: 37%;
+  left: 30%;
+  transform: translate(-50% , -20%);
+  font-size: 3rem;
 }
 
 
@@ -1079,7 +1090,7 @@ h2{
 
 .aboutDark{
   padding: 50px 0 10% 0;
-  background: #000;
+  background: rgba(18, 1, 22, 0.589);
 }
 
 .aboutContainer{
@@ -1179,6 +1190,13 @@ h2{
   background: #fff;
   padding-top: 2px;
 }
+
+.mySkillsDark{
+  padding-bottom: 100px;
+  background: rgba(18, 1, 22, 0.589);
+  padding-top: 2px;
+}
+
 
 .skillsContainer{
   margin-top: 70px;
@@ -1447,6 +1465,7 @@ h2{
 
 /*  ///////////////  Social Media Section  ///////////////// */
 .mediaContainer{
+  margin-top: 70px;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
