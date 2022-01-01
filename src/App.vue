@@ -7,7 +7,9 @@
           <h1 class="introductionText">
             Hi , I'm Mehrnaz
           </h1>
-          <h5 class="introductionDetail">Front-end web developer</h5>
+          <h5 class="introductionDetail">
+            Front-end web developer
+          </h5>
           <img 
             src="./assets/images/backgroundog.png" 
             class="background" 
@@ -123,7 +125,7 @@
         <!-- About Section -->
         <section
           id="about"
-         :class="darkMode ? 'aboutDark' : 'about'"
+          :class="darkMode ? 'aboutDark' : 'about'"
         >
           <h2>About  Me</h2>
           <divider id="devider" />
@@ -134,32 +136,37 @@
               dir="rtl"
             >
               <ul>
-                <!-- <dl>
-                  <dt>full name</dt> <dd>mehrnaz ghaffar</dd>
-                </dl> -->
                 <li>
                   <div class="titles">
                     <b>FULL NAME</b>
                   </div>
-                  <div class="info">Mehrnaz Ghaffar Tabrizi</div>   
+                  <div class="info">
+                    Mehrnaz Ghaffar Tabrizi
+                  </div>   
                 </li>
                 <li>
                   <div class="titles">
                     <b>BIRTHDAY</b>
                   </div>
-                  <div class="info">1378/8/18</div> 
+                  <div class="info">
+                    1378/8/18
+                  </div> 
                 </li>
                 <li>
                   <div class="titles">
                     <b>BIRTH PLACE</b>
                   </div>
-                  <div class="info">Tehran , Iran </div>
+                  <div class="info">
+                    Tehran , Iran 
+                  </div>
                 </li>
                 <li>
                   <div class="titles">
                     <b>EMAIL</b>
                   </div>
-                  <div class="info">mehrnaz.ghaffar@gmail.com</div>
+                  <div class="info">
+                    mehrnaz.ghaffar@gmail.com
+                  </div>
                 </li>
               </ul>
             </div>
@@ -179,25 +186,33 @@
                   <div class="titles">
                     <b>ADDRESS</b>
                   </div>
-                  <div class="info">Tehran , Iran</div>   
+                  <div class="info">
+                    Tehran , Iran
+                  </div>   
                 </li>
                 <li>
                   <div class="titles">
                     <b>PHONE</b>
                   </div>
-                  <div class="info">+98912*****15</div> 
+                  <div class="info">
+                    +98912*****15
+                  </div> 
                 </li>
                 <li>
                   <div class="titles">
                     <b>DEGREE</b>
                   </div>
-                  <div class="info">Bachlor of computer engineering</div>
+                  <div class="info">
+                    Bachlor of computer engineering
+                  </div>
                 </li>
                 <li>
                   <div class="titles">
                     <b>UNIVERSITY</b>
                   </div>
-                  <div class="info">Shahrood university of technology</div>
+                  <div class="info">
+                    Shahrood university of technology
+                  </div>
                 </li>
               </ul>
             </div>
@@ -535,7 +550,7 @@
                   <span>date 1</span>
                 </div> 
                 <p>
-                   &nbsp; Starting my studuies as a computer engineering student at Shahrood University of Technology was the start of my coding path . 
+                  &nbsp; Starting my studuies as a computer engineering student at Shahrood University of Technology was the start of my coding path . 
                   It was then that I got to know the world of coding and developing that instantly made me fall in love with it . I started learning basics of coding and
                   got to learn about important topics such as Database Design , Data Structures and Data Algorithms .
                 </p>    
@@ -677,7 +692,7 @@
                 href="https://t.me/Mehrnaz_ghr"
               >
                 <span>telegram</span>
-               </a> 
+              </a> 
             </div>
             <div class="mediaButton">
               <div class="mediaIcon">
@@ -696,7 +711,9 @@
               </a>
             </div>
           </div>
-          <span class="copyRight"> © 2020 Mehrnaz Ghaffar Tabrizi </span>
+          <span class="copyRight"> 
+            © 2020 Mehrnaz Ghaffar Tabrizi 
+          </span>
         </footer>
       </section>
     </main>

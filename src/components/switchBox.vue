@@ -4,7 +4,10 @@
       id="switchbox"
       type="checkbox" 
     >
-    <label for="switchbox" @click="switchToggle()"/>
+    <label 
+      for="switchbox" 
+      @click="switchToggle()"
+    />
   </div>
 </template>
 
