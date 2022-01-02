@@ -528,7 +528,7 @@
           id="experience" 
           class="experience"
         >
-          <h2>education &amp; experiences</h2>
+          <h2>My Experiences</h2>
           <divider />
           <div 
             id="experienceStart" 
@@ -547,7 +547,7 @@
                 <i class="fas fa-university" />
                 <div class="details">
                   <span class="timelineTitle">started university</span>
-                  <span>date 1</span>
+                  <span>1397 / 7 / 1</span>
                 </div> 
                 <p>
                   &nbsp; Starting my studuies as a computer engineering student at Shahrood University of Technology was the start of my coding path . 
@@ -561,7 +561,7 @@
                 <i class="fas fa-code" />
                 <div class="details">
                   <span class="timelineTitle">HTML &amp; CSS</span>
-                  <span>date 2</span>
+                  <span>1397 / 8 / 10</span>
                 </div>
                 <p>
                   &nbsp;I got familiar with HTML and CSS through an extra course I took on my first term . Got to know the basics and got familiar with a little Javascript and PHP to use them for a learning project and it was at this stage 
@@ -574,7 +574,7 @@
                 <i class="fab fa-js" />
                 <div class="details">
                   <span class="timelineTitle">Javascript</span>
-                  <span>date 2</span>
+                  <span>1398 / 4 / 14</span>
                 </div>
                 <p>
                   &nbsp;Summer was a good time for me to put my full focus on Javascript without university duties . I started learning the language more using youtube courses
@@ -587,7 +587,7 @@
                 <i class="fas fa-building" />
                 <div class="details">
                   <span class="timelineTitle">Internship</span>
-                  <span>date 2</span>
+                  <span>1400 / 5 / 2</span>
                 </div>
                 <p>
                   &nbsp; Starting my Internship at Novaday company was a great leap in my path. I got to know and work with more complicated and heavier projects 
@@ -601,7 +601,7 @@
                 <i class="fab fa-git-alt" />
                 <div class="details">
                   <span class="timelineTitle">Git</span>
-                  <span>date 2</span>
+                  <span>1400 / 5 / 21</span>
                 </div>
                 <p>
                   &nbsp; I started using git and github through out my internship and university courses . I learned about using it from youtube and started putting my 
@@ -614,7 +614,7 @@
                 <i class="fab fa-vuejs" />
                 <div class="details">
                   <span class="timelineTitle">Vue.js</span>
-                  <span>date 2</span>
+                  <span>1400 / 6 / 3</span>
                 </div>
                 <p>
                   &nbsp; Next step was learning a framework and I choose Vue.js , I started learning Vue through youtube courses. To really learn the framework 
@@ -628,7 +628,7 @@
                 <i class="fas fa-window-restore" />
                 <div class="details">
                   <span class="timelineTitle">Portfolio</span>
-                  <span>date 2</span>
+                  <span>1400 / 6 / 30</span>
                 </div>
                 <p>
                   &nbsp; Creating this site as my own portfolio was one of my best learning experiences and a great way to put all my knowledge together and do a lot 
@@ -779,6 +779,7 @@ export default {
     timeline.to(".preIntroduction" , {y:"-100%", duration: 1}, "-=1");
     timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
+    timeline.fromTo(".introductionDetail" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
     
     // timeline.fromTo(".card", { opacity:0 } , { opacity:1 , duration:2} );
 
@@ -822,6 +823,7 @@ main{
 
 .preIntroductionText{
   color: rgba(193, 158, 240, 0.856);
+  font-family: 'PT Serif', serif;
   font-size: 3rem;
   margin-top: 80px;
 }
@@ -863,22 +865,23 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2{
   text-align: center;
   margin: 20px 0px 0px 0px;
-  font-size:40px;
-  font-family: 'Great Vibes', cursive;
-  text-shadow: 1px 4px 5px rgb(199 192 193);
+  font-size:35px;
+  font-family: 'PT Serif', serif;
+  text-shadow: 1px 4px 4px rgb(199 192 193);
 }
 
 /*////////////////// menu /////////////////*/
 .menu{
   position: fixed;
   left: 0;
-  top: 90px;
-  height: 530px;
+  top: 140px;
+  height: 428px;
   width: 78px;
   background: rgba(91, 62, 129, 0.438);
   padding: 6px 14px;
@@ -1073,16 +1076,18 @@ h2{
   top: 27%;
   left: 28%;
   transform: translate(-50% , -20%);
-  font-size: 5rem;
+  font-size: 4.3rem;
+  font-family: 'PT Serif', serif;
 }
 
 .introductionDetail{
   position: absolute;
   color: rgba(246, 238, 255, 0.966);
-  top: 37%;
+  top: 39%;
   left: 30%;
   transform: translate(-50% , -20%);
-  font-size: 3rem;
+  font-size: 2.3rem;
+  font-family: 'PT Serif', serif;
 }
 
 
@@ -1156,10 +1161,12 @@ h2{
 
 .titles{
   margin-bottom: -20px;
+  font-size: 19px;
 }
 
 .info{
   color: rgb(56, 54, 54);
+  font-size: 18px;
 }
 
 /* .button{
@@ -1333,13 +1340,13 @@ h2{
 }
 
 .level p i{
-  color: coral;
+  color: rgba(25, 6, 49, 0.651);
 }
 
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
   background: rgba(193, 158, 240, 0.247);
-  height: 203vh;  
+  height: 233vh;  
   padding-top: 2px;
 }
 
@@ -1444,6 +1451,7 @@ h2{
 
 .section p{
   margin: 10px 0 17px 0;
+  line-height: 23px;
 }
 
 @media(max-width: 790px){
