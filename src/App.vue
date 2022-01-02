@@ -879,8 +879,8 @@ export default {
   mounted(){
     const timeline = gsap.timeline({defaults :{ ease : "power1.out" }});
     timeline.to(".text", {y:"0%" , duration: 1, stagger: 0.25});
-    timeline.to(".slider" , {y:"-100%", duration: 1.5 , delay: 0.5});
-    timeline.to(".preIntroduction" , {y:"-100%", duration: 1}, "-=1");
+    timeline.to(".slider" , {y:"-200%", duration: 2.4 , delay: 0.5});
+    timeline.to(".preIntroduction" , {y:"-200%", duration: 2.4}, "-=2");
     timeline.fromTo("nav" , { opacity:0 }, { opacity:1 , duration: 1 });
     timeline.fromTo(".introductionText" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
     timeline.fromTo(".introductionDetail" , { opacity:0 }, { opacity:1 , duration: 1 }, "-=1");
@@ -1475,7 +1475,8 @@ h2{
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
   background: rgba(193, 158, 240, 0.247);
-  height: 240vh;  
+  /* height: 240vh;   */
+  height: 2000px;
   padding-top: 2px;
 }
 
@@ -1591,6 +1592,12 @@ h2{
   line-height: 23px;
 }
 
+@media (max-width: 883px) {
+  .experience{
+    height:2300px ;
+  }
+}
+
 @media(max-width: 790px){
   .experienceContainer .centerLine{
     left: 40px;
@@ -1625,10 +1632,13 @@ h2{
   }
 }
 
-/*  ///////////////  Social Media Section  ///////////////// */
-.footer{
-  background: #fff;
+@media(max-width: 373px) {
+  .experience{
+    height:3500px ;
+  }
 }
+
+/*  ///////////////  Social Media Section  ///////////////// */
 
 .mediaDark{
   background: #000;
@@ -1735,6 +1745,13 @@ h2{
 
 .copyRightDark{
   color: #fff;
+}
+
+@media (max-width: 1313px) {
+  .mediaContainer{
+    margin-bottom: 20px;
+  }
+  
 }
 
 </style>
