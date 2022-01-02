@@ -37,7 +37,10 @@
         <!-- menu -->
         <nav 
           class="menu"
-          :class="clicked ? 'menuActive' : 'menu'"
+          :class="[
+            clicked ? 'menuActive' : 'menu',
+            {'menuDark': darkMode}
+          ]"
         >
           <div class="logoContent">
             <div class="logo">
@@ -127,12 +130,20 @@
           id="about"
           :class="darkMode ? 'aboutDark' : 'about'"
         >
-          <h2>About  Me</h2>
-          <divider id="devider" />
+          <h2 
+            :class="{'hDark': darkMode}"
+          >
+            About  Me
+          </h2>
+          <divider 
+            id="devider" 
+            :darkMode="this.darkMode"
+          />
           <div class="aboutContainer">
             <div
               id="leftDiv"
               class="aboutText"
+              :class="{'aboutTextDark': darkMode}"
               dir="rtl"
             >
               <ul>
@@ -140,7 +151,10 @@
                   <div class="titles">
                     <b>FULL NAME</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     Mehrnaz Ghaffar Tabrizi
                   </div>   
                 </li>
@@ -148,7 +162,10 @@
                   <div class="titles">
                     <b>BIRTHDAY</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     1378/8/18
                   </div> 
                 </li>
@@ -156,7 +173,10 @@
                   <div class="titles">
                     <b>BIRTH PLACE</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     Tehran , Iran 
                   </div>
                 </li>
@@ -164,7 +184,10 @@
                   <div class="titles">
                     <b>EMAIL</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     mehrnaz.ghaffar@gmail.com
                   </div>
                 </li>
@@ -180,13 +203,17 @@
             <div
               id="rightDiv"
               class="aboutText"
+              :class="{'aboutTextDark': darkMode}"
             >
               <ul>
                 <li>
                   <div class="titles">
                     <b>ADDRESS</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     Tehran , Iran
                   </div>   
                 </li>
@@ -194,7 +221,10 @@
                   <div class="titles">
                     <b>PHONE</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     +98912*****15
                   </div> 
                 </li>
@@ -202,7 +232,10 @@
                   <div class="titles">
                     <b>DEGREE</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     Bachlor of computer engineering
                   </div>
                 </li>
@@ -210,7 +243,10 @@
                   <div class="titles">
                     <b>UNIVERSITY</b>
                   </div>
-                  <div class="info">
+                  <div 
+                    class="info"
+                    :class="{'infoDark': darkMode}"
+                  >
                     Shahrood university of technology
                   </div>
                 </li>
@@ -233,8 +269,14 @@
           id="mySkills" 
           :class="darkMode ? 'mySkillsDark' : 'mySkills'"
         >
-          <h2>My Skills</h2>
-          <divider />
+          <h2
+            :class="{'hDark': darkMode}"
+          >
+            My Skills
+          </h2>
+          <divider 
+            :darkMode="this.darkMode"
+          />
           <div class="skillsContainer">
             <div class="column">
               <div class="progressBar">          
@@ -304,8 +346,14 @@
           id="languages" 
           class="languages"
         >
-          <h2>My Languages</h2>
-          <divider />
+          <h2
+            :class="{'hDark': darkMode}"
+          >
+            My Languages
+          </h2>
+          <divider 
+            :darkMode="this.darkMode"
+          />
           <div class="languageContainer">
             <div 
               id="card1" 
@@ -528,8 +576,14 @@
           id="experience" 
           class="experience"
         >
-          <h2>My Experiences</h2>
-          <divider />
+          <h2
+            :class="{'hDark': darkMode}"
+          >
+            My Experiences
+          </h2>
+          <divider 
+            :darkMode="this.darkMode"
+          />
           <div 
             id="experienceStart" 
             class="experienceContainer"
@@ -644,7 +698,11 @@
           id="footer" 
           class="footer"
         >
-          <h2>connect with me on </h2>
+          <h2
+            :class="{'hDark': darkMode}"
+          >
+            connect with me on 
+          </h2>
           <div class="mediaContainer">
             <div class="mediaButton">
               <div class="mediaIcon">
@@ -855,7 +913,6 @@ main{
   height: 100%;
   z-index: 2;
   position: absolute;
-  background: #fff;
 }
 
 body {
@@ -876,6 +933,11 @@ h2{
   text-shadow: 1px 4px 4px rgb(199 192 193);
 }
 
+.hDark{
+  color: #fff;
+  text-shadow: 1px 4px 4px #282828;
+}
+
 /*////////////////// menu /////////////////*/
 .menu{
   position: fixed;
@@ -890,17 +952,18 @@ h2{
   z-index: 1;
 }
 
-/* .darkModemenu{
+.menuDark{
   position: fixed;
   left: 0;
-  top: 90px;
-  height: 530px;
+  top: 140px;
+  height: 428px;
   width: 78px;
-  background: rgb(46, 33, 40);
+  background: #230046;
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
-} */
+  z-index: 1;
+}
 
 .menu.menuActive{
   width: 175px;
@@ -968,7 +1031,7 @@ h2{
   border-radius: 6px;
   height: 35px;
   width: 122px;
-  background: rgb(121, 88, 88);
+  background: rgba(190, 148, 209, 0.377);
   line-height: 35px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1000,8 +1063,8 @@ h2{
 }
 
 .menu ul li a:hover{
-  background: coral;
-  color: cornflowerblue;
+  background: rgba(84, 51, 128, 0.438);
+  color: rgba(244, 236, 255, 0.808);
 }
 
 .menu ul li i, .menu .darkmodeIcon{
@@ -1112,7 +1175,7 @@ h2{
 
 .aboutDark{
   padding: 50px 0 10% 0;
-  background: rgba(18, 1, 22, 0.589);
+  background: #000;
 }
 
 .aboutContainer{
@@ -1125,6 +1188,10 @@ h2{
 .aboutText{
   margin-top: 25px;
   /* margin-top: inherit; */
+}
+
+.aboutTextDark{
+  color: #fff;
 }
 
 .aboutText ul li{
@@ -1167,6 +1234,10 @@ h2{
 .info{
   color: rgb(56, 54, 54);
   font-size: 18px;
+}
+
+.infoDark{
+  color: rgb(224, 220, 220);
 }
 
 /* .button{

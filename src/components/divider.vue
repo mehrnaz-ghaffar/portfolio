@@ -1,16 +1,19 @@
 <template>
   <div class="container">
-    <div class="line">
-      <div class="diamond" />
+    <div class="line" :class="{'lineDark': darkMode}">
+      <div class="diamond" :class="{'diamondDark': darkMode}"/>
     </div>
     <hr>
   </div>
 </template>
 
 <script>
+
+
 export default {
   name: "Divider",
-};
+  props: ['darkMode'],
+}
 </script>
 
 <style scoped>
@@ -18,7 +21,7 @@ export default {
   padding: 20px 400px 20px 400px;
 }
 
-.line {
+.line , .lineDark {
   width: 100%;
   height: 45px;
   position: relative;
@@ -31,6 +34,17 @@ export default {
   margin: auto;
   height: 2px;
   background: #000;
+  width: 45%;
+  top: 45%;
+}
+
+.lineDark::after,
+.lineDark::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #320064;
   width: 45%;
   top: 45%;
 }
@@ -53,6 +67,10 @@ export default {
   bottom: 0;
   margin: auto;
   transform: rotate(45deg);
+}
+
+.diamondDark{
+  background: #320064;
 }
 
 hr{
