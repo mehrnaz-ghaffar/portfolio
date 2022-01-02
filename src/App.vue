@@ -283,29 +283,49 @@
                 <progressBar 
                   :skillName="skillNameHtml" 
                   :width="widthHtml"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>86%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  86%
+                </span>
               </div>
               <div class="progressBar">         
                 <progressBar 
                   :skillName="skillNameJs"
                   :width="widthJs"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>63%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  63%
+                </span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameGit"
                   :width="widthGit"  
+                  :darkMode="this.darkMode"
                 /> 
-                <span>46%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  46%
+                </span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNamePython"
                   :width="widthPython"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>48%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  48%
+                </span>
               </div>
             </div>
             <div class="column">
@@ -313,29 +333,49 @@
                 <progressBar 
                   :skillName="skillNameCss"
                   :width="widthCss"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>78%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  78%
+                </span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameVue"
                   :width="widthVue"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>56%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  56%
+                </span>
               </div>
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNameJava"
                   :width="widthJava"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>50%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  50%
+                </span>
               </div>            
               <div class="progressBar">
                 <progressBar 
                   :skillName="skillNamePhotoshop"
                   :width="widthPhotoshop"
+                  :darkMode="this.darkMode"
                 /> 
-                <span>35%</span>
+                <span
+                  :class="{'spanDark': darkMode}"
+                >
+                  35%
+                </span>
               </div>
             </div>
           </div>
@@ -345,6 +385,7 @@
         <section
           id="languages" 
           class="languages"
+          :class="{'languagesDark': darkMode}"
         >
           <h2
             :class="{'hDark': darkMode}"
@@ -575,6 +616,7 @@
         <section
           id="experience" 
           class="experience"
+          :class="{'experienceDark': darkMode}"
         >
           <h2
             :class="{'hDark': darkMode}"
@@ -697,6 +739,7 @@
         <footer 
           id="footer" 
           class="footer"
+          :class="{'mediaDark': darkMode}"
         >
           <h2
             :class="{'hDark': darkMode}"
@@ -769,7 +812,10 @@
               </a>
             </div>
           </div>
-          <span class="copyRight"> 
+          <span 
+            class="copyRight"
+            :class="{'copyRightDark': darkMode}"        
+          > 
             © 2020 Mehrnaz Ghaffar Tabrizi 
           </span>
         </footer>
@@ -863,7 +909,9 @@ main{
 
 .data-scrollmagic-pin-spacer{
   padding-top: 0 !important;
+
 } 
+
 
 /* //////////////// on load animation /////////////////// */
 
@@ -913,6 +961,7 @@ main{
   height: 100%;
   z-index: 2;
   position: absolute;
+  background: #000;
 }
 
 body {
@@ -927,7 +976,8 @@ body {
 
 h2{
   text-align: center;
-  margin: 20px 0px 0px 0px;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
   font-size:35px;
   font-family: 'PT Serif', serif;
   text-shadow: 1px 4px 4px rgb(199 192 193);
@@ -958,7 +1008,7 @@ h2{
   top: 140px;
   height: 428px;
   width: 78px;
-  background: #230046;
+  background: #39046e;
   padding: 6px 14px;
   transition: all 0.5s ease;
   border-radius: 0px 10px 10px 0px;
@@ -1288,7 +1338,7 @@ h2{
 
 .mySkillsDark{
   padding-bottom: 100px;
-  background: rgba(18, 1, 22, 0.589);
+  background: #000;
   padding-top: 2px;
 }
 
@@ -1311,6 +1361,10 @@ h2{
   font-size: 20px;
   display: inline;
   width: 80px;
+}
+
+.spanDark{
+  color: #fff;
 }
 
 @media screen and (max-width: 1028px) {
@@ -1337,6 +1391,10 @@ h2{
 .languages{
   padding: 100px 0 100px 0;
   background: #fff;
+}
+
+.languagesDark{
+  background: #000;
 }
 
 .languageContainer{
@@ -1417,8 +1475,12 @@ h2{
 /*  ///////////////  experience Section  ///////////////// */
 .experience{
   background: rgba(193, 158, 240, 0.247);
-  height: 233vh;  
+  height: 240vh;  
   padding-top: 2px;
+}
+
+.experienceDark{
+  background: #0f011d;
 }
 
 .experienceContainer{
@@ -1471,6 +1533,10 @@ h2{
   font-size: 17px;
   /* box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05); */
 
+}
+
+.iconDark{
+  background: #0f011d;
 }
 
 .centerLine .scrollIcon{
@@ -1560,6 +1626,14 @@ h2{
 }
 
 /*  ///////////////  Social Media Section  ///////////////// */
+.footer{
+  background: #fff;
+}
+
+.mediaDark{
+  background: #000;
+}
+
 .mediaContainer{
   margin-top: 70px;
   margin-bottom: 100px;
@@ -1659,5 +1733,8 @@ h2{
   justify-content: center;
 }
 
+.copyRightDark{
+  color: #fff;
+}
 
 </style>

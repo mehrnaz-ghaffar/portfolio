@@ -157,6 +157,7 @@ let tl3 = gsap.timeline({
     start: "top",
     end: "bottom",
     pin: true,
+    pinSpacer:false
     // scrub: true
    
   },

@@ -44,7 +44,7 @@ export default {
   position: absolute;
   margin: auto;
   height: 2px;
-  background: #320064;
+  background: rgba(160, 114, 212, 0.952);
   width: 45%;
   top: 45%;
 }
@@ -70,7 +70,7 @@ export default {
 }
 
 .diamondDark{
-  background: #320064;
+  background: rgba(160, 114, 212, 0.952);
 }
 
 hr{

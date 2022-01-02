@@ -1,10 +1,15 @@
 <template>
-  <div class="loadingBar">
-    <div 
+  <div class="loadingBar" >
+    <div @click="toggleNav"
       class="percentage" 
+      :class="{'percentageDark': darkMode}"
       :style="percentageWidth" 
     >
-      <span> {{ skillName }} </span>
+      <span
+        :class="{'spanDark': darkMode}"
+      > 
+        {{ skillName }} 
+      </span>
     </div>
   </div>
 </template>
@@ -26,8 +31,14 @@ export default {
       default: () =>{
         return 0
       }
+    },
+    darkMode:{
+      type:Boolean,
+      default: () =>{
+        return false
+      }
     }
-  },
+    },
   computed: {
     percentageWidth(){
       return{
@@ -35,6 +46,12 @@ export default {
       };
     }
   },
+
+  methods: {
+      toggleNav : function(){
+        console.log(this.darkMode)
+      },
+}
 }
 </script>
 
@@ -64,11 +81,19 @@ export default {
 
 }
 
+.percentageDark{
+  background-color: rgba(169, 124, 221, 0.952);
+}
+
 .percentage span{
   float: left;
   margin: 4px 17px;
   font-size: 17px;
   color: rgba(56, 54, 54, 0.87);
+}
+
+.spanDark{
+  color: rgba(0, 0, 0, 0.808) !important;
 }
 
 @media screen and (max-width: 483px) {
